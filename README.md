@@ -1,10 +1,10 @@
-# giadajoeycazzola.github.io
+# giadajoeycazzola
 
 > An example of static website for photographers
 
 ## Build Setup
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
