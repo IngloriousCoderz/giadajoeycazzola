@@ -1,53 +1,41 @@
 <template>
-  <div>
-    <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
-    <nuxt/>
-  </div>
+<div>
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css">
+
+  <nav class="navbar level has-text-centered">
+    <div class="level-item">
+      <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'about'}">About</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'photo'}">Photo</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'index'}">Logo</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'stories'}">Stories</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'film'}">Film</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'contatti'}">Contatti</nuxt-link>
+    </div>
+  </nav>
+
+  <nuxt/>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <p>
+          &copy; Copyright 2017 Giada Joey Cazzola | Tutti i diritti riservati
+        </p>
+      </div>
+    </div>
+  </footer>
+</div>
 </template>
-
-<style>
-html {
-  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: border-box;
-  margin: 0;
-}
-
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
-</style>

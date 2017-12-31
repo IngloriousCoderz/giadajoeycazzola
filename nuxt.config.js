@@ -15,12 +15,14 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
+  css: ['~/assets/css/style.css'],
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
 
-  plugins: ['~plugins/buefy'],
+  plugins: ['~plugins/buefy', '~plugins/vue-awesome-swiper'],
 
   /*
   ** Build configuration

@@ -1,58 +1,135 @@
 <template>
-  <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        giadajoeycazzola.github.io
-      </h1>
-      <h2 class="subtitle">
-        An example of static website for photographers
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GitHub</a>
+<div>
+  <nav class="navbar is-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Logo</nuxt-link>
+
+      <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-menu" :class="{'is-active': burgerActive}">
+      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
+      <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white">About</nuxt-link>
+      <nuxt-link :to="{name: 'photo'}" class="navbar-item has-text-white">Photo</nuxt-link>
+      <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
+      <nuxt-link :to="{name: 'film'}" class="navbar-item has-text-white">Film</nuxt-link>
+      <nuxt-link :to="{name: 'contatti'}" class="navbar-item has-text-white">Contatti</nuxt-link>
+    </div>
+  </nav>
+
+  <div v-swiper:mySwiper="swiperOptions">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" v-for="slide in slides" :key="slide">
+        <div class="is-overlay" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
+        <div class="is-overlay dark"></div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar level has-text-centered is-hidden-mobile">
+    <div class="level-item">
+      <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'about'}" class="has-text-white">About</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'photo'}" class="has-text-white">Photo</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'index'}" class="has-text-white">Logo</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'stories'}" class="has-text-white">Stories</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'film'}" class="has-text-white">Film</nuxt-link>
+    </div>
+    <div class="level-item">
+      <nuxt-link :to="{name: 'contatti'}" class="has-text-white">Contatti</nuxt-link>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="is-size-1 has-text-centered">Giada Joey Cazzola</h1>
+
+        <div class="content">
+          <p>
+            Giada è una fotografa torinese specializzata in reportage di matrimonio fotografia di gravidanza, newborn e baby photography. Contattala per informazioni.
+          </p>
+        </div>
       </div>
     </div>
   </section>
+</div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  layout: 'home',
+
+  data() {
+    return {
+      burgerActive: false,
+      slides: ['jpg1', 'jpg2', 'jpg3', 'jpg4', 'jpg5', 'jpg6', 'jpg7', 'jpg8'],
+      swiperOptions: {
+        loop: true,
+        speed: 3000,
+        keyboard: {
+          enabled: true
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false
+        }
+      }
+    }
+  },
+
+  methods: {
+    onClickBurger() {
+      this.burgerActive = !this.burgerActive
+    }
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
+<style scoped>
+.navbar.is-mobile, .navbar-brand, .navbar-menu {
+  background-color: #504c49;
+}
+
+.swiper-container {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.swiper-slide {
   display: flex;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+.swiper-slide>.is-overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+.swiper-slide>.is-overlay.dark {
+  /*background: rgba(0, 0, 0, 0.5);*/
 }
 
-.links {
-  padding-top: 15px;
+.navbar.level {
+  position: absolute;
+  width: 100vw;
+  bottom: 0;
+  z-index: 1;
+  background: transparent;
 }
 </style>

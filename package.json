@@ -16,6 +16,7 @@
   "dependencies": {
     "buefy": "^0.6.2",
     "nuxt": "^1.0.0-rc11",
+    "vue-awesome-swiper": "^3.0.7",
     "vue-server-renderer": "^2.5.13",
     "vue-template-compiler": "^2.5.13"
   },
