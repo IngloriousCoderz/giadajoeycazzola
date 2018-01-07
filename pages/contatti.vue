@@ -28,23 +28,24 @@
 
     <div class="column has-margin">
       <div class="box">
-        <form@submit="onSubmit">
+        <form action="https://formspree.io/giada.cazzola93@gmail.com" method="POST">
           <div class="field">
-            <input class="input" v-model="name" placeholder="Nome" />
+            <input class="input" name="name" placeholder="Nome" />
           </div>
 
           <div class="field">
-            <input class="input" type="email" v-model="email" placeholder="Email" />
+            <input class="input" type="email" name="email" placeholder="Email" />
           </div>
 
           <div class="field">
-            <input class="input" v-model="phone" placeholder="Telefono" />
+            <input class="input" name="phone" placeholder="Telefono" />
           </div>
 
           <div class="field">
-            <textarea class="textarea" v-model="message" placeholder="Messaggio" />
+            <textarea class="textarea" name="message" placeholder="Messaggio" />
           </div>
 
+          <input type="hidden" name="subject" value="Richiesta di contatto dal sito giadajoeycazzola.com" />
           <button class="button" type="submit">Invia</button>
         </form>
       </div>
@@ -52,34 +53,3 @@
   </div>
 </section>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      name: null,
-      email: null,
-      phone: null,
-      message: null
-    }
-  },
-
-  methods: {
-    onSubmit(event) {
-      event.preventDefault()
-
-      const subject = `Richiesta di contatto dal sito giadajoeycazzola.com`
-
-      const body =
-        `${this.message}
-
--- ${this.name}
-Email: ${this.email}
-Telefono: ${this.phone}
-`
-
-      window.location.href = `mailto:giada.cazzola93@gmail.com?subject=${subject}&body=${encodeURIComponent(body)}`
-    }
-  }
-}
-</script>

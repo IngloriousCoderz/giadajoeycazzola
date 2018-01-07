@@ -24,6 +24,23 @@ module.exports = {
 
   plugins: ['~plugins/buefy', '~plugins/vue-awesome-swiper'],
 
+  modules: [
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-61816704-2'
+      }
+    ]
+  ],
+
+  env: {
+    baseUrl: process.env.ENV === 'production' ? process.env.BASE_URL || '' : ''
+  },
+
+  router: {
+    base: process.env.ENV === 'production' ? process.env.BASE_URL || '' : ''
+  },
+
   /*
   ** Build configuration
   */

@@ -1,6 +1,6 @@
 <template>
 <div>
-  <nav class="navbar is-mobile is-hidden-tablet-only is-hidden-desktop-only is-hidden-widescreen-only" role="navigation" aria-label="main navigation">
+  <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Logo</nuxt-link>
 
@@ -24,7 +24,7 @@
   <div v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide">
-        <div class="is-overlay" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
+        <div class="is-overlay" :style="{'background-image': `url(${baseUrl}/images/slides/${slide}.jpg)`}" />
         <div class="is-overlay dark"></div>
       </div>
     </div>
@@ -76,6 +76,7 @@ export default {
 
   data() {
     return {
+      baseUrl: process.env.baseUrl,
       burgerActive: false,
       slides: ['jpg1', 'jpg2', 'jpg3', 'jpg4', 'jpg5', 'jpg6', 'jpg7', 'jpg8'],
       swiperOptions: {
