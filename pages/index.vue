@@ -24,7 +24,7 @@
   <div v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide">
-        <div class="is-overlay" :style="{'background-image': `url(${baseUrl}/images/slides/${slide}.jpg)`}" />
+        <div class="is-overlay" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
         <div class="is-overlay dark"></div>
       </div>
     </div>
@@ -76,7 +76,6 @@ export default {
 
   data() {
     return {
-      baseUrl: process.env.baseUrl,
       burgerActive: false,
       slides: ['jpg1', 'jpg2', 'jpg3', 'jpg4', 'jpg5', 'jpg6', 'jpg7', 'jpg8'],
       swiperOptions: {
