@@ -2,7 +2,9 @@
 <div>
   <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Logo</nuxt-link>
+      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+        <h1 class="has-text-weight-bold is-marginless">GJC</h1>
+      </nuxt-link>
 
       <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
         <span></span>
@@ -41,7 +43,9 @@
       <nuxt-link :to="{name: 'photo'}" class="has-text-white">Photo</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'index'}" class="has-text-white">Logo</nuxt-link>
+      <nuxt-link :to="{name: 'index'}" class="has-text-white">
+        <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
+      </nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'stories'}" class="has-text-white">Stories</nuxt-link>
@@ -57,7 +61,7 @@
   <section class="hero">
     <div class="hero-body">
       <div class="container">
-        <h1 class="is-size-1 has-text-centered">Giada Joey Cazzola</h1>
+        <h1 class="is-size-1-desktop is-size-3-mobile has-text-centered">GiadaJoeyCazzola</h1>
 
         <div class="content">
           <p>
@@ -108,6 +112,9 @@ export default {
 .swiper-container {
   height: 100vh;
   overflow: hidden;
+  @media (max-width: 768px) {
+    height: 240px;
+  }
 }
 
 .swiper-slide {

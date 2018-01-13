@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Scriptina';
+  src: url(/fonts/SCRIPTIN.ttf);
+}
+
+@font-face {
   font-family: 'Bromello';
   src: url(/fonts/bromello.ttf);
 }
@@ -16,21 +21,16 @@ html {
 }
 
 h1 {
-  font-family: 'Bromello';
+  font-family: 'Scriptina', 'Bromello';
+  margin-bottom: 3rem !important;
 }
 
 .content {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 3rem !important;
 }
 
 .has-vertically-aligned-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.has-margin {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
 }
