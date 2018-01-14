@@ -23,7 +23,7 @@
     </div>
   </nav>
 
-  <div v-swiper:mySwiper="swiperOptions">
+  <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide">
         <div class="is-overlay" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
