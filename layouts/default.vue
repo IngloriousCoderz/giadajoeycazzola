@@ -1,6 +1,29 @@
 <template>
 <div>
-  <nav class="navbar level has-text-centered">
+  <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+        <h1 class="has-text-weight-bold is-marginless">GJC</h1>
+      </nuxt-link>
+
+      <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+
+    <div class="navbar-menu" :class="{'is-active': burgerActive}">
+      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white" @click.native="closeBurger">Home</nuxt-link>
+      <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white" @click.native="closeBurger">About</nuxt-link>
+      <nuxt-link :to="{name: 'photo'}" class="navbar-item has-text-white" @click.native="closeBurger">Photo</nuxt-link>
+      <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white" @click.native="closeBurger">Stories</nuxt-link>
+      <nuxt-link :to="{name: 'film'}" class="navbar-item has-text-white" @click.native="closeBurger">Film</nuxt-link>
+      <nuxt-link :to="{name: 'contatti'}" class="navbar-item has-text-white" @click.native="closeBurger">Contatti</nuxt-link>
+    </div>
+  </nav>
+
+  <nav class="navbar level has-text-centered is-hidden-mobile">
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
     </div>
@@ -11,7 +34,9 @@
       <nuxt-link :to="{name: 'photo'}">Photo</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'index'}">Logo</nuxt-link>
+      <nuxt-link :to="{name: 'index'}">
+        <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
+      </nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'stories'}">Stories</nuxt-link>
@@ -37,3 +62,32 @@
   </footer>
 </div>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      burgerActive: false
+    }
+  },
+
+  methods: {
+    onClickBurger() {
+      this.burgerActive = !this.burgerActive
+    },
+
+    closeBurger() {
+      console.log('closing')
+      this.burgerActive = false
+    }
+  }
+}
+</script>
+
+<style scoped>
+.navbar.is-mobile,
+.navbar-brand,
+.navbar-menu {
+  background-color: #504c49;
+}
+</style>
