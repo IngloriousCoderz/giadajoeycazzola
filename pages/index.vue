@@ -68,17 +68,15 @@
             Sono Giada e sono una fotografa specializzata in reportage di matrimonio.
           </p>
           <p>
-            Descriverei il mio lavoro come una ricerca della perfezione nell’imperfezione.
-          <br />
-            Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
-          <br />
-            Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del loro matrimonio con dettagli che nemmeno loro ricordavano.
+            Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
+            <br /> Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
+            <br /> Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
           </p>
           <p>
-            Il mio successo e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la VOSTRA storia, il VOSTRO giorno speciale, il VOSTRO amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me non esistono foto impostate, sorrisi di circostanza, pose plastiche.
-            Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate
-            dopo aver pronunciato quel sì all’altare, i baci e le mani che si incrociano mentre camminate uno di fianco all’altra. in una parola mi interessate voi e io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi
-            le immagini perfette per descrivere quello che siete.
+            Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la <em>vostra</em> storia, il <em>vostro</em> giorno speciale, il <em>vostro</em> amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me non esistono foto impostate,
+            sorrisi di circostanza, pose plastiche. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi,
+            i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e io e la mia macchina fotografica faremo tutto
+            quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.
           </p>
         </div>
       </div>
