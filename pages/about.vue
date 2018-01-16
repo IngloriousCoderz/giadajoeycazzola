@@ -3,7 +3,9 @@
   <h1 class="is-size-1 has-text-centered">Su di me</h1>
 
   <div class="content columns">
-    <img class="column is-half is-offset-one-quarter" src="/images/about_me.jpg" alt="about me" />
+    <div class="column is-half is-offset-one-quarter">
+      <img src="/images/about_me.jpg" alt="about me" />
+    </div>
   </div>
 
   <div class="content has-text-centered">

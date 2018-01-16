@@ -31,12 +31,22 @@ a {
   color: #4a4a4a !important;
 }
 
-.navbar {
+button::-moz-focus-inner {
+  border: 0;
+}
+
+.navbar.is-hidden-mobile {
   min-height: 5rem !important;
 }
 
 .content {
   margin-bottom: 3rem !important;
+}
+
+.has-navbar-fixed-top {
+  @media (min-width: 1024px) {
+    padding-top: 5rem;
+  }
 }
 
 .has-vertically-aligned-content {

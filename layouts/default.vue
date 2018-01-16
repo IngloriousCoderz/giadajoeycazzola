@@ -57,6 +57,10 @@
         <p>
           &copy; Copyright 2017 Giada Joey Cazzola | Tutti i diritti riservati
         </p>
+
+        <!-- // FB like button -->
+        <div class="fb-like" data-href="https://www.facebook.com/GiadaJoeyCazzolaPhotographer/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+        <!-- // FB like button -->
       </div>
     </div>
   </footer>
@@ -77,7 +81,6 @@ export default {
     },
 
     closeBurger() {
-      console.log('closing')
       this.burgerActive = false
     }
   }
@@ -85,10 +88,6 @@ export default {
 </script>
 
 <style scoped>
-.has-navbar-fixed-top {
-  padding-top: 5rem;
-}
-
 .navbar.is-mobile,
 .navbar-brand,
 .navbar-menu {

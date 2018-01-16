@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <nav class="navbar level container has-text-centered is-uppercase is-hidden-mobile">
+  <nav class="navbar level container has-text-centered is-uppercase is-hidden-touch">
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
     </div>
@@ -143,7 +143,13 @@ export default {
 .swiper-container {
   height: 100vh;
   overflow: hidden;
+  @media (max-width: 1024px) {
+    height: 720px;
+  }
   @media (max-width: 768px) {
+    height: 480px;
+  }
+  @media (max-width: 480px) {
     height: 240px;
   }
 }
@@ -159,9 +165,9 @@ export default {
   background-position: center;
 }
 
-.swiper-slide>.is-overlay.dark {
-  /*background: rgba(0, 0, 0, 0.5);*/
-}
+/*.swiper-slide>.is-overlay.dark {
+  background: rgba(0, 0, 0, 0.5);
+}*/
 
 .navbar.level.container {
   position: absolute;
