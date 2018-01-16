@@ -30,6 +30,8 @@
         <div class="is-overlay dark"></div>
       </div>
     </div>
+    <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
+    <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
   </div>
 
   <nav class="navbar level container has-text-centered is-uppercase is-hidden-touch">
@@ -88,8 +90,8 @@
         </a>
       </div>
       <script>
-      window.wpShowRatedv2('159658')
-</script>
+        window.wpShowRatedv2('159658')
+      </script>
       <!-- // Matrimonio.com -->
 
     </div>
@@ -116,6 +118,10 @@ export default {
         speed: 3000,
         keyboard: {
           enabled: true
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev'
         },
         autoplay: {
           delay: 3000,
