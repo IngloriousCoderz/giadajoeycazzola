@@ -57,19 +57,17 @@ module.exports = {
         type: 'text/css',
         href:
           '//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Playfair+Display'
       }
     ],
 
     script: [
-      {
-        src: 'https://cdn1.matrimonio.com/_js/wp-rated.js?v=4'
-      },
-      {
-        src: '/static/scripts/spa.js'
-      },
-      {
-        src: '/static/scripts/fb.js'
-      }
+      { src: 'https://cdn1.matrimonio.com/_js/wp-rated.js?v=4' },
+      { src: '/scripts/spa.js' },
+      { src: '/scripts/fb.js' }
     ]
   },
 

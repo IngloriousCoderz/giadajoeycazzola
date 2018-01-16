@@ -32,7 +32,7 @@
     </div>
   </div>
 
-  <nav class="navbar level has-text-centered is-hidden-mobile">
+  <nav class="navbar level container has-text-centered is-uppercase is-hidden-mobile">
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
     </div>
@@ -101,6 +101,12 @@
 export default {
   layout: 'home',
 
+  metaInfo: {
+    htmlAttrs: {
+      class: ''
+    }
+  },
+
   data() {
     return {
       burgerActive: false,
@@ -157,10 +163,11 @@ export default {
   /*background: rgba(0, 0, 0, 0.5);*/
 }
 
-.navbar.level {
+.navbar.level.container {
   position: absolute;
-  width: 100vw;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 1;
   background: transparent;
 }

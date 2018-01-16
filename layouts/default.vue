@@ -1,5 +1,5 @@
 <template>
-<div>
+<div class="has-navbar-fixed-top">
   <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
@@ -23,7 +23,7 @@
     </div>
   </nav>
 
-  <nav class="navbar level has-text-centered is-hidden-mobile">
+  <nav class="navbar level container has-text-centered is-uppercase is-fixed-top is-hidden-mobile">
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
     </div>
@@ -85,6 +85,10 @@ export default {
 </script>
 
 <style scoped>
+.has-navbar-fixed-top {
+  padding-top: 5rem;
+}
+
 .navbar.is-mobile,
 .navbar-brand,
 .navbar-menu {
