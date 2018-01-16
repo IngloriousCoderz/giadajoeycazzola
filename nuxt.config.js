@@ -35,11 +35,11 @@ module.exports = {
         property: 'og:description',
         content:
           'Wedding photographer based in Turin. Specializing in spontaneous photos and videos. Destination wedding and elopement photographer in Italy, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe.'
+      },
+      {
+        property: 'og:image',
+        content: '/favicon-96x96.png'
       }
-      // {
-      //   property: 'og:image',
-      //   content: ''
-      // }
     ],
 
     link: [
