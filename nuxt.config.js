@@ -17,7 +17,7 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          'Wedding photographer based in Turin. Specializing in spontaneous photo and video reportages. Destination wedding and elopement photographer in Italy, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe.'
+          'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
         property: 'og:url',
@@ -34,7 +34,7 @@ module.exports = {
       {
         property: 'og:description',
         content:
-          'Wedding photographer based in Turin. Specializing in spontaneous photo and video reportages. Destination wedding and elopement photographer in Italy, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe.'
+          'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
         property: 'og:image',

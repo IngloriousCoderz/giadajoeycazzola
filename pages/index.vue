@@ -3,7 +3,7 @@
   <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
-        <h1 class="has-text-weight-bold is-marginless">GJC</h1>
+        <h2 class="has-text-weight-bold is-marginless">GJC</h2>
       </nuxt-link>
 
       <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
@@ -46,7 +46,7 @@
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}" class="has-text-white">
-        <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
+        <h2 class="is-size-2 has-text-weight-bold is-marginless">GJC</h2>
       </nuxt-link>
     </div>
     <div class="level-item">
