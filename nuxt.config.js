@@ -88,8 +88,14 @@ module.exports = {
       {
         id: 'UA-61816704-2'
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
+
+  sitemap: {
+    hostname: 'https://www.giadajoeycazzola.com',
+    generate: true
+  },
 
   /*
   ** Build configuration
