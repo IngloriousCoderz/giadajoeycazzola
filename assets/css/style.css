@@ -23,11 +23,7 @@ html {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   font-family: 'Scriptina', 'Bromello';
   margin-bottom: 3rem !important;
 }
@@ -38,6 +34,10 @@ a {
 
 button::-moz-focus-inner {
   border: 0;
+}
+
+footer {
+  overflow-x: hidden;
 }
 
 .navbar.is-hidden-mobile {
@@ -58,4 +58,14 @@ button::-moz-focus-inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+.has-clipped-background {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.clickable:hover {
+  opacity: 0.5;
 }

@@ -80,7 +80,11 @@ module.exports = {
     color: '#3B8070'
   },
 
-  plugins: ['~plugins/buefy', '~plugins/vue-awesome-swiper'],
+  plugins: [
+    '~plugins/buefy',
+    '~plugins/vue-awesome-swiper',
+    '~plugins/vlightbox'
+  ],
 
   modules: [
     [

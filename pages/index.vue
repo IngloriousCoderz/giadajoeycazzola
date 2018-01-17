@@ -16,7 +16,7 @@
     <div class="navbar-menu" :class="{'is-active': burgerActive}">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
       <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white">About</nuxt-link>
-      <nuxt-link :to="{name: 'photo'}" class="navbar-item has-text-white">Photo</nuxt-link>
+      <nuxt-link :to="{name: 'photos'}" class="navbar-item has-text-white">Photos</nuxt-link>
       <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
       <nuxt-link :to="{name: 'film'}" class="navbar-item has-text-white">Film</nuxt-link>
       <nuxt-link :to="{name: 'contatti'}" class="navbar-item has-text-white">Contatti</nuxt-link>
@@ -26,7 +26,7 @@
   <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide">
-        <div class="is-overlay" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
+        <div class="is-overlay has-clipped-background" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
         <div class="is-overlay dark"></div>
       </div>
     </div>
@@ -42,7 +42,7 @@
       <nuxt-link :to="{name: 'about'}" class="has-text-white">About</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'photo'}" class="has-text-white">Photo</nuxt-link>
+      <nuxt-link :to="{name: 'photos'}" class="has-text-white">Photos</nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}" class="has-text-white">
@@ -93,7 +93,6 @@
         window.wpShowRatedv2('159658')
       </script>
       <!-- // Matrimonio.com -->
-
     </div>
   </section>
 </div>
@@ -165,12 +164,6 @@ export default {
   justify-content: center;
 }
 
-.swiper-slide>.is-overlay {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 /*.swiper-slide>.is-overlay.dark {
   background: rgba(0, 0, 0, 0.5);
 }*/
@@ -182,5 +175,6 @@ export default {
   transform: translateX(-50%);
   z-index: 1;
   background: transparent;
+  text-shadow: 0 0 0.5em black;
 }
 </style>
