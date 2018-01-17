@@ -7,7 +7,7 @@
 <script>
 import zpad from 'zpad'
 
-const BASE_PATH = '/images/photos/martina_salvador'
+const BASE_PATH = '/images/stories/martinasalvador'
 const IMAGE_COUNT = 92
 
 export default {

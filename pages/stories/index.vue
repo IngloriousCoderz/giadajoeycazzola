@@ -1,6 +1,6 @@
 <template>
 <section class="container">
-  <h1 class="is-size-1 has-text-centered">Le mie fotografie</h1>
+  <h1 class="is-size-1 has-text-centered">Le mie storie</h1>
 
   <div class="content columns is-centered is-multiline">
     <div v-for="image in images" :key="image.id" class="column is-one-third">
@@ -21,7 +21,7 @@
   </div>
 
   <div class="content has-text-centered">
-    Altre foto in arrivo...
+    Altri album in arrivo...
   </div>
 </section>
 </template>
@@ -33,8 +33,8 @@ export default {
       images: [
         {
           id: 1,
-          src: '/images/photos/martina_salvador/01.jpg',
-          href: 'photos-martinasalvador',
+          src: '/images/stories/martinasalvador/01.jpg',
+          href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
           description: 'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
         }
