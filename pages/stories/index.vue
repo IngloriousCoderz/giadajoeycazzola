@@ -32,11 +32,18 @@ export default {
     return {
       images: [
         {
-          id: 1,
+          id: 'martinasalvador',
           src: '/images/stories/martinasalvador/01.jpg',
           href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
           description: 'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
+        },
+        {
+          id: 'annamariaclaudio',
+          src: '/images/stories/annamariaclaudio/01.jpg',
+          href: 'stories-annamariaclaudio',
+          title: 'Annamaria & Claudio',
+          description: 'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
         }
       ]
     }
