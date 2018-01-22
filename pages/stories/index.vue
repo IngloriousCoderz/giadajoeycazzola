@@ -28,6 +28,19 @@
 
 <script>
 export default {
+  head() {
+    return {
+      title: 'Stories',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Blog realizzato per raccontare i migliori reportage di matrimonio realizzati a Torino, Piemonte, Langhe, Toscana, Puglia, Italia. Location bellissime immerse nella natura, abiti da sposa unici.'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       images: [

@@ -53,3 +53,20 @@
   </div>
 </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'About',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Chi è Giada Joey Cazzola, una descrizione di questa ragazza che si occupa di fotografia e reportage di matrimonio a torino.'
+        }
+      ]
+    }
+  }
+}
+</script>

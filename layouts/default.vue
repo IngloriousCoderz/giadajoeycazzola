@@ -55,6 +55,12 @@
 
 <script>
 export default {
+  head() {
+    return {
+      titleTemplate: '%s | Giada Joey Cazzola - Destination Wedding Photographer'
+    }
+  },
+
   data() {
     return {
       burgerActive: false

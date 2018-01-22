@@ -11,6 +11,21 @@ const BASE_PATH = '/images/stories/martinasalvador'
 const IMAGE_COUNT = 92
 
 export default {
+  scrollToTop: true,
+
+  head() {
+    return {
+      title: 'Martina & Salvador',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       title: 'Martina & Salvador',

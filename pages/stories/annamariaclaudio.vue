@@ -11,6 +11,21 @@ const BASE_PATH = '/images/stories/annamariaclaudio'
 const IMAGE_COUNT = 50
 
 export default {
+  scrollToTop: true,
+
+  head() {
+    return {
+      title: 'Annamaria & Claudio',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
+        }
+      ]
+    }
+  },
+
   data() {
     return {
       title: 'Annamaria & Claudio',

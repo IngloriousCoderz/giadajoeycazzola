@@ -9,3 +9,20 @@
     </div>
   </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Film',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'I migliori video di matrimonio realizzati a Torino, Piemonte, Langhe, Toscana, Puglia, Italia.'
+        }
+      ]
+    }
+  }
+}
+</script>

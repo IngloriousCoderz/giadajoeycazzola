@@ -5,25 +5,39 @@
   <div class="content columns">
     <div class="column has-vertically-aligned-content">
       <p>
-        Se vuoi qualche informazione non esitare a contattarmi!
+        Scrivimi per ricevere maggiori informazioni sui miei servizi. Sarò felice di rispondere alle tue domande e di confermarti la mia disponibiltà per la data del tuo matrimonio.
       </p>
       <p>
-        Sono disponibile per:
+        Oltre che reportage di matrimonio, offro diversi servizi quali:
       </p>
       <ul>
         <li>
-          Lorem
+          maternità
         </li>
         <li>
-          ipsum
+          newborn photography
         </li>
         <li>
-          dolor
+          reportage
         </li>
         <li>
-          e anche sit amet!
+          book
+        </li>
+        <li>
+          servizi di coppia in esterni o in studio
+        </li>
+        <li>
+          ritratti
         </li>
       </ul>
+      <p>
+        Per saperne di più:
+      </p>
+      <p>
+        <a href="mailto:giada.cazzola93@gmail.com" class="has-text-weight-bold">giada.cazzola93@gmail.com</a>
+        //
+        <a href="tel:+393475045548" class="has-text-weight-bold">+39 347 5045548</a>
+      </p>
     </div>
 
     <div class="column">
@@ -53,3 +67,20 @@
   </div>
 </section>
 </template>
+
+<script>
+export default {
+  head() {
+    return {
+      title: 'Contatti',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Compila la form per contattare Giada Joey Cazzola. Disponibile anche per altri tipi di servizi fotografici a Torino.'
+        }
+      ]
+    }
+  }
+}
+</script>

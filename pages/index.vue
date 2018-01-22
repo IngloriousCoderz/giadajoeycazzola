@@ -25,8 +25,8 @@
 
   <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="slide in slides" :key="slide">
-        <div class="is-overlay has-clipped-background" :style="{'background-image': `url(/images/slides/${slide}.jpg)`}" />
+      <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
+        <div class="is-overlay has-clipped-background" :style="{'background-image': `url(${slide.src})`}" />
         <div class="is-overlay dark"></div>
       </div>
     </div>
@@ -99,19 +99,20 @@
 </template>
 
 <script>
+import zpad from 'zpad'
+
+const SLIDE_COUNT = 8
+
 export default {
   layout: 'home',
-
-  metaInfo: {
-    htmlAttrs: {
-      class: ''
-    }
-  },
 
   data() {
     return {
       burgerActive: false,
-      slides: ['jpg1', 'jpg2', 'jpg3', 'jpg4', 'jpg5', 'jpg6', 'jpg7', 'jpg8'],
+      slides: Array.from(Array(SLIDE_COUNT).keys()).map(index => ({
+        id: index + 1,
+        src: `/images/slides/${zpad(index + 1)}.jpg`
+      })),
       swiperOptions: {
         loop: true,
         speed: 3000,
