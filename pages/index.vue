@@ -101,7 +101,7 @@
 <script>
 import zpad from 'zpad'
 
-const SLIDE_COUNT = 8
+const SLIDE_COUNT = 11
 
 export default {
   layout: 'home',
