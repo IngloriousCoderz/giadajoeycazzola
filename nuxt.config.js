@@ -66,6 +66,7 @@ module.exports = {
 
     script: [
       { src: 'https://cdn1.matrimonio.com/_js/wp-rated.js?v=4' },
+      { src: 'https://cdn1.matrimonio.com/js/wp-widget.js' },
       { src: '/scripts/spa.js' },
       { src: '/scripts/fb.js' }
     ]

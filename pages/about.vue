@@ -60,6 +60,19 @@
       per dare un tocco vintage al servizio, le riprese video e l'impaginazione delle immagini in splendidi album, così come servizi pre- e post-matrimoniali.
     </p>
   </div>
+
+  <div class="content columns is-centered">
+    <div class="column is-one-third">
+      <div id="wp-widget-reviews">
+        <div id="wp-widget-preview">
+          Leggi <a href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658/opinioni">le nostre raccomandazioni</a> a &nbsp;
+          <a href='https://www.matrimonio.com'>
+            <img src="https://cdn1.matrimonio.com/assets/img/logos/gen_logoHeader.svg" height="20">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 </template>
 
@@ -76,6 +89,10 @@ export default {
         }
       ]
     }
+  },
+
+  mounted() {
+    window.wpShowReviews('159658', 'white')
   }
 }
 </script>
