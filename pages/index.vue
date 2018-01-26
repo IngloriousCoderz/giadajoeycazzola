@@ -16,7 +16,7 @@
     <div class="navbar-menu" :class="{'is-active': burgerActive}">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
       <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white">About</nuxt-link>
-      <nuxt-link :to="{name: 'photos'}" class="navbar-item has-text-white">Photos</nuxt-link>
+      <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
       <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
       <nuxt-link :to="{name: 'film'}" class="navbar-item has-text-white">Film</nuxt-link>
       <nuxt-link :to="{name: 'contatti'}" class="navbar-item has-text-white">Contatti</nuxt-link>
@@ -42,7 +42,7 @@
       <nuxt-link :to="{name: 'about'}" class="has-text-white">About</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'photos'}" class="has-text-white">Photos</nuxt-link>
+      <nuxt-link :to="{name: 'portfolio'}" class="has-text-white">Portfolio</nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'index'}" class="has-text-white">

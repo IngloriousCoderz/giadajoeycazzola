@@ -2,8 +2,17 @@
 <section class="container">
   <h1 class="is-size-1 has-text-centered">Su di me</h1>
 
-  <div class="content columns">
-    <div class="column is-half is-offset-one-quarter">
+  <div class="content has-text-centered">
+    <blockquote>
+      &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
+      <footer>
+        &mdash; <cite>Ferdinando Scianna</cite>
+      </footer>
+    </blockquote>
+  </div>
+
+  <div class="content columns is-centered">
+    <div class="column is-half">
       <img src="/images/about_me.jpg" alt="about me" />
     </div>
   </div>

@@ -2,6 +2,15 @@
 <section class="container">
   <h1 class="is-size-1 has-text-centered">Le mie storie</h1>
 
+  <div class="content has-text-centered">
+    <blockquote>
+      &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
+      <footer>
+        &mdash; <cite>Diane Arbus</cite>
+      </footer>
+    </blockquote>
+  </div>
+
   <div class="content columns is-centered is-multiline">
     <div v-for="image in images" :key="image.id" class="column is-one-third">
       <nuxt-link :to="{ name: image.href }">
