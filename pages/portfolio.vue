@@ -13,7 +13,7 @@
 
     <div class="content has-text-centered">
       <p>
-        Una raccolta di foto che ho scattato in diversi matrimoni. Per vedere le gallery complete clicca <nuxt-link :to="{name: 'stories'}">qui</nuxt-link>.
+        Una raccolta di foto che ho scattato in diversi matrimoni. Per vedere le gallery complete clicca <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
       </p>
     </div>
 

@@ -102,6 +102,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
+    vendor: ['buefy', 'vue-awesome-swiper', 'zpad'],
     /*
     ** Run ESLint on save
     */
