@@ -27,11 +27,11 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
         <div class="is-overlay has-clipped-background" :style="{'background-image': `url(${slide.src})`}" />
-        <div class="is-overlay dark"></div>
+        <!-- <div class="is-overlay dark"></div> -->
       </div>
     </div>
-    <div class="swiper-button-prev swiper-button-white" slot="button-prev"></div>
-    <div class="swiper-button-next swiper-button-white" slot="button-next"></div>
+    <div class="swiper-button-prev swiper-button-white" slot="button-prev" @click="onClickPrev"></div>
+    <div class="swiper-button-next swiper-button-white" slot="button-next" @click="onClickNext"></div>
   </div>
 
   <nav class="navbar level container has-text-centered is-uppercase is-hidden-touch">
@@ -89,9 +89,6 @@
           <img alt="Consigliato da Matrimonio.com" id="wp-rated-img" src="https://cdn1.matrimonio.com/img/badges/2017/badge-gold_it_IT.jpg" />
         </a>
       </div>
-      <script>
-        window.wpShowRatedv2('159658')
-      </script>
       <!-- // Matrimonio.com -->
     </div>
   </section>
@@ -101,7 +98,9 @@
 <script>
 import zpad from 'zpad'
 
-const SLIDE_COUNT = 11
+const SLIDE_COUNT = 13
+const SLIDE_SPEED = 3000
+const MANUAL_SPEED = 500
 
 export default {
   layout: 'home',
@@ -115,25 +114,37 @@ export default {
       })),
       swiperOptions: {
         loop: true,
-        speed: 3000,
+        speed: SLIDE_SPEED,
         keyboard: {
           enabled: true
         },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev'
-        },
+        // navigation: {
+        //   nextEl: '.swiper-button-next',
+        //   prevEl: '.swiper-button-prev'
+        // },
         autoplay: {
-          delay: 3000,
-          disableOnInteraction: false
+          delay: SLIDE_SPEED,
+          disableOnInteraction: true
         }
       }
     }
   },
 
+  mounted() {
+    window.wpShowRatedv2('159658')
+  },
+
   methods: {
     onClickBurger() {
       this.burgerActive = !this.burgerActive
+    },
+
+    onClickPrev() {
+      this.mySwiper.slidePrev(MANUAL_SPEED)
+    },
+
+    onClickNext() {
+      this.mySwiper.slideNext(MANUAL_SPEED)
     }
   }
 }
@@ -165,9 +176,9 @@ export default {
   justify-content: center;
 }
 
-/*.swiper-slide>.is-overlay.dark {
+.swiper-slide>.is-overlay.dark {
   background: rgba(0, 0, 0, 0.5);
-}*/
+}
 
 .navbar.level.container {
   position: absolute;
