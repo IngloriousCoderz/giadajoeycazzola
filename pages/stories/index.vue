@@ -66,6 +66,13 @@ export default {
           href: 'stories-annamariaclaudio',
           title: 'Annamaria & Claudio',
           description: 'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
+        },
+        {
+          id: 'cassandracarlo',
+          src: '/images/stories/cassandracarlo/01.jpg',
+          href: 'stories-cassandracarlo',
+          title: 'Cassandra & Carlo',
+          description: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
         }
       ]
     }
