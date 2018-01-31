@@ -73,6 +73,13 @@ export default {
           href: 'stories-cassandracarlo',
           title: 'Cassandra & Carlo',
           description: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
+        },
+        {
+          id: 'danielamichele',
+          src: '/images/stories/danielamichele/01.jpg',
+          href: 'stories-danielamichele',
+          title: 'Daniela & Michele',
+          description: 'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
         }
       ]
     }
