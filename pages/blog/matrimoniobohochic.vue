@@ -2,6 +2,8 @@
 <section class="container">
   <h1 class="is-size-1 has-text-centered">{{title}}</h1>
 
+  <small class="is-italic">&mdash; 2 febbraio 2018 &mdash;</small>
+
   <article class="content">
     <p>
       Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
