@@ -1,6 +1,6 @@
 <template>
 <section class="container">
-  <h1 class="is-size-1 has-text-centered">Le mie storie</h1>
+  <h1 class="is-size-1 has-text-centered">Storie</h1>
 
   <div class="content has-text-centered">
     <blockquote>

@@ -18,8 +18,8 @@
       <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white">About</nuxt-link>
       <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
       <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
-      <nuxt-link :to="{name: 'film'}" class="navbar-item has-text-white">Film</nuxt-link>
-      <nuxt-link :to="{name: 'contatti'}" class="navbar-item has-text-white">Contatti</nuxt-link>
+      <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white">Blog</nuxt-link>
+      <nuxt-link :to="{name: 'contacts'}" class="navbar-item has-text-white">Contacts</nuxt-link>
     </div>
   </nav>
 
@@ -53,10 +53,10 @@
       <nuxt-link :to="{name: 'stories'}" class="has-text-white">Stories</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'film'}" class="has-text-white">Film</nuxt-link>
+      <nuxt-link :to="{name: 'blog'}" class="has-text-white">Blog</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'contatti'}" class="has-text-white">Contatti</nuxt-link>
+      <nuxt-link :to="{name: 'contacts'}" class="has-text-white">Contacts</nuxt-link>
     </div>
   </nav>
 

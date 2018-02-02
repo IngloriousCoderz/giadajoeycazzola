@@ -113,7 +113,7 @@ export default {
 	margin: 0 auto;
 	padding: 0;
 	display: block;
-	max-width: 780px;
+	// max-width: 780px;
 	text-align: center;
 
 	li {
@@ -124,7 +124,8 @@ export default {
 
         img {
             display: block;
-            width: 200px;
+            width: 182px;
+            // width: 200px;
         }
 	}
 }

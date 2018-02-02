@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Giada Joey Cazzola - Destination wedding photographer',
+    title: 'Giada Joey Cazzola - Destination Wedding Photographer',
 
     meta: [
       {
@@ -30,7 +30,7 @@ module.exports = {
       },
       {
         property: 'og:title',
-        content: 'Giada Joey Cazzola - Destination wedding photographer'
+        content: 'Giada Joey Cazzola - Destination Wedding Photographer'
       },
       {
         property: 'og:description',
