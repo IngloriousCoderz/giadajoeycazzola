@@ -43,6 +43,7 @@ module.exports = {
         content: '/favicon-96x96.png'
       },
       {
+        hid: 'og:type',
         property: 'og:type',
         content: 'website'
       }

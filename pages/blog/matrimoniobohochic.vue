@@ -154,7 +154,7 @@ export default {
       title: 'Matrimonio Boho Chic',
       description: 'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
       url: 'https://www.giadajoeycazzola.com/blog/matrimoniobohochic/',
-      image: '/images/blog/matrimoniobohochic/01.jpg',
+      image: 'https://www.giadajoeycazzola.com/images/blog/matrimoniobohochic/01.jpg',
       images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
         acc[section] = Array.from(Array(count).keys()).map(index => ({
           id: index + 1,
