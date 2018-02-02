@@ -17,7 +17,8 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
+          'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
+        // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
         property: 'og:url',
@@ -34,7 +35,8 @@ module.exports = {
       {
         property: 'og:description',
         content:
-          'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
+          'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
+        // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
         property: 'og:image',
