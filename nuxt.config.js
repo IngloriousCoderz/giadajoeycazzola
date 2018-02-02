@@ -50,6 +50,7 @@ module.exports = {
 
     link: [
       {
+        hid: 'canonical',
         rel: 'canonical',
         href: 'https://www.giadajoeycazzola.com'
       },
