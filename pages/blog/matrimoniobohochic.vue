@@ -107,18 +107,48 @@ export default {
 
   head() {
     return {
-      title: 'Matrimonio Boho Chic',
-      meta: [{
+      title: this.title,
+      meta: [
+        {
         hid: 'description',
         name: 'description',
-        content: 'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.'
-      }]
+        content: this.description
+      },
+      {
+        hid: 'og:title',
+        property: 'og:title',
+        content: this.title
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: this.description
+      },
+      {
+        hid: 'og:url',
+        property: 'og:url',
+        content: this.url
+      },
+      {
+        hid: 'og:image',
+        property: 'og:image',
+        content: this.image
+      },
+      {
+        hid: 'og:type',
+        property: 'og:type',
+        content: 'website'
+      }
+    ]
     }
   },
 
   data() {
     return {
       title: 'Matrimonio Boho Chic',
+      description: 'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
+      url: 'https://www.giadajoeycazzola.com/blog/matrimoniobohochic',
+      image: '/images/blog/matrimoniobohochic/01.jpg',
       images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
         acc[section] = Array.from(Array(count).keys()).map(index => ({
           id: index + 1,

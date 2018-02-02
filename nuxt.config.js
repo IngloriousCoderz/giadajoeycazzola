@@ -21,26 +21,30 @@ module.exports = {
         // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
-        property: 'og:url',
-        content: 'https://www.giadajoeycazzola.com'
-      },
-      {
-        property: 'og:type',
-        content: 'website'
-      },
-      {
+        hid: 'og:title',
         property: 'og:title',
         content: 'Giada Joey Cazzola - Destination Wedding Photographer'
       },
       {
+        hid: 'og:description',
         property: 'og:description',
         content:
           'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
         // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
       },
       {
+        hid: 'og:url',
+        property: 'og:url',
+        content: 'https://www.giadajoeycazzola.com'
+      },
+      {
+        hid: 'og:image',
         property: 'og:image',
         content: '/favicon-96x96.png'
+      },
+      {
+        property: 'og:type',
+        content: 'website'
       }
     ],
 
