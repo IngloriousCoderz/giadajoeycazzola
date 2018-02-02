@@ -4,8 +4,14 @@
  * Released under the MIT License.
  */
 
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
 /**
- * vuex v2.5.0
+ * vuex v3.0.1
  * (c) 2017 Evan You
  * @license MIT
  */
@@ -15,20 +21,14 @@
  * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
  * @license   Licensed under MIT license
  *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
- * @version   v4.2.2+97478eb6
+ * @version   v4.2.4+314e4831
  */
 
 /**
- * vue-meta v1.3.1
- * (c) 2017 Declan de Wet & Atinux
+ * vue-meta v1.4.2
+ * (c) 2018 Declan de Wet & Atinux
  * @license MIT
  */
-
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
 
 /*
 object-assign
