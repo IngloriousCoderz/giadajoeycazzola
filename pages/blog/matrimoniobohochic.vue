@@ -166,18 +166,3 @@ export default {
   }
 }
 </script>
-
-<style lang="scss">
-.vue-lightbox {
-    ul {
-        max-width: initial !important;
-
-        li {
-
-            img {
-                width: 182px !important;
-            }
-        }
-    }
-}
-</style>

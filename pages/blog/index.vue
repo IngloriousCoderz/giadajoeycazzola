@@ -3,7 +3,7 @@
   <h1 class="is-size-1 has-text-centered">Blog</h1>
 
   <div class="content has-text-centered">
-    Dall&rsquo;unione di due passioni, scrittura e fotografia, nasce questo blog: uno spazio in cui i futuri sposi, alle prese con l&rsquo;organizzazione del matrimonio, possono trovare spunti interessanti. Un viaggio tra parole e immagini che insieme compongono articoli riguardanti vari argomenti: dallo stile alle location, dagli abiti alle bomobniere. Buona lettura!
+    Dall&rsquo;unione di due passioni, scrittura e fotografia, nasce questo blog: uno spazio in cui i futuri sposi, alle prese con l&rsquo;organizzazione del matrimonio, possono trovare spunti interessanti. Un viaggio tra parole e immagini che insieme compongono articoli riguardanti vari argomenti: dallo stile alle location, dagli abiti alle bomboniere. Buona lettura!
   </div>
 
   <div class="content">
