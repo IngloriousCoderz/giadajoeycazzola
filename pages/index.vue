@@ -105,8 +105,59 @@ const MANUAL_SPEED = 500
 export default {
   layout: 'home',
 
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
+        }
+      ]
+    }
+  },
+
   data() {
     return {
+      title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
+      description:
+        'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.',
+      url: 'https://www.giadajoeycazzola.com/',
+      image: 'https://www.giadajoeycazzola.com/images/slides/01.jpg',
+
       burgerActive: false,
       slides: Array.from(Array(SLIDE_COUNT).keys()).map(index => ({
         id: index + 1,
@@ -176,7 +227,7 @@ export default {
   justify-content: center;
 }
 
-.swiper-slide>.is-overlay.dark {
+.swiper-slide > .is-overlay.dark {
   background: rgba(0, 0, 0, 0.5);
 }
 

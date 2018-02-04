@@ -80,14 +80,56 @@
 export default {
   head() {
     return {
-      title: 'About',
+      title: this.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Chi è Giada Joey Cazzola, una descrizione di questa ragazza che si occupa di fotografia e reportage di matrimonio a torino.'
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
         }
       ]
+    }
+  },
+
+  data() {
+    return {
+      title: 'About',
+      description:
+        'Chi è Giada Joey Cazzola, una descrizione di questa ragazza che si occupa di fotografia e reportage di matrimonio a Torino.',
+      url: 'https://www.giadajoeycazzola.com/about/',
+      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg'
     }
   },
 

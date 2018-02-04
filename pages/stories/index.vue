@@ -39,12 +39,44 @@
 export default {
   head() {
     return {
-      title: 'Stories',
+      title: this.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Blog realizzato per raccontare i migliori reportage di matrimonio realizzati a Torino, Piemonte, Langhe, Toscana, Puglia, Italia. Location bellissime immerse nella natura, abiti da sposa unici.'
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
         }
       ]
     }
@@ -52,34 +84,44 @@ export default {
 
   data() {
     return {
+      title: 'Stories',
+      description:
+        'Blog realizzato per raccontare i migliori reportage di matrimonio realizzati a Torino, Piemonte, Langhe, Toscana, Puglia, Italia. Location bellissime immerse nella natura, abiti da sposa unici.',
+      url: 'https://www.giadajoeycazzola.com/stories/',
+      image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
+
       images: [
         {
           id: 'martinasalvador',
           src: '/images/stories/martinasalvador/01.jpg',
           href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
-          description: 'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
+          description:
+            "Magico matrimonio tra i vigneti dell'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all'amore di Martina e Salvador."
         },
         {
           id: 'annamariaclaudio',
           src: '/images/stories/annamariaclaudio/01.jpg',
           href: 'stories-annamariaclaudio',
           title: 'Annamaria & Claudio',
-          description: 'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
+          description:
+            'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
         },
         {
           id: 'cassandracarlo',
           src: '/images/stories/cassandracarlo/01.jpg',
           href: 'stories-cassandracarlo',
           title: 'Cassandra & Carlo',
-          description: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
+          description:
+            "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno."
         },
         {
           id: 'danielamichele',
           src: '/images/stories/danielamichele/01.jpg',
           href: 'stories-danielamichele',
           title: 'Daniela & Michele',
-          description: 'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
+          description:
+            'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
         }
       ]
     }

@@ -3,7 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Giada Joey Cazzola - Destination Wedding Photographer',
+    title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
 
     meta: [
       {
@@ -23,7 +23,7 @@ module.exports = {
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Giada Joey Cazzola - Destination Wedding Photographer'
+        content: 'Giada Joey Cazzola - Fotografa matrimonio Torino'
       },
       {
         hid: 'og:description',
@@ -40,7 +40,7 @@ module.exports = {
       {
         hid: 'og:image',
         property: 'og:image',
-        content: '/favicon-96x96.png'
+        content: 'https://www.giadajoeycazzola.com/images/about_me.jpg'
       },
       {
         hid: 'og:type',

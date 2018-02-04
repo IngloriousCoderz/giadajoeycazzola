@@ -38,26 +38,68 @@
 export default {
   head() {
     return {
-      title: 'Blog',
-      meta: [{
-        hid: 'description',
-        name: 'description',
-        content: 'Una collezione di articoli ricchi di consigli per le future spose: location in Piemonte, tutte le nuove tendenze wedding dell\'anno in corso e molto altro.'
-      }]
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
+        }
+      ]
     }
   },
 
   data() {
     return {
-      posts: [{
-        id: 'matrimoniobohochic',
-        src: '/images/blog/matrimoniobohochic/01.jpg',
-        href: 'blog-matrimoniobohochic',
-        title: 'Matrimonio Boho Chic',
-        description: `Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
+      title: 'Blog',
+      description:
+        "Una collezione di articoli ricchi di consigli per le future spose: location in Piemonte, tutte le nuove tendenze wedding dell'anno in corso e molto altro.",
+      url: 'https://www.giadajoeycazzola.com/blog/',
+      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+
+      posts: [
+        {
+          id: 'matrimoniobohochic',
+          src: '/images/blog/matrimoniobohochic/01.jpg',
+          href: 'blog-matrimoniobohochic',
+          title: 'Matrimonio Boho Chic',
+          description: `Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
         <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
         <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?`
-      }]
+        }
+      ]
     }
   }
 }

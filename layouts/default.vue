@@ -57,7 +57,7 @@
 export default {
   head() {
     return {
-      titleTemplate: '%s | Giada Joey Cazzola - Destination Wedding Photographer'
+      titleTemplate: '%s | Giada Joey Cazzola - Fotografa matrimonio Torino'
     }
   },
 

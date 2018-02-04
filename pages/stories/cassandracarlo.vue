@@ -19,12 +19,44 @@ export default {
 
   head() {
     return {
-      title: 'Cassandra & Carlo',
+      title: this.title,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: 'website'
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
         }
       ]
     }
@@ -33,6 +65,12 @@ export default {
   data() {
     return {
       title: 'Cassandra & Carlo',
+      description:
+        "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.",
+      url: 'https://www.giadajoeycazzola.com/stories/cassandracarlo/',
+      image:
+        'https://www.giadajoeycazzola.com/images/stories/cassandracarlo/01.jpg',
+
       images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
         src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
