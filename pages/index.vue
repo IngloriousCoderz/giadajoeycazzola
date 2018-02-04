@@ -26,7 +26,8 @@
   <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
-        <div class="is-overlay has-clipped-background" :style="{'background-image': `url(${slide.src})`}" />
+        <div class="is-overlay has-clipped-background swiper-lazy" :style="{'background-image': `url(${slide.src})`}" />
+        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         <!-- <div class="is-overlay dark"></div> -->
       </div>
     </div>
@@ -166,6 +167,7 @@ export default {
       swiperOptions: {
         loop: true,
         speed: SLIDE_SPEED,
+        lazy: true,
         keyboard: {
           enabled: true
         },
