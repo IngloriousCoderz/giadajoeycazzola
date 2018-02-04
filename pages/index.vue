@@ -168,7 +168,7 @@ export default {
       swiperOptions: {
         loop: true,
         speed: SLIDE_SPEED,
-        lazy: { loadOnTransitionStart: true },
+        lazy: { loadPrevNext: true, loadOnTransitionStart: true },
         keyboard: {
           enabled: true
         },
