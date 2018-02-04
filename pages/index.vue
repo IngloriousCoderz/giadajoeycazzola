@@ -27,9 +27,7 @@
     <div class="swiper-wrapper">
       <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
         <div class="is-overlay has-clipped-background swiper-lazy" :data-background="slide.src"  />
-        <!-- :style="{'background-image': `url(${slide.src})`}" -->
         <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-        <!-- <div class="is-overlay dark"></div> -->
       </div>
     </div>
     <div class="swiper-button-prev swiper-button-white" slot="button-prev" @click="onClickPrev"></div>
@@ -163,22 +161,24 @@ export default {
       burgerActive: false,
       slides: Array.from(Array(SLIDE_COUNT).keys()).map(index => ({
         id: index + 1,
-        src: `/images/slides/${zpad(index + 1)}.jpg`
+        src: `/images/slides/mobile/${zpad(index + 1)}.jpg`
       })),
       swiperOptions: {
         loop: true,
         speed: SLIDE_SPEED,
         lazy: { loadPrevNext: true, loadOnTransitionStart: true },
-        keyboard: {
-          enabled: true
-        },
-        // navigation: {
-        //   nextEl: '.swiper-button-next',
-        //   prevEl: '.swiper-button-prev'
-        // },
-        autoplay: {
-          delay: SLIDE_SPEED,
-          disableOnInteraction: true
+        keyboard: { enabled: true },
+        autoplay: { delay: SLIDE_SPEED, disableOnInteraction: true },
+        on: {
+          init: () => {
+            if (window.matchMedia('(min-width: 1024px)').matches) {
+              this.slides.forEach(slide => {
+                const tokens = slide.src.split('/')
+                slide.src = [...tokens.slice(0, -2), tokens.slice(-1)].join('/')
+              })
+              this.$nextTick(() => this.mySwiper.lazy.load())
+            }
+          }
         }
       }
     }
@@ -228,10 +228,6 @@ export default {
 .swiper-slide {
   display: flex;
   justify-content: center;
-}
-
-.swiper-slide > .is-overlay.dark {
-  background: rgba(0, 0, 0, 0.5);
 }
 
 .navbar.level.container {
