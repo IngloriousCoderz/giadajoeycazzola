@@ -1,10 +1,5 @@
 <template>
-<section class="container">
-  <h1 class="is-size-1 has-text-centered">{{title}}</h1>
-
-  <small class="is-italic">&mdash; 2 febbraio 2018 &mdash;</small>
-
-  <article class="content">
+  <post :title="title" :description="description" :url="url" :image="image" :type="type" :date="date">
     <p>
       Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
       <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
@@ -80,16 +75,16 @@
       Guarda
       <nuxt-link :to="{name: 'stories-martinasalvador'}" class="has-text-weight-bold">qui</nuxt-link> le foto scattate durante il matrimonio boho chic celebrato alla Tenuta Tamburnin.
     </p>
-  </article>
-</section>
+</post>
 </template>
 
 <script>
 import zpad from 'zpad'
 
+import Post from '@/components/Post'
 import Lightbox from '@/components/Lightbox'
 
-const BASE_PATH = '/images/blog/matrimoniobohochic'
+const BASE_PATH = 'blog/matrimoniobohochic'
 const IMAGE_COUNT = {
   decorations: 17,
   bouquet: 7,
@@ -99,70 +94,22 @@ const IMAGE_COUNT = {
 }
 
 export default {
-  scrollToTop: true,
-
-  components: {
-    Lightbox
-  },
-
-  head() {
-    return {
-      title: this.title,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.description
-        },
-        {
-          hid: 'og:title',
-          property: 'og:title',
-          content: this.title
-        },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: this.description
-        },
-        {
-          hid: 'og:url',
-          property: 'og:url',
-          content: this.url
-        },
-        {
-          hid: 'og:image',
-          property: 'og:image',
-          content: this.image
-        },
-        {
-          hid: 'og:type',
-          property: 'og:type',
-          content: 'website'
-        }
-      ],
-      link: [
-        {
-          hid: 'canonical',
-          rel: 'canonical',
-          href: this.url
-        }
-      ]
-    }
-  },
+  components: { Post, Lightbox },
 
   data() {
     return {
       title: 'Matrimonio Boho Chic',
       description:
         'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
-      url: 'https://www.giadajoeycazzola.com/blog/matrimoniobohochic/',
-      image:
-        'https://www.giadajoeycazzola.com/images/blog/matrimoniobohochic/01.jpg',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH}/`,
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      type: 'website',
+      date: '2 febbraio 2018',
 
       images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
         acc[section] = Array.from(Array(count).keys()).map(index => ({
           id: index + 1,
-          src: `${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`
+          src: `/images/${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`
         }))
         return acc
       }, {})
