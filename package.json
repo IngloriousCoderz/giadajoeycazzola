@@ -14,6 +14,7 @@
     "deploy": "git subtree push --prefix dist origin master"
   },
   "dependencies": {
+    "babel-polyfill": "^6.26.0",
     "buefy": "^0.6.2",
     "nuxt": "^1.0.0-rc11",
     "vue-awesome-swiper": "^3.0.7",

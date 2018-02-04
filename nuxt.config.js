@@ -69,6 +69,12 @@ module.exports = {
         rel: 'stylesheet',
         type: 'text/css',
         href:
+          '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css'
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href:
           '//cdn.materialdesignicons.com/2.0.46/css/materialdesignicons.min.css'
       },
       {
@@ -78,8 +84,13 @@ module.exports = {
     ],
 
     script: [
+      {
+        src:
+          '//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js'
+      },
       { src: 'https://cdn1.matrimonio.com/_js/wp-rated.js?v=4' },
       { src: 'https://cdn1.matrimonio.com/js/wp-widget.js' },
+      { src: '/scripts/cookie.js' },
       { src: '/scripts/spa.js' },
       { src: '/scripts/fb.js' }
     ]
@@ -115,7 +126,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['buefy', 'vue-awesome-swiper', 'zpad'],
+    vendor: ['babel-polyfill', 'buefy', 'vue-awesome-swiper', 'zpad'],
     /*
     ** Run ESLint on save
     */

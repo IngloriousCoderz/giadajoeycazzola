@@ -42,6 +42,7 @@ footer {
 
 .navbar.is-hidden-mobile {
   min-height: 5rem !important;
+  position: sticky !important;
 }
 
 .content {
@@ -49,7 +50,9 @@ footer {
 }
 
 .has-navbar-fixed-top {
-  @media (min-width: 1024px) {
+  /* apply only to IE */
+  @media (min-width: 1024px) and (-ms-high-contrast: none),
+    (-ms-high-contrast: active) {
     padding-top: 5rem;
   }
 }
@@ -68,6 +71,15 @@ footer {
 
 .clickable:hover {
   opacity: 0.5;
+}
+
+/* cookie bar */
+.cc-grower {
+  position: fixed; /* fallback for IE */
+  position: sticky;
+  top: 0;
+  z-index: 31;
+  width: 100%;
 }
 
 .vue-lightbox > h1 {
