@@ -46,6 +46,11 @@ module.exports = {
         hid: 'og:type',
         property: 'og:type',
         content: 'website'
+      },
+      {
+        hid: 'fb:app_id',
+        property: 'fb:app_id',
+        content: '1953139364946355'
       }
     ],
 
