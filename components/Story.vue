@@ -1,6 +1,12 @@
 <template>
 <section class="container">
-  <lightbox :title="title" :images="images"></lightbox>
+  <h1 class="is-size-1 has-text-centered">{{title}}</h1>
+
+  <section class="has-text-centered-mobile">
+    <slot></slot>
+  </section>
+
+  <lightbox :images="images"></lightbox>
 </section>
 </template>
 

@@ -1,5 +1,11 @@
 <template>
   <post :title="title" :description="description" :url="url" :image="image" :type="type" :date="date">
+    <p class="is-size-7 has-text-centered-mobile">
+      fiori &amp; bouquet: <a href="https://www.facebook.com/ilpoderelerocche/" target="_blank" class="has-text-weight-bold">Ilpoderelerocche</a>
+      <br />
+      abito da sposa: <a href="https://www.celiadragouni.com/" target="_blank" class="has-text-weight-bold">Celia Dragouni</a> - <a href="http://www.whitelesposetorino.com/" target="_blank" class="has-text-weight-bold">White Le Spose</a>
+    </p>
+
     <p>
       Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
       <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
