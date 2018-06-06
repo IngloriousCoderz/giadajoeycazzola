@@ -84,9 +84,9 @@
       </div>
 
       <!-- // Matrimonio.com -->
-      <div id="wp-rated" class="has-text-centered">
-        <a href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658" title="Consigliato in matrimonio.com" target="_blank">
-          <img alt="Consigliato da Matrimonio.com" id="wp-rated-img" src="https://cdn1.matrimonio.com/img/badges/2017/badge-gold_it_IT.jpg" />
+      <div id="wp-ratedWA" class="has-text-centered">
+        <a href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658" title="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com" target="_blank">
+          <img width="250" height="250" alt="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com" id="wp-ratedWA-img-2018" src="https://cdn1.matrimonio.com/img/badges/2018/badge-weddingawards_it_IT.jpg" />
         </a>
       </div>
       <!-- // Matrimonio.com -->
@@ -185,7 +185,7 @@ export default {
   },
 
   mounted() {
-    window.wpShowRatedv2('159658')
+    window.wpShowRatedWAv3('159658', '2018')
   },
 
   methods: {

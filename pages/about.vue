@@ -1,6 +1,6 @@
 <template>
 <section class="container">
-  <h1 class="is-size-1 has-text-centered">Su di me</h1>
+  <h1 class="is-size-1 has-text-centered">About me</h1>
 
   <div class="content has-text-centered">
     <blockquote>
@@ -58,6 +58,15 @@
     <p>
       Sarà possibile personalizzare il pacchetto nuziale sulla base delle vostre esigenze e, grazie alla collaborazione con altri professionisti del settore, sarò in grado di offrirvi, oltre al reportage dell'intera giornata, anche delle bellissime polaroid
       per dare un tocco vintage al servizio, le riprese video e l'impaginazione delle immagini in splendidi album, così come servizi pre- e post-matrimoniali.
+    </p>
+  </div>
+
+  <div class="content has-text-centered">
+    <h1 class="is-size-1">Menzioni</h1>
+    <p>
+      <a href="http://weddingwonderland.it/2018/05/matrimonio-autunnale-ispirato-al-te.html" target="_blank" class="has-text-weight-bold">Un matrimonio autunnale ispirato al tè</a> - Wedding Wonderland, 3 maggio 2018
+      <br />
+      <a href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html" target="_blank" class="has-text-weight-bold">Un matrimonio boho e handmade</a> - Wedding Wonderland, 5 giugno 2018
     </p>
   </div>
 

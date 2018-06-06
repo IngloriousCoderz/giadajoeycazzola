@@ -122,6 +122,14 @@ export default {
           title: 'Daniela & Michele',
           description:
             'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
+        },
+        {
+          id: 'pierpaolofernando',
+          src: '/images/stories/pierpaolofernando/01.jpg',
+          href: 'stories-pierpaolofernando',
+          title: 'Pierpaolo & Fernando',
+          description:
+            'Una caotica ma sempre affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: due ragazzi bellissimi e molto complici che hanno emozionato tutti coloro che hanno avuto la fortuna di partecipare alla loro unione.'
         }
       ]
     }
