@@ -13,9 +13,23 @@
 
     <div class="content has-text-centered">
       <p>
-        Una raccolta di foto che ho scattato in diversi matrimoni. Per vedere le gallery complete clicca <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
+        Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere le gallery complete clicca <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
       </p>
     </div>
+
+    <h2 class="is-size-2 has-text-centered">Video</h2>
+
+    <div class="content has-text-centered">
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
+            src="https://player.vimeo.com/video/273849529?portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            frameborder="0"
+            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <h2 class="is-size-2 has-text-centered">Foto</h2>
 
     <lightbox :images="images"></lightbox>
   </section>
