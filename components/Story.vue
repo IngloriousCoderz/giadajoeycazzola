@@ -2,8 +2,18 @@
 <section class="container">
   <h1 class="is-size-1 has-text-centered">{{title}}</h1>
 
-  <section class="has-text-centered-mobile">
+  <section class="content has-text-centered-mobile">
     <slot></slot>
+  </section>
+
+  <section v-if="video" class="content has-text-centered">
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe
+          :src="video"
+          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    </div>
   </section>
 
   <lightbox :images="images"></lightbox>
@@ -16,7 +26,7 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 export default {
-  props: ['title', 'description', 'type', 'basePath', 'imageCount'],
+  props: ['title', 'description', 'type', 'basePath', 'imageCount', 'video'],
 
   components: { Lightbox },
 

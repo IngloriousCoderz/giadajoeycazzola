@@ -19,7 +19,7 @@
 
     <h2 class="is-size-2 has-text-centered">Video</h2>
 
-    <div class="content has-text-centered">
+    <!-- <div class="content has-text-centered">
       <div style="padding:56.25% 0 0 0;position:relative;">
         <iframe
             src="https://player.vimeo.com/video/273849529?portrait=0"
@@ -27,7 +27,9 @@
             frameborder="0"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-    </div>
+    </div> -->
+
+    <lightbox :images="videos"></lightbox>
 
     <h2 class="is-size-2 has-text-centered">Foto</h2>
 
@@ -98,6 +100,20 @@ export default {
         'Raccolta dei migliori lavori di reportage di matrimonio realizzati in location bellissime per matrimoni a Torino, Langhe, Piemonte, Toscana, Puglia, Italia.',
       url: 'https://www.giadajoeycazzola.com/portfolio/',
       image: 'https://www.giadajoeycazzola.com/images/slides/01.jpg',
+
+      videos: [
+        // http://vimeo.com/api/v2/video/286857992.xml
+        {
+          id: 1,
+          src: 'https://player.vimeo.com/video/273849529',
+          thumb: 'http://i.vimeocdn.com/video/705748390_640.jpg'
+        },
+        {
+          id: 2,
+          src: 'https://player.vimeo.com/video/286857992',
+          thumb: 'http://i.vimeocdn.com/video/721857555_640.jpg'
+        }
+      ],
 
       images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
