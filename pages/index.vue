@@ -204,7 +204,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .navbar.is-mobile,
 .navbar-brand,
 .navbar-menu {
