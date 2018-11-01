@@ -43,7 +43,7 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 const BASE_PATH = '/images/portfolio'
-const IMAGE_COUNT = 96
+const IMAGE_COUNT = 71
 
 export default {
   components: { Lightbox },
