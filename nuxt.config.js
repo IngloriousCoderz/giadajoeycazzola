@@ -1,3 +1,5 @@
+global.File = typeof window === 'undefined' ? Object : window.File
+
 module.exports = {
   /*
   ** Headers of the page
@@ -77,7 +79,7 @@ module.exports = {
     color: '#3B8070'
   },
 
-  plugins: ['~plugins/buefy', '~plugins/vue-awesome-swiper'],
+  plugins: ['~plugins/vue-awesome-swiper'],
 
   modules: [
     [
@@ -86,7 +88,8 @@ module.exports = {
         id: 'UA-61816704-2'
       }
     ],
-    '@nuxtjs/sitemap'
+    '@nuxtjs/sitemap',
+    'nuxt-buefy'
   ],
 
   sitemap: {
@@ -98,7 +101,7 @@ module.exports = {
   ** Build configuration
   */
   build: {
-    vendor: ['babel-polyfill', 'buefy', 'vue-awesome-swiper', 'zpad'],
+    vendor: ['babel-polyfill', 'vue-awesome-swiper', 'zpad'],
     /*
     ** Run ESLint on save
     */

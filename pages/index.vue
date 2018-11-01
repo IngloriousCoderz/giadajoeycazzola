@@ -98,7 +98,7 @@
 <script>
 import zpad from 'zpad'
 
-const SLIDE_COUNT = 13
+const SLIDE_COUNT = 11
 const SLIDE_SPEED = 3000
 const MANUAL_SPEED = 500
 
@@ -156,12 +156,12 @@ export default {
       description:
         'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.',
       url: 'https://www.giadajoeycazzola.com/',
-      image: 'https://www.giadajoeycazzola.com/images/slides/01.jpg',
+      image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
 
       burgerActive: false,
       slides: Array.from(Array(SLIDE_COUNT).keys()).map(index => ({
         id: index + 1,
-        src: `/images/slides/mobile/${zpad(index + 1)}.jpg`
+        src: `/images/home/mobile/${zpad(index + 1)}.jpg`
       })),
       swiperOptions: {
         loop: true,
@@ -185,7 +185,7 @@ export default {
   },
 
   mounted() {
-    window.wpShowRatedWAv3('159658', '2018')
+    window.wpShowRatedWAv3 && window.wpShowRatedWAv3('159658', '2018')
   },
 
   methods: {
