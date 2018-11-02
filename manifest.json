@@ -1,5 +1,9 @@
 {
   "name": "Giada Joey Cazzola",
+  "short_name": "GJC",
+  "display": "minimal-ui",
+  "background_color": "#ffffff",
+  "theme_color": "#4a4a4a",
   "icons": [
     {
       "src": "/android-icon-36x36.png",
