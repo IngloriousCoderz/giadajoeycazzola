@@ -15,7 +15,7 @@
 
     <div class="navbar-menu" :class="{'is-active': burgerActive}">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
-      <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white">About</nuxt-link>
+      <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white">Recensioni</nuxt-link>
       <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
       <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
       <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white">Blog</nuxt-link>
@@ -39,7 +39,7 @@
       <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'about'}" class="has-text-white">About</nuxt-link>
+      <nuxt-link :to="{name: 'recensioni'}" class="has-text-white">Recensioni</nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'portfolio'}" class="has-text-white">Portfolio</nuxt-link>
@@ -69,19 +69,41 @@
           <p>
             Sono Giada e sono una fotografa specializzata in reportage di matrimonio.
           </p>
+
+          <p>
+            Sono nata a Torino, città d&rsquo;arte e magia. Ed è proprio tra le vie di questa città che è nata la mia passione per la fotografia. Sono sempre stata una sentimentale, innamorata dell&rsquo;amore e di tutto ciò che questo sentimento riesce a suscitare nelle persone.
+          <p>
+
+          <p>
+            Sguardi complici, baci fugaci e dettagli impercettibili sono stati da sempre la mia massima fonte d&rsquo;ispirazione. Per questo motivo, in un susseguirsi di vicende che hanno incrociato il mio cammino, ho scelto di dedicarmi alla fotografia di matrimonio e nello specifico al reportage.
+          </p>
+
+          <p>
+            La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
+            <br/>Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
+          </p>
+          
+          <p>
+            Mi commuoverò e sorriderò con voi.
+          </p>
+
+          <p>
+            Il mio è uno studio serio e profondo che da anni mi permette di crescere e ampliare il mio bagaglio visivo non solo direttamente sul campo dei miei matrimoni ma anche guardando con attenzione matrimoni di guru e mentori della fotografia di reportage di tutto il mondo.
+          </p>
+
           <p>
             Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
-            <br /> Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
-            <br /> Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
+            <br/>Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
+            <br/>Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
           </p>
-          <p>
-            Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la <em>vostra</em> storia, il <em>vostro</em> giorno speciale, il <em>vostro</em> amore con un approccio fresco, giovane, spontaneo e il più naturale
-            possibile. Per me non esistono foto impostate, sorrisi di circostanza, pose plastiche. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi
-            di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e
-            io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.
-          </p>
+
+          <p>Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la vostra storia, il vostro giorno speciale, il vostro amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.</p>
+
+          <p>&ctdot;</p>
         </div>
       </div>
+
+      <h1 class="is-size-1 has-text-centered">Riconoscimenti</h1>
 
       <!-- // Matrimonio.com -->
       <div id="wp-ratedWA" class="has-text-centered">

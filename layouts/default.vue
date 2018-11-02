@@ -15,7 +15,7 @@
 
     <div class="navbar-menu" :class="{'is-active': burgerActive}">
       <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white" @click.native="closeBurger">Home</nuxt-link>
-      <nuxt-link :to="{name: 'about'}" class="navbar-item has-text-white" @click.native="closeBurger">About</nuxt-link>
+      <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white" @click.native="closeBurger">Recensioni</nuxt-link>
       <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white" @click.native="closeBurger">Portfolio</nuxt-link>
       <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white" @click.native="closeBurger">Stories</nuxt-link>
       <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white" @click.native="closeBurger">Blog</nuxt-link>
@@ -28,7 +28,7 @@
       <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
     </div>
     <div class="level-item">
-      <nuxt-link :to="{name: 'about'}">About</nuxt-link>
+      <nuxt-link :to="{name: 'recensioni'}">Recensioni</nuxt-link>
     </div>
     <div class="level-item">
       <nuxt-link :to="{name: 'portfolio'}">Portfolio</nuxt-link>
