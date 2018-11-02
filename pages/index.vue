@@ -172,10 +172,9 @@ export default {
         on: {
           init: () => {
             if (window.matchMedia('(min-width: 1024px)').matches) {
-              this.slides.forEach(slide => {
-                const tokens = slide.src.split('/')
-                slide.src = [...tokens.slice(0, -2), tokens.slice(-1)].join('/')
-              })
+              this.slides.forEach(
+                slide => (slide.src = slide.src.replace(/\/mobile\//g, '/'))
+              )
               this.$nextTick(() => this.mySwiper.lazy.load())
             }
           }
