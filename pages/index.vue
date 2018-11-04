@@ -120,7 +120,7 @@
 <script>
 import zpad from 'zpad'
 
-const SLIDE_COUNT = 11
+const SLIDE_COUNT = 12
 const SLIDE_SPEED = 3000
 const MANUAL_SPEED = 500
 

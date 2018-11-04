@@ -97,7 +97,22 @@ export default {
           href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
           description:
-            "Magico matrimonio tra i vigneti dell'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all'amore di Martina e Salvador."
+            'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
+        },
+        {
+          id: 'vittorialuigi',
+          src: '/images/stories/vittorialuigi/58.jpg',
+          href: 'stories-vittorialuigi',
+          title: 'Vittoria & Luigi',
+          description: 'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
+        },
+        {
+          id: 'pierpaolofernando',
+          src: '/images/stories/pierpaolofernando/01.jpg',
+          href: 'stories-pierpaolofernando',
+          title: 'Pierpaolo & Fernando',
+          description:
+            'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.'
         },
         {
           id: 'annamariaclaudio',
@@ -109,27 +124,19 @@ export default {
         },
         {
           id: 'cassandracarlo',
-          src: '/images/stories/cassandracarlo/01.jpg',
+          src: '/images/stories/cassandracarlo/03.jpg',
           href: 'stories-cassandracarlo',
           title: 'Cassandra & Carlo',
           description:
-            "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno."
+            'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
         },
         {
           id: 'danielamichele',
-          src: '/images/stories/danielamichele/01.jpg',
+          src: '/images/stories/danielamichele/53.jpg',
           href: 'stories-danielamichele',
           title: 'Daniela & Michele',
           description:
             'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
-        },
-        {
-          id: 'pierpaolofernando',
-          src: '/images/stories/pierpaolofernando/01.jpg',
-          href: 'stories-pierpaolofernando',
-          title: 'Pierpaolo & Fernando',
-          description:
-            'Una caotica ma sempre affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: due ragazzi bellissimi e molto complici che hanno emozionato tutti coloro che hanno avuto la fortuna di partecipare alla loro unione.'
         }
       ]
     }

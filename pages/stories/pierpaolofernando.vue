@@ -21,7 +21,7 @@ export default {
     return {
       title: 'Pierpaolo & Fernando',
       description:
-        'Una caotica ma sempre affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: due ragazzi bellissimi e molto complici che hanno emozionato tutti coloro che hanno avuto la fortuna di partecipare alla loro unione.',
+        'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.',
       type: 'website',
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT,
