@@ -151,6 +151,7 @@ export default {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
+  z-index: 1;
 
   .holder {
     max-width: 600px;
