@@ -3,17 +3,16 @@
     <h1 class="is-size-1 has-text-centered">Portfolio</h1>
 
     <div class="content has-text-centered">
-      <blockquote>
-        &ldquo;La fotografia è una cosa semplice, a condizione di avere qualcosa da dire.&rdquo;
-        <footer>
-          &mdash; <cite>Mario Giacomelli</cite>
+      <blockquote>&ldquo;La fotografia è una cosa semplice, a condizione di avere qualcosa da dire.&rdquo;
+        <footer>&mdash;
+          <cite>Mario Giacomelli</cite>
         </footer>
       </blockquote>
     </div>
 
     <div class="content has-text-centered">
-      <p>
-        Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere le gallery complete clicca <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
+      <p>Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere le gallery complete clicca
+        <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
       </p>
     </div>
 
@@ -27,8 +26,7 @@
             frameborder="0"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
-    </div> -->
-
+    </div>-->
     <lightbox :images="videos"></lightbox>
 
     <h2 class="is-size-2 has-text-centered">Foto</h2>

@@ -1,120 +1,138 @@
 <template>
-<div>
-  <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
-        <h2 class="has-text-weight-bold is-marginless">GJC</h2>
-      </nuxt-link>
+  <div>
+    <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+          <h2 class="has-text-weight-bold is-marginless">GJC</h2>
+        </nuxt-link>
 
-      <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
-
-    <div class="navbar-menu" :class="{'is-active': burgerActive}">
-      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
-      <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white">Recensioni</nuxt-link>
-      <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
-      <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
-      <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white">Blog</nuxt-link>
-      <nuxt-link :to="{name: 'contacts'}" class="navbar-item has-text-white">Contacts</nuxt-link>
-    </div>
-  </nav>
-
-  <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
-    <div class="swiper-wrapper">
-      <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
-        <div class="is-overlay has-clipped-background swiper-lazy" :data-background="slide.src"  />
-        <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+        <button
+          class="button navbar-burger"
+          :class="{'is-active': burgerActive}"
+          @click="onClickBurger"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>
-    </div>
-    <div class="swiper-button-prev swiper-button-white" slot="button-prev" @click="onClickPrev"></div>
-    <div class="swiper-button-next swiper-button-white" slot="button-next" @click="onClickNext"></div>
-  </div>
 
-  <nav class="navbar level container has-text-centered is-uppercase is-hidden-touch">
-    <div class="level-item">
-      <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'recensioni'}" class="has-text-white">Recensioni</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'portfolio'}" class="has-text-white">Portfolio</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'index'}" class="has-text-white">
-        <h2 class="is-size-2 has-text-weight-bold is-marginless">GJC</h2>
-      </nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'stories'}" class="has-text-white">Stories</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'blog'}" class="has-text-white">Blog</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'contacts'}" class="has-text-white">Contacts</nuxt-link>
-    </div>
-  </nav>
+      <div class="navbar-menu" :class="{'is-active': burgerActive}">
+        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
+        <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white">Recensioni</nuxt-link>
+        <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
+        <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
+        <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white">Blog</nuxt-link>
+        <nuxt-link :to="{name: 'contacts'}" class="navbar-item has-text-white">Contacts</nuxt-link>
+      </div>
+    </nav>
 
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="is-size-1-desktop is-size-3-mobile has-text-centered">GiadaJoeyCazzola</h1>
-
-        <div class="content has-text-centered">
-          <p>
-            Sono Giada e sono una fotografa specializzata in reportage di matrimonio.
-          </p>
-
-          <p>
-            Sono nata a Torino, città d&rsquo;arte e magia. Ed è proprio tra le vie di questa città che è nata la mia passione per la fotografia. Sono sempre stata una sentimentale, innamorata dell&rsquo;amore e di tutto ciò che questo sentimento riesce a suscitare nelle persone.
-          <p>
-
-          <p>
-            Sguardi complici, baci fugaci e dettagli impercettibili sono stati da sempre la mia massima fonte d&rsquo;ispirazione. Per questo motivo, in un susseguirsi di vicende che hanno incrociato il mio cammino, ho scelto di dedicarmi alla fotografia di matrimonio e nello specifico al reportage.
-          </p>
-
-          <p>
-            La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
-            <br/>Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
-          </p>
-          
-          <p>
-            Mi commuoverò e sorriderò con voi.
-          </p>
-
-          <p>
-            Il mio è uno studio serio e profondo che da anni mi permette di crescere e ampliare il mio bagaglio visivo non solo direttamente sul campo dei miei matrimoni ma anche guardando con attenzione matrimoni di guru e mentori della fotografia di reportage di tutto il mondo.
-          </p>
-
-          <p>
-            Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
-            <br/>Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
-            <br/>Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
-          </p>
-
-          <p>Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la vostra storia, il vostro giorno speciale, il vostro amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.</p>
-
-          <p>&ctdot;</p>
+    <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
+          <div class="is-overlay has-clipped-background swiper-lazy" :data-background="slide.src"/>
+          <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
       </div>
-
-      <h1 class="is-size-1 has-text-centered">Riconoscimenti</h1>
-
-      <!-- // Matrimonio.com -->
-      <div id="wp-ratedWA" class="has-text-centered">
-        <a href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658" title="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com" target="_blank">
-          <img width="250" height="250" alt="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com" id="wp-ratedWA-img-2018" src="https://cdn1.matrimonio.com/img/badges/2018/badge-weddingawards_it_IT.jpg" />
-        </a>
-      </div>
-      <!-- // Matrimonio.com -->
+      <div class="swiper-button-prev swiper-button-white" slot="button-prev" @click="onClickPrev"></div>
+      <div class="swiper-button-next swiper-button-white" slot="button-next" @click="onClickNext"></div>
     </div>
-  </section>
-</div>
+
+    <nav class="navbar level container has-text-centered is-uppercase is-hidden-touch">
+      <div class="level-item">
+        <nuxt-link :to="{name: 'index'}" class="has-text-white">Home</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'recensioni'}" class="has-text-white">Recensioni</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'portfolio'}" class="has-text-white">Portfolio</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'index'}" class="has-text-white">
+          <h2 class="is-size-2 has-text-weight-bold is-marginless">GJC</h2>
+        </nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'stories'}" class="has-text-white">Stories</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'blog'}" class="has-text-white">Blog</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'contacts'}" class="has-text-white">Contacts</nuxt-link>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="is-size-1-desktop is-size-3-mobile has-text-centered">GiadaJoeyCazzola</h1>
+
+          <div class="content has-text-centered">
+            <p>Sono Giada e sono una fotografa specializzata in reportage di matrimonio.</p>
+
+            <p>Sono nata a Torino, città d&rsquo;arte e magia. Ed è proprio tra le vie di questa città che è nata la mia passione per la fotografia. Sono sempre stata una sentimentale, innamorata dell&rsquo;amore e di tutto ciò che questo sentimento riesce a suscitare nelle persone.</p>
+            <p></p>
+            <p>Sguardi complici, baci fugaci e dettagli impercettibili sono stati da sempre la mia massima fonte d&rsquo;ispirazione. Per questo motivo, in un susseguirsi di vicende che hanno incrociato il mio cammino, ho scelto di dedicarmi alla fotografia di matrimonio e nello specifico al reportage.</p>
+
+            <p>La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
+              <br>Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
+            </p>
+
+            <p>Mi commuoverò e sorriderò con voi.</p>
+
+            <p>Il mio è uno studio serio e profondo che da anni mi permette di crescere e ampliare il mio bagaglio visivo non solo direttamente sul campo dei miei matrimoni ma anche guardando con attenzione matrimoni di guru e mentori della fotografia di reportage di tutto il mondo.</p>
+
+            <p>Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
+              <br>Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
+              <br>Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
+            </p>
+
+            <p>Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la vostra storia, il vostro giorno speciale, il vostro amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.</p>
+
+            <p>&ctdot;</p>
+          </div>
+        </div>
+
+        <h1 class="is-size-1 has-text-centered">Riconoscimenti</h1>
+
+        <!-- // Matrimonio.com -->
+        <div class="content columns">
+          <div id="wp-ratedWA" class="column has-text-right">
+            <a
+              href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
+              title="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com"
+              target="_blank"
+            >
+              <img
+                width="250"
+                height="250"
+                alt="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com"
+                id="wp-ratedWA-img-2018"
+                src="https://cdn1.matrimonio.com/img/badges/2018/badge-weddingawards_it_IT.jpg"
+              >
+            </a>
+          </div>
+          <div id="wp-ratedWA" class="column has-text-left">
+            <a
+              href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
+              title="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
+            >
+              <img
+                width="250"
+                height="250"
+                alt="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
+                id="wp-ratedWA-img-2019"
+                src="https://cdn1.matrimonio.com/img/badges/2019/badge-weddingawards_it_IT.jpg"
+              >
+            </a>
+          </div>
+        </div>
+        <!-- // Matrimonio.com -->
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

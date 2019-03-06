@@ -1,17 +1,17 @@
 module.exports = {
   root: true,
-  parser: 'babel-eslint',
   env: {
     browser: true,
     node: true
   },
-  extends: 'standard',
-  // required to lint *.vue files
-  plugins: ['html'],
+  parserOptions: {
+    parser: 'babel-eslint'
+  },
+  extends: ['@nuxtjs', 'plugin:prettier/recommended'],
+  plugins: ['prettier'],
   // add your custom rules here
   rules: {
-    'space-before-function-paren': [2, 'never'],
-    indent: 1
-  },
-  globals: {}
+    'prettier/prettier': 'warn',
+    'vue/html-indent': 'warn'
+  }
 }

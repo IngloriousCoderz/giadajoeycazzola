@@ -1,11 +1,26 @@
 <template>
-<story :title="title" :description="description" :type="type" :base-path="basePath" :image-count="imageCount" :video="video">
-  <p class="is-size-7">
-    location: <a href="https://www.facebook.com/principidipiemontetorino/" target="_blank" class="has-text-weight-bold">Principi di Piemonte</a>
-    <br />
-    abiti: <a href="https://www.carlopignatelli.com/" target="_blank" class="has-text-weight-bold">Carlo Pignatelli</a>
-  </p>
-</story>
+  <story
+    :title="title"
+    :description="description"
+    :type="type"
+    :base-path="basePath"
+    :image-count="imageCount"
+    :video="video"
+  >
+    <p class="is-size-7">location:
+      <a
+        href="https://www.facebook.com/principidipiemontetorino/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Principi di Piemonte</a>
+      <br>abiti:
+      <a
+        href="https://www.carlopignatelli.com/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Carlo Pignatelli</a>
+    </p>
+  </story>
 </template>
 
 <script>

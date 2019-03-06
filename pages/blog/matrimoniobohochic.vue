@@ -1,15 +1,34 @@
 <template>
-  <post :title="title" :description="description" :url="url" :image="image" :type="type" :date="date">
-    <p class="is-size-7 has-text-centered-mobile">
-      fiori &amp; bouquet: <a href="https://www.facebook.com/ilpoderelerocche/" target="_blank" class="has-text-weight-bold">Ilpoderelerocche</a>
-      <br />
-      abito da sposa: <a href="https://www.celiadragouni.com/" target="_blank" class="has-text-weight-bold">Celia Dragouni</a> - <a href="http://www.whitelesposetorino.com/" target="_blank" class="has-text-weight-bold">White Le Spose</a>
+  <post
+    :title="title"
+    :description="description"
+    :url="url"
+    :image="image"
+    :type="type"
+    :date="date"
+  >
+    <p class="is-size-7 has-text-centered-mobile">fiori &amp; bouquet:
+      <a
+        href="https://www.facebook.com/ilpoderelerocche/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Ilpoderelerocche</a>
+      <br>abito da sposa:
+      <a
+        href="https://www.celiadragouni.com/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Celia Dragouni</a> -
+      <a
+        href="http://www.whitelesposetorino.com/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >White Le Spose</a>
     </p>
 
-    <p>
-      Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
-      <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
-      <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?
+    <p>Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
+      <br>&ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
+      <br>Ma cosa rende un matrimonio come questo diverso dagli altri?
     </p>
 
     <h3 class="title is-4 has-text-centered has-text-weight-bold">Decorazioni e dettagli</h3>
@@ -42,17 +61,15 @@
       anni &lsquo;70. I tessuti sono leggeri e decorati da pizzi, merletti e frange.
     </p>
 
-    <p>
-      Il richiamo hippie suggerisce un sandalo basso e informale, per non rinunciare alla femminilità e a qualche punto luce ti suggerisco un tacco basso ma impreziosito di strass che danno personalità al look.
-    </p>
+    <p>Il richiamo hippie suggerisce un sandalo basso e informale, per non rinunciare alla femminilità e a qualche punto luce ti suggerisco un tacco basso ma impreziosito di strass che danno personalità al look.</p>
 
-    <p>
-      L&rsquo;acconciatura ideale vuole i capelli sciolti ma è perfetto anche un raccolto morbido con qualche ciocca che incornicia il viso; via libera a fiori e merletti tra i capelli e coroncine da portare sulla fronte.
-    </p>
+    <p>L&rsquo;acconciatura ideale vuole i capelli sciolti ma è perfetto anche un raccolto morbido con qualche ciocca che incornicia il viso; via libera a fiori e merletti tra i capelli e coroncine da portare sulla fronte.</p>
 
     <lightbox :images="images.dress"></lightbox>
 
-    <h3 class="title is-4 has-text-centered has-text-weight-bold">Torta nuziale, tableau mariage e bomboniere</h3>
+    <h3
+      class="title is-4 has-text-centered has-text-weight-bold"
+    >Torta nuziale, tableau mariage e bomboniere</h3>
 
     <p>
       Il tableau mariage può essere creato con le erbe aromatiche o con fogli di carta grezza appesi a vecchie persiane posate sull&rsquo;erba, la torta nuziale ideale è a piani e impreziosita di fiori mentre le bomboniere hanno il compito di lasciare agli
@@ -72,16 +89,16 @@
     <p>
       Una location che si presta perfettamente per questo tipo di wedding è Tenuta Tamburnin, a Castelnuovo Don Bosco. Immersa nei vigneti del Basso Monferrato Astigiano, questa struttura vanta 20 ettari di terreno di cui 9 di vigneto, 2 di noccioleto, prati,
       boschi e una pregiata cantina, tutti luoghi in cui è possibile ricreare l&rsquo;atmosfera del matrimonio bohemien senza rinunciare alla presenza di una cucina, un&rsquo;ampia sala in cui consumare il pasto e un luogo coperto in cui ballare anche
-      in caso di pioggia. (Per saperne di più visita il sito <a href="http://tamburnin.it/">tamburnin.it</a>).
+      in caso di pioggia. (Per saperne di più visita il sito
+      <a href="http://tamburnin.it/">tamburnin.it</a>).
     </p>
 
     <lightbox :images="images.location"></lightbox>
 
-    <p>
-      Guarda
-      <nuxt-link :to="{name: 'stories-martinasalvador'}" class="has-text-weight-bold">qui</nuxt-link> le foto scattate durante il matrimonio boho chic celebrato alla Tenuta Tamburnin.
+    <p>Guarda
+      <nuxt-link :to="{name: 'stories-martinasalvador'}" class="has-text-weight-bold">qui</nuxt-link>le foto scattate durante il matrimonio boho chic celebrato alla Tenuta Tamburnin.
     </p>
-</post>
+  </post>
 </template>
 
 <script>

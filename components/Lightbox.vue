@@ -3,31 +3,40 @@
     <h1 v-if="title">{{ title }}</h1>
 
     <ul v-if="images">
-      <li v-for="(image, index) in images">
-          <img :src="image.thumb || image.src" :alt="image.caption" @click="clickImage(index)">
+      <li v-for="(image, index) in images" :key="image.src">
+        <img :src="image.thumb || image.src" :alt="image.caption" @click="clickImage(index)">
       </li>
-     </ul>
-     
-     <div class="lightbox-overlay" v-if="overlayActive" @click.self="closeOverlay">
+    </ul>
+
+    <div class="lightbox-overlay" v-if="overlayActive" @click.self="closeOverlay">
       <div class="holder">
         <div v-if="images[currentImage].thumb" style="padding:56.25% 0 0 0;position:relative;">
           <iframe
-              :src="images[currentImage].src"
-              style="position:absolute;top:0;left:0;width:100%;height:100%;"
-              frameborder="0"
-              webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+            :src="images[currentImage].src"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            frameborder="0"
+            webkitallowfullscreen
+            mozallowfullscreen
+            allowfullscreen
+          ></iframe>
         </div>
 
-        <img v-if="!images[currentImage].thumb" :src="images[currentImage].src"/>
-        
+        <img v-if="!images[currentImage].thumb" :src="images[currentImage].src">
+
         <div class="nav" v-if="nav">
-          <a class="close" nohref @click="closeOverlay"><span>&times</span></a>
-          <a class="prev" nohref @click="prevImage"><span>&#8592</span></a>
-          <a class="next" nohref @click="nextImage"><span>&#8594</span></a>
+          <a class="close" nohref @click="closeOverlay">
+            <span>&times;</span>
+          </a>
+          <a class="prev" nohref @click="prevImage">
+            <span>&#8592;</span>
+          </a>
+          <a class="next" nohref @click="nextImage">
+            <span>&#8594;</span>
+          </a>
         </div>
         <p v-if="caption && images[currentImage].caption">{{ images[currentImage].caption }}</p>
       </div>
-     </div>
+    </div>
   </div>
 </template>
 

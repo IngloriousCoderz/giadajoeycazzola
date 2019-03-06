@@ -1,56 +1,86 @@
 <template>
-<div class="has-navbar-fixed-top">
-  <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
-        <h1 class="has-text-weight-bold is-marginless">GJC</h1>
-      </nuxt-link>
+  <div class="has-navbar-fixed-top">
+    <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+      <div class="navbar-brand">
+        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+          <h1 class="has-text-weight-bold is-marginless">GJC</h1>
+        </nuxt-link>
 
-      <button class="button navbar-burger" :class="{'is-active': burgerActive}" @click="onClickBurger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </div>
+        <button
+          class="button navbar-burger"
+          :class="{'is-active': burgerActive}"
+          @click="onClickBurger"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
 
-    <div class="navbar-menu" :class="{'is-active': burgerActive}">
-      <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white" @click.native="closeBurger">Home</nuxt-link>
-      <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white" @click.native="closeBurger">Recensioni</nuxt-link>
-      <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white" @click.native="closeBurger">Portfolio</nuxt-link>
-      <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white" @click.native="closeBurger">Stories</nuxt-link>
-      <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white" @click.native="closeBurger">Blog</nuxt-link>
-      <nuxt-link :to="{name: 'contacts'}" class="navbar-item has-text-white" @click.native="closeBurger">Contacts</nuxt-link>
-    </div>
-  </nav>
+      <div class="navbar-menu" :class="{'is-active': burgerActive}">
+        <nuxt-link
+          :to="{name: 'index'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Home</nuxt-link>
+        <nuxt-link
+          :to="{name: 'recensioni'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Recensioni</nuxt-link>
+        <nuxt-link
+          :to="{name: 'portfolio'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Portfolio</nuxt-link>
+        <nuxt-link
+          :to="{name: 'stories'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Stories</nuxt-link>
+        <nuxt-link
+          :to="{name: 'blog'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Blog</nuxt-link>
+        <nuxt-link
+          :to="{name: 'contacts'}"
+          class="navbar-item has-text-white"
+          @click.native="closeBurger"
+        >Contacts</nuxt-link>
+      </div>
+    </nav>
 
-  <nav class="navbar level container has-text-centered is-uppercase is-fixed-top is-hidden-mobile">
-    <div class="level-item">
-      <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'recensioni'}">Recensioni</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'portfolio'}">Portfolio</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'index'}">
-        <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
-      </nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'stories'}">Stories</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'blog'}">Blog</nuxt-link>
-    </div>
-    <div class="level-item">
-      <nuxt-link :to="{name: 'contacts'}">Contacts</nuxt-link>
-    </div>
-  </nav>
+    <nav
+      class="navbar level container has-text-centered is-uppercase is-fixed-top is-hidden-mobile"
+    >
+      <div class="level-item">
+        <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'recensioni'}">Recensioni</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'portfolio'}">Portfolio</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'index'}">
+          <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
+        </nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'stories'}">Stories</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'blog'}">Blog</nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{name: 'contacts'}">Contacts</nuxt-link>
+      </div>
+    </nav>
 
-  <nuxt/>
-</div>
+    <nuxt/>
+  </div>
 </template>
 
 <script>

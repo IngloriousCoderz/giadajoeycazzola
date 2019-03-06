@@ -1,60 +1,75 @@
 <template>
-<section class="container">
-  <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
+  <section class="container">
+    <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
 
-  <div class="content has-text-centered">
-    <blockquote>
-      &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
-      <footer>
-        &mdash; <cite>Ferdinando Scianna</cite>
-      </footer>
-    </blockquote>
-  </div>
-
-  <div class="content columns is-centered">
-    <div class="column is-half">
-      <img src="/images/about_me.jpg" alt="about me" />
-    </div>
-  </div>
-
-  <div class="content has-text-centered">
-    <template v-for="review in reviews">
-      <p class="has-text-weight-bold">
-        &ldquo;{{review.text}}&rdquo;
+    <div class="content has-text-centered">
+      <blockquote>&ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
         <footer>
-        &mdash; <cite>{{review.author}}</cite>
+          &mdash;
+          <cite>Ferdinando Scianna</cite>
         </footer>
+      </blockquote>
+    </div>
+
+    <div class="content columns is-centered">
+      <div class="column is-half">
+        <img src="/images/about_me.jpg" alt="about me">
+      </div>
+    </div>
+
+    <div class="content has-text-centered">
+      <div v-for="review in reviews" :key="review.text">
+        <p class="has-text-weight-bold">&ldquo;{{ review.text }}&rdquo;</p>
+
+        <footer>
+          &mdash;
+          <cite>{{ review.author }}</cite>
+        </footer>
+
+        <p>&ctdot;</p>
+      </div>
+    </div>
+
+    <h1 class="is-size-1 has-text-centered">Menzioni</h1>
+
+    <div class="content has-text-centered">
+      <p>
+        <a
+          href="http://weddingwonderland.it/2018/05/matrimonio-autunnale-ispirato-al-te.html"
+          target="_blank"
+          class="has-text-weight-bold"
+        >Un matrimonio autunnale ispirato al tè</a> - Wedding Wonderland, 3 maggio 2018
+        <br>
+        <a
+          href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
+          target="_blank"
+          class="has-text-weight-bold"
+        >Un matrimonio boho e handmade</a> - Wedding Wonderland, 5 giugno 2018
       </p>
 
       <p>&ctdot;</p>
-    </template>
-  </div>
+    </div>
 
-  <h1 class="is-size-1 has-text-centered">Menzioni</h1>
-  
-  <div class="content has-text-centered">
-    <p>
-      <a href="http://weddingwonderland.it/2018/05/matrimonio-autunnale-ispirato-al-te.html" target="_blank" class="has-text-weight-bold">Un matrimonio autunnale ispirato al tè</a> - Wedding Wonderland, 3 maggio 2018
-      <br />
-      <a href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html" target="_blank" class="has-text-weight-bold">Un matrimonio boho e handmade</a> - Wedding Wonderland, 5 giugno 2018
-    </p>
-
-    <p>&ctdot;</p>
-  </div>
-
-  <div class="content columns is-centered">
-    <div class="column is-one-third">
-      <div id="wp-widget-reviews">
-        <div id="wp-widget-preview">
-          Leggi <a href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658/opinioni">le nostre raccomandazioni</a> a &nbsp;
-          <a href='https://www.matrimonio.com'>
-            <img src="https://cdn1.matrimonio.com/assets/img/logos/gen_logoHeader.svg" height="20">
-          </a>
+    <div class="content columns is-centered">
+      <div class="column is-one-third has-text-centered">
+        <div id="wp-widget-reviews">
+          <div id="wp-widget-preview">
+            Leggi
+            <a
+              href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658/opinioni"
+              target="_blank"
+            >le nostre raccomandazioni</a> su
+            <a href="https://www.matrimonio.com" target="_blank">
+              <img
+                src="https://cdn1.matrimonio.com/assets/img/logos/gen_logoHeader.svg"
+                height="20"
+              >
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 </template>
 
 <script>
@@ -173,7 +188,7 @@ export default {
   },
 
   mounted() {
-    window.wpShowReviews('159658', 'white')
+    window.wpShowReviews && window.wpShowReviews('159658', 'white')
   }
 }
 </script>

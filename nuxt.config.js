@@ -1,9 +1,9 @@
 global.File = typeof window === 'undefined' ? Object : window.File
 
 module.exports = {
-  /*
-  ** Headers of the page
-  */
+  /**
+   * Headers of the page
+   */
   head: {
     title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
 
@@ -73,9 +73,9 @@ module.exports = {
 
   css: ['~/assets/css/style.scss'],
 
-  /*
-  ** Customize the progress bar color
-  */
+  /**
+   * Customize the progress bar color
+   */
   loading: {
     color: '#3B8070'
   },
@@ -98,16 +98,17 @@ module.exports = {
     generate: true
   },
 
-  /*
-  ** Build configuration
-  */
+  /**
+   * Build configuration
+   */
   build: {
     vendor: ['babel-polyfill', 'vue-awesome-swiper', 'zpad'],
-    /*
-    ** Run ESLint on save
-    */
+    /**
+     * You can extend webpack config here
+     */
     extend(config, ctx) {
-      if (ctx.dev && ctx.isClient) {
+      // Run ESLint on save
+      if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
           enforce: 'pre',
           test: /\.(js|vue)$/,

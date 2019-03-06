@@ -1,23 +1,26 @@
 <template>
-<section class="container">
-  <h1 class="is-size-1 has-text-centered">{{title}}</h1>
+  <section class="container">
+    <h1 class="is-size-1 has-text-centered">{{title}}</h1>
 
-  <section class="content has-text-centered-mobile">
-    <slot></slot>
-  </section>
+    <section class="content has-text-centered-mobile">
+      <slot></slot>
+    </section>
 
-  <section v-if="video" class="content has-text-centered">
-    <div style="padding:56.25% 0 0 0;position:relative;">
-      <iframe
+    <section v-if="video" class="content has-text-centered">
+      <div style="padding:56.25% 0 0 0;position:relative;">
+        <iframe
           :src="video"
           style="position:absolute;top:0;left:0;width:100%;height:100%;"
           frameborder="0"
-          webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-    </div>
-  </section>
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
 
-  <lightbox :images="images"></lightbox>
-</section>
+    <lightbox :images="images"></lightbox>
+  </section>
 </template>
 
 <script>

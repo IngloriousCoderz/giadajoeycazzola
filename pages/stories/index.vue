@@ -1,38 +1,38 @@
 <template>
-<section class="container">
-  <h1 class="is-size-1 has-text-centered">Storie</h1>
+  <section class="container">
+    <h1 class="is-size-1 has-text-centered">Storie</h1>
 
-  <div class="content has-text-centered">
-    <blockquote>
-      &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
-      <footer>
-        &mdash; <cite>Diane Arbus</cite>
-      </footer>
-    </blockquote>
-  </div>
+    <div class="content has-text-centered">
+      <blockquote>&ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
+        <footer>&mdash;
+          <cite>Diane Arbus</cite>
+        </footer>
+      </blockquote>
+    </div>
 
-  <div class="content columns is-centered is-multiline">
-    <div v-for="image in images" :key="image.id" class="column is-one-third">
-      <nuxt-link :to="{ name: image.href }">
-        <div class="card">
-          <div class="card-image">
-            <div class="image is-4by3">
-              <div class="is-overlay has-clipped-background clickable" :style="{'background-image': `url(${image.src})`}" />
+    <div class="content columns is-centered is-multiline">
+      <div v-for="image in images" :key="image.id" class="column is-one-third">
+        <nuxt-link :to="{ name: image.href }">
+          <div class="card">
+            <div class="card-image">
+              <div class="image is-4by3">
+                <div
+                  class="is-overlay has-clipped-background clickable"
+                  :style="{'background-image': `url(${image.src})`}"
+                />
+              </div>
+            </div>
+            <div class="card-content has-text-centered">
+              <h3 class="title is-5">{{image.title}}</h3>
+              <p>{{image.description}}</p>
             </div>
           </div>
-          <div class="card-content has-text-centered">
-            <h3 class="title is-5">{{image.title}}</h3>
-            <p>{{image.description}}</p>
-          </div>
-        </div>
-      </nuxt-link>
+        </nuxt-link>
+      </div>
     </div>
-  </div>
 
-  <div class="content has-text-centered">
-    Altri album in arrivo...
-  </div>
-</section>
+    <div class="content has-text-centered">Altri album in arrivo...</div>
+  </section>
 </template>
 
 <script>
@@ -97,14 +97,15 @@ export default {
           href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
           description:
-            'Magico matrimonio tra i vigneti dell\'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all\'amore di Martina e Salvador.'
+            "Magico matrimonio tra i vigneti dell'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all'amore di Martina e Salvador."
         },
         {
           id: 'vittorialuigi',
           src: '/images/stories/vittorialuigi/58.jpg',
           href: 'stories-vittorialuigi',
           title: 'Vittoria & Luigi',
-          description: 'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
+          description:
+            'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
         },
         {
           id: 'pierpaolofernando',
@@ -128,7 +129,7 @@ export default {
           href: 'stories-cassandracarlo',
           title: 'Cassandra & Carlo',
           description:
-            'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l\'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
+            "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno."
         },
         {
           id: 'danielamichele',
