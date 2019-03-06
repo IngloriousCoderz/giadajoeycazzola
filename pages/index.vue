@@ -104,6 +104,7 @@
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
+                target="_blank"
               >
                 <img
                   width="250"

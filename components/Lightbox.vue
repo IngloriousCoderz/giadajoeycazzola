@@ -28,10 +28,12 @@
             <span>&times;</span>
           </a>
           <a class="prev" nohref @click="prevImage">
-            <span>&#8592;</span>
+            <!-- <span>&#8592;</span> -->
+            <div data-v-2a183b29 slot="button-prev" class="swiper-button-prev swiper-button-white"></div>
           </a>
           <a class="next" nohref @click="nextImage">
-            <span>&#8594;</span>
+            <!-- <span>&#8594;</span> -->
+            <div data-v-2a183b29 slot="button-next" class="swiper-button-next swiper-button-white"></div>
           </a>
         </div>
         <p v-if="caption && images[currentImage].caption">{{ images[currentImage].caption }}</p>

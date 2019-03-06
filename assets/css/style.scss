@@ -110,3 +110,12 @@ footer {
   width: initial !important;
   margin: 0 auto;
 }
+
+.vue-lightbox > .lightbox-overlay > .holder {
+  margin: 50vh auto !important;
+  transform: translateY(-50%);
+  @media (min-width: 1024px) {
+    margin: 0 auto !important;
+    transform: initial;
+  }
+}
