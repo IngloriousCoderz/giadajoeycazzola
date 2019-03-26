@@ -10,7 +10,7 @@
 
     <div class="lightbox-overlay" v-if="overlayActive" @click.self="closeOverlay">
       <div class="holder">
-        <div v-if="images[currentImage].thumb" style="padding:56.25% 0 0 0;position:relative;">
+        <div v-if="images[currentImage].thumb" style="padding:56.25% 0 0 0;">
           <iframe
             :src="images[currentImage].src"
             style="position:absolute;top:0;left:0;width:100%;height:100%;"
