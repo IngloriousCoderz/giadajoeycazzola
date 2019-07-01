@@ -40,6 +40,12 @@ footer {
   overflow-x: hidden;
 }
 
+.navbar.is-mobile,
+.navbar-brand,
+.navbar-menu {
+  background-color: white; /*#504c49;*/
+}
+
 .navbar.is-hidden-mobile {
   min-height: 5rem !important;
   position: sticky !important;
@@ -47,6 +53,34 @@ footer {
 
 .content {
   margin-bottom: 3rem !important;
+}
+
+.navbar {
+  .navbar-brand {
+    position: fixed;
+    width: 100%;
+  }
+
+  .navbar-menu {
+    display: block;
+    position: fixed;
+    margin-top: 3.25rem;
+    width: 100%;
+    height: 100vh;
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+  }
+
+  .navbar-menu.is-active {
+    opacity: 1;
+    transition: opacity 0.5s;
+    pointer-events: initial;
+
+    .navbar-item {
+      font-size: x-large;
+    }
+  }
 }
 
 .has-navbar-fixed-top {

@@ -2,7 +2,7 @@
   <div class="has-navbar-fixed-top">
     <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+        <nuxt-link :to="{name: 'index'}" class="navbar-item">
           <h1 class="has-text-weight-bold is-marginless">GJC</h1>
         </nuxt-link>
 
@@ -18,36 +18,20 @@
       </div>
 
       <div class="navbar-menu" :class="{'is-active': burgerActive}">
-        <nuxt-link
-          :to="{name: 'index'}"
-          class="navbar-item has-text-white"
-          @click.native="closeBurger"
-        >Home</nuxt-link>
+        <nuxt-link :to="{name: 'index'}" class="navbar-item" @click.native="closeBurger">Home</nuxt-link>
         <nuxt-link
           :to="{name: 'recensioni'}"
-          class="navbar-item has-text-white"
+          class="navbar-item"
           @click.native="closeBurger"
         >Recensioni</nuxt-link>
         <nuxt-link
           :to="{name: 'portfolio'}"
-          class="navbar-item has-text-white"
+          class="navbar-item"
           @click.native="closeBurger"
         >Portfolio</nuxt-link>
-        <nuxt-link
-          :to="{name: 'stories'}"
-          class="navbar-item has-text-white"
-          @click.native="closeBurger"
-        >Stories</nuxt-link>
-        <nuxt-link
-          :to="{name: 'blog'}"
-          class="navbar-item has-text-white"
-          @click.native="closeBurger"
-        >Blog</nuxt-link>
-        <nuxt-link
-          :to="{name: 'contacts'}"
-          class="navbar-item has-text-white"
-          @click.native="closeBurger"
-        >Contacts</nuxt-link>
+        <nuxt-link :to="{name: 'stories'}" class="navbar-item" @click.native="closeBurger">Stories</nuxt-link>
+        <nuxt-link :to="{name: 'blog'}" class="navbar-item" @click.native="closeBurger">Blog</nuxt-link>
+        <nuxt-link :to="{name: 'contacts'}" class="navbar-item" @click.native="closeBurger">Contacts</nuxt-link>
       </div>
     </nav>
 
@@ -120,11 +104,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.navbar.is-mobile,
-.navbar-brand,
-.navbar-menu {
-  background-color: #504c49;
-}
-</style>

@@ -241,7 +241,7 @@ export default {
         top: 0;
         font-size: 30px;
         opacity: 0.6;
-        z-index: 1000000;
+        z-index: 1;
         position: absolute;
         text-align: left;
         box-sizing: border-box;

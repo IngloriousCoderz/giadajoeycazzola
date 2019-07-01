@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">
+        <nuxt-link :to="{name: 'index'}" class="navbar-item">
           <h2 class="has-text-weight-bold is-marginless">GJC</h2>
         </nuxt-link>
 
@@ -18,12 +18,12 @@
       </div>
 
       <div class="navbar-menu" :class="{'is-active': burgerActive}">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item has-text-white">Home</nuxt-link>
-        <nuxt-link :to="{name: 'recensioni'}" class="navbar-item has-text-white">Recensioni</nuxt-link>
-        <nuxt-link :to="{name: 'portfolio'}" class="navbar-item has-text-white">Portfolio</nuxt-link>
-        <nuxt-link :to="{name: 'stories'}" class="navbar-item has-text-white">Stories</nuxt-link>
-        <nuxt-link :to="{name: 'blog'}" class="navbar-item has-text-white">Blog</nuxt-link>
-        <nuxt-link :to="{name: 'contacts'}" class="navbar-item has-text-white">Contacts</nuxt-link>
+        <nuxt-link :to="{name: 'index'}" class="navbar-item">Home &rsaquo;</nuxt-link>
+        <nuxt-link :to="{name: 'recensioni'}" class="navbar-item">Recensioni &rsaquo;</nuxt-link>
+        <nuxt-link :to="{name: 'portfolio'}" class="navbar-item">Portfolio &rsaquo;</nuxt-link>
+        <nuxt-link :to="{name: 'stories'}" class="navbar-item">Stories &rsaquo;</nuxt-link>
+        <nuxt-link :to="{name: 'blog'}" class="navbar-item">Blog &rsaquo;</nuxt-link>
+        <nuxt-link :to="{name: 'contacts'}" class="navbar-item">Contacts &rsaquo;</nuxt-link>
       </div>
     </nav>
 
@@ -76,7 +76,8 @@
             <p></p>
             <p>Sguardi complici, baci fugaci e dettagli impercettibili sono stati da sempre la mia massima fonte d&rsquo;ispirazione. Per questo motivo, in un susseguirsi di vicende che hanno incrociato il mio cammino, ho scelto di dedicarmi alla fotografia di matrimonio e nello specifico al reportage.</p>
 
-            <p>La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
+            <p>
+              La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
               <br>Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
             </p>
 
@@ -84,7 +85,8 @@
 
             <p>Il mio è uno studio serio e profondo che da anni mi permette di crescere e ampliare il mio bagaglio visivo non solo direttamente sul campo dei miei matrimoni ma anche guardando con attenzione matrimoni di guru e mentori della fotografia di reportage di tutto il mondo.</p>
 
-            <p>Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
+            <p>
+              Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
               <br>Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
               <br>Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
             </p>
@@ -143,7 +145,8 @@
 import zpad from 'zpad'
 
 const SLIDE_COUNT = 12
-const SLIDE_SPEED = 3000
+const SLIDE_DELAY = 3000
+const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
 
 export default {
@@ -212,7 +215,7 @@ export default {
         speed: SLIDE_SPEED,
         lazy: { loadPrevNext: true, loadOnTransitionStart: true },
         keyboard: { enabled: true },
-        autoplay: { delay: SLIDE_SPEED, disableOnInteraction: true },
+        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true },
         on: {
           init: () => {
             if (window.matchMedia('(min-width: 1024px)').matches) {
@@ -248,12 +251,6 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.navbar.is-mobile,
-.navbar-brand,
-.navbar-menu {
-  background-color: #504c49;
-}
-
 .swiper-container {
   height: 100vh;
   overflow: hidden;

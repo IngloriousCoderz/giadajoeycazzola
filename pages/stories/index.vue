@@ -3,8 +3,10 @@
     <h1 class="is-size-1 has-text-centered">Storie</h1>
 
     <div class="content has-text-centered">
-      <blockquote>&ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
-        <footer>&mdash;
+      <blockquote>
+        &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
+        <footer>
+          &mdash;
           <cite>Diane Arbus</cite>
         </footer>
       </blockquote>
@@ -91,6 +93,14 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
 
       images: [
+        {
+          id: 'alessandraattilio',
+          src: '/images/stories/alessandraattilio/63.jpg',
+          href: 'stories-alessandraattilio',
+          title: 'Alessandra & Attilio',
+          description:
+            '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.'
+        },
         {
           id: 'martinasalvador',
           src: '/images/stories/martinasalvador/01.jpg',
