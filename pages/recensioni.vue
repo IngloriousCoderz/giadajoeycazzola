@@ -136,6 +136,16 @@ export default {
         },
         {
           text:
+            'Definire Giada e i suoi collaboratori Giorgio e Giulia in poche parole risulta difficile. Con noi sono stati fantastici, per nulla invadenti, non ci si accorgeva quasi della loro presenza. Sempre gentilissimi e disponibilissimi ci siamo divertiti tantissimo con loro durante gli scatti delle nostre nozze. Sono persone talmente piacevoli che sembrava quasi fossero degli amici più che dei fornitori. Consigliamo assolutamente Giada per le vostre fotografie perché è davvero una ragazza in gamba e speciale.',
+          author: 'Valentina e Giorgio'
+        },
+        {
+          text:
+            'Un reportage perfetto! Per il nostro matrimonio cercavamo una persona che potesse raccontare la giornata senza farci sentire "paparazzati", con Giada è stato proprio così. È stata una presenza discreta, ma sempre presente, e ci ha restituito un reportage fotografico della nostra giornata pieno di emozioni, sorrisi e dettagli preziosi! Super!',
+          author: 'Elena e Daniele'
+        },
+        {
+          text:
             "Professionalità e stile. Giada è stata perfetta! Il servizio fornito da lei e il suo staff è stato impeccabile ed estremamente discreto e naturale. Nel giorno dell'evento nulla è stato lasciato al caso, grazie a un planning dettagliato e al contempo dotato della necessaria elasticità per gestire gli inevitabili inconvenienti di un matrimonio. Grazie per aver reso ancora più speciale quel giorno lasciandoci degli splendidi ricordi da rivivere per sempre!",
           author: 'Vittoria e Luigi'
         },
