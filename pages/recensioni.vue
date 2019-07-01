@@ -3,7 +3,8 @@
     <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
 
     <div class="content has-text-centered">
-      <blockquote>&ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
+      <blockquote>
+        &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
         <footer>
           &mdash;
           <cite>Ferdinando Scianna</cite>
@@ -128,6 +129,11 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
 
       reviews: [
+        {
+          text:
+            'Mi sono imbattuta in Giada grazie a un sito nel quale cercavo spunti e idee per il mio matrimonio. Appena ho visto le sue foto ho subito pensato "Ecco, queste sono proprio le foto che piacciono a me!". Anche il mio fidanzato (ormai marito), di gusti piuttosto difficili, ne rimase piacevolmente sorpreso. Fin da subito Giada si è resa disponibilissima e aperta a soddisfare le nostre esigenze. Durante la cerimonia e tutto il resto della giornata è stata capace di immortalare attimi e dettagli dei quali non mi ero neppure accorta, regalandoci immagini meravigliose che, già con un po\' di nostalgia, ci faranno rivivere uno dei giorni più belli ed emozionanti della nostra vita.',
+          author: 'Alessandra e Attilio'
+        },
         {
           text:
             "Professionalità e stile. Giada è stata perfetta! Il servizio fornito da lei e il suo staff è stato impeccabile ed estremamente discreto e naturale. Nel giorno dell'evento nulla è stato lasciato al caso, grazie a un planning dettagliato e al contempo dotato della necessaria elasticità per gestire gli inevitabili inconvenienti di un matrimonio. Grazie per aver reso ancora più speciale quel giorno lasciandoci degli splendidi ricordi da rivivere per sempre!",
