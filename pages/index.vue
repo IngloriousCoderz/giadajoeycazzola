@@ -29,8 +29,8 @@
 
     <div class="swiper-container" v-swiper:mySwiper="swiperOptions">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="slide in slides" :key="slide.id">
-          <div class="is-overlay has-clipped-background swiper-lazy" :data-background="slide.src"/>
+        <div class="swiper-slide" v-for="image in images" :key="image.id">
+          <div class="is-overlay has-clipped-background swiper-lazy" :data-background="image.src" />
           <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
         </div>
       </div>
@@ -78,7 +78,7 @@
 
             <p>
               La mia capacità di catturare la spontaneità delle persone non poteva che unirsi alla cosa più spontanea che esista: l&rsquo;amore.
-              <br>Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
+              <br />Ed è così che racconterò il giorno del vostro matrimonio: con discrezione e ricchezza di particolari.
             </p>
 
             <p>Mi commuoverò e sorriderò con voi.</p>
@@ -87,8 +87,8 @@
 
             <p>
               Descriverei il mio lavoro come una ricerca della perfezione nell'imperfezione.
-              <br>Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
-              <br>Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
+              <br />Il racconto dettagliato del giorno più bello per una coppia, realizzato con ricchezza di particolari ma anche con discrezione.
+              <br />Il miglior complimento che mi fanno gli sposi dopo aver visto le foto è che sembra loro di rivivere attraverso i miei scatti il giorno del matrimonio con dettagli che nemmeno loro ricordavano.
             </p>
 
             <p>Il mio successo, e il motivo per cui vi invito a scegliermi, è proprio questo: racconterò la vostra storia, il vostro giorno speciale, il vostro amore con un approccio fresco, giovane, spontaneo e il più naturale possibile. Per me esistete voi, con i vostri pregi e i vostri difetti che vi rendono unici e che sono sicura siano quelli che hanno permesso alla vostra metà di innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi imbarazzati quando vi guardate dopo aver pronunciato quel "sì" all'altare, i baci e le mani che si incrociano mentre camminate uno di fianco all'altra. In una parola mi interessate voi, e io e la mia macchina fotografica faremo tutto quello che è in nostro potere per restituirvi le immagini perfette per descrivere quello che siete.</p>
@@ -114,7 +114,7 @@
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
                   id="wp-ratedWA-img-2019"
                   src="https://cdn1.matrimonio.com/img/badges/2019/badge-weddingawards_it_IT.jpg"
-                >
+                />
               </a>
             </div>
 
@@ -130,7 +130,7 @@
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com"
                   id="wp-ratedWA-img-2018"
                   src="https://cdn1.matrimonio.com/img/badges/2018/badge-weddingawards_it_IT.jpg"
-                >
+                />
               </a>
             </div>
           </div>
@@ -144,7 +144,8 @@
 <script>
 import zpad from 'zpad'
 
-const SLIDE_COUNT = 12
+const BASE_PATH = '/images/home'
+const IMAGE_COUNT = 10
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
@@ -206,9 +207,9 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
 
       burgerActive: false,
-      slides: Array.from(Array(SLIDE_COUNT).keys()).map(index => ({
+      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
-        src: `/images/home/mobile/${zpad(index + 1)}.jpg`
+        src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
       })),
       swiperOptions: {
         loop: true,
@@ -219,8 +220,8 @@ export default {
         on: {
           init: () => {
             if (window.matchMedia('(min-width: 1024px)').matches) {
-              this.slides.forEach(
-                slide => (slide.src = slide.src.replace(/\/mobile\//g, '/'))
+              this.images.forEach(
+                image => (image.src = image.src.replace(/\/mobile\//g, '/'))
               )
               this.$nextTick(() => this.mySwiper.lazy.load())
             }
