@@ -18,12 +18,36 @@
       </div>
 
       <div class="navbar-menu" :class="{'is-active': burgerActive}">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item">Home &rsaquo;</nuxt-link>
-        <nuxt-link :to="{name: 'recensioni'}" class="navbar-item">Recensioni &rsaquo;</nuxt-link>
-        <nuxt-link :to="{name: 'portfolio'}" class="navbar-item">Portfolio &rsaquo;</nuxt-link>
-        <nuxt-link :to="{name: 'stories'}" class="navbar-item">Stories &rsaquo;</nuxt-link>
-        <nuxt-link :to="{name: 'blog'}" class="navbar-item">Blog &rsaquo;</nuxt-link>
-        <nuxt-link :to="{name: 'contacts'}" class="navbar-item">Contacts &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'index'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Home &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'recensioni'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Recensioni &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'portfolio'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Portfolio &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'stories'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Stories &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'blog'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Blog &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'contacts'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Contacts &rsaquo;</nuxt-link>
       </div>
     </nav>
 
@@ -238,6 +262,10 @@ export default {
   methods: {
     onClickBurger() {
       this.burgerActive = !this.burgerActive
+    },
+
+    closeBurger() {
+      this.burgerActive = false
     },
 
     onClickPrev() {

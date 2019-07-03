@@ -56,6 +56,8 @@ footer {
 }
 
 .navbar {
+  z-index: 2;
+
   .navbar-brand {
     position: fixed;
     width: 100%;
@@ -70,16 +72,16 @@ footer {
     opacity: 0;
     transition: opacity 0.5s;
     pointer-events: none;
+
+    .navbar-item {
+      font-size: x-large;
+    }
   }
 
   .navbar-menu.is-active {
     opacity: 1;
     transition: opacity 0.5s;
     pointer-events: initial;
-
-    .navbar-item {
-      font-size: x-large;
-    }
   }
 }
 

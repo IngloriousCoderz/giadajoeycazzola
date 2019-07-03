@@ -4,7 +4,7 @@
 
     <ul v-if="images">
       <li v-for="(image, index) in images" :key="image.src">
-        <img :src="image.thumb || image.src" :alt="image.caption" @click="clickImage(index)">
+        <img :src="image.thumb || image.src" :alt="image.caption" @click="clickImage(index)" />
       </li>
     </ul>
 
@@ -21,7 +21,7 @@
           ></iframe>
         </div>
 
-        <img v-if="!images[currentImage].thumb" :src="images[currentImage].src">
+        <img v-if="!images[currentImage].thumb" :src="images[currentImage].src" />
 
         <div class="nav" v-if="nav">
           <a class="close" nohref @click="closeOverlay">
@@ -162,7 +162,7 @@ export default {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 1;
+  z-index: 3;
 
   .holder {
     max-width: 600px;

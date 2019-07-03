@@ -18,20 +18,36 @@
       </div>
 
       <div class="navbar-menu" :class="{'is-active': burgerActive}">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item" @click.native="closeBurger">Home</nuxt-link>
+        <nuxt-link
+          :to="{name: 'index'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Home &rsaquo;</nuxt-link>
         <nuxt-link
           :to="{name: 'recensioni'}"
           class="navbar-item"
           @click.native="closeBurger"
-        >Recensioni</nuxt-link>
+        >Recensioni &rsaquo;</nuxt-link>
         <nuxt-link
           :to="{name: 'portfolio'}"
           class="navbar-item"
           @click.native="closeBurger"
-        >Portfolio</nuxt-link>
-        <nuxt-link :to="{name: 'stories'}" class="navbar-item" @click.native="closeBurger">Stories</nuxt-link>
-        <nuxt-link :to="{name: 'blog'}" class="navbar-item" @click.native="closeBurger">Blog</nuxt-link>
-        <nuxt-link :to="{name: 'contacts'}" class="navbar-item" @click.native="closeBurger">Contacts</nuxt-link>
+        >Portfolio &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'stories'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Stories &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'blog'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Blog &rsaquo;</nuxt-link>
+        <nuxt-link
+          :to="{name: 'contacts'}"
+          class="navbar-item"
+          @click.native="closeBurger"
+        >Contacts &rsaquo;</nuxt-link>
       </div>
     </nav>
 
@@ -63,7 +79,7 @@
       </div>
     </nav>
 
-    <nuxt/>
+    <nuxt />
   </div>
 </template>
 
