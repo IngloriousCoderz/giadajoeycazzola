@@ -13,7 +13,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >Tenuta Tamburnin</a>
-      <br>abito da sposa:
+      <br />abito da sposa:
       <a
         href="https://www.atelier-eme.it/atelier-torino/?IDstore=23"
         target="_blank"
@@ -26,7 +26,7 @@
 <script>
 import Story from '@/components/Story'
 
-const BASE_PATH = 'stories/alessandraattilio'
+const BASE_PATH = 'stories/alessandraattilio/mobile'
 const IMAGE_COUNT = 93
 
 export default {
