@@ -42,7 +42,7 @@ export default {
     return {
       title: 'Chiara & Marco',
       description:
-        'Torino non è mai stata bella come questa sera, in cui Chiara e Marco nel cuore della città hanno scelto di dirsi “sì” per sempre.',
+        'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.',
       type: 'website',
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
