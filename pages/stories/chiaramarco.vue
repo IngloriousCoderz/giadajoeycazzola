@@ -19,6 +19,12 @@
         target="_blank"
         class="has-text-weight-bold"
       >Turin Palace Hotel</a>
+      <br />musica:
+      <a
+        href="https://matrimonioeasy.it/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Easy Tempo Set</a>
     </p>
   </story>
 </template>

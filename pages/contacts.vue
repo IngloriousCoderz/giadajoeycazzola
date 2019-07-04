@@ -27,29 +27,40 @@
 
       <div class="column">
         <div class="box">
-          <form action="https://formspree.io/giada.cazzola93@gmail.com" method="POST">
+          <form action="https://formspree.io/giada.cazzola93@gmail.com" method="POST" ref="form">
             <div class="field">
-              <input class="input" name="name" placeholder="Nome">
+              <input class="input" name="name" placeholder="Nome" />
             </div>
 
             <div class="field">
-              <input class="input" type="email" name="email" placeholder="Email">
+              <input class="input" type="email" name="email" placeholder="Email" />
             </div>
 
             <div class="field">
-              <input class="input" name="phone" placeholder="Telefono">
+              <input class="input" name="phone" placeholder="Telefono" />
             </div>
 
             <div class="field">
-              <textarea class="textarea" name="message" placeholder="Messaggio"/>
+              <textarea class="textarea" name="message" placeholder="Messaggio" />
+            </div>
+
+            <div class="field">
+              <b-switch v-model="privacyAccepted">
+                Accetto la
+                <a
+                  href="https://www.iubenda.com/privacy-policy/10318033"
+                  target="_blank"
+                  class="has-text-weight-bold"
+                >privacy policy</a>
+              </b-switch>
             </div>
 
             <input
               type="hidden"
               name="subject"
               value="Richiesta di contatto dal sito giadajoeycazzola.com"
-            >
-            <button class="button" type="submit">Invia</button>
+            />
+            <button class="button" type="submit" @click.prevent="onClick">Invia</button>
           </form>
         </div>
       </div>
@@ -110,7 +121,19 @@ export default {
       description:
         'Compila la form per contattare Giada Joey Cazzola. Disponibile anche per altri tipi di servizi fotografici a Torino.',
       url: 'https://www.giadajoeycazzola.com/contacts/',
-      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg'
+      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+      privacyAccepted: false
+    }
+  },
+
+  methods: {
+    onClick(event) {
+      if (!this.privacyAccepted) {
+        alert('Per favore, accetta la privacy policy prima di continuare')
+        return
+      }
+
+      this.$refs.form.submit()
     }
   }
 }
