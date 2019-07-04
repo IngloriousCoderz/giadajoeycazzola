@@ -88,6 +88,14 @@ export default {
         src: `/images/${this.basePath}/${zpad(index + 1)}.jpg`
       }))
     }
+  },
+
+  mounted() {
+    if (window.matchMedia('(min-width: 1024px)').matches) {
+      this.images.forEach(
+        image => (image.src = image.src.replace(/\/mobile\//g, '/'))
+      )
+    }
   }
 }
 </script>

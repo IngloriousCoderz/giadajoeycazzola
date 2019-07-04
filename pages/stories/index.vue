@@ -126,6 +126,14 @@ export default {
             'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.'
         },
         {
+          id: 'chiaramarco',
+          src: '/images/stories/chiaramarco/mobile/50.jpg',
+          href: 'stories-chiaramarco',
+          title: 'Chiara & Marco',
+          description:
+            'Torino non è mai stata bella come questa sera, in cui Chiara e Marco nel cuore della città hanno scelto di dirsi “sì” per sempre.'
+        },
+        {
           id: 'annamariaclaudio',
           src: '/images/stories/annamariaclaudio/01.jpg',
           href: 'stories-annamariaclaudio',

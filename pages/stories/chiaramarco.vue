@@ -1,0 +1,46 @@
+<template>
+  <story
+    :title="title"
+    :description="description"
+    :type="type"
+    :base-path="basePath"
+    :image-count="imageCount"
+  >
+    <p class="is-size-7">
+      abito da sposa:
+      <a
+        href="https://www.ladymilu.it/"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Lady Mi.Lù.</a>
+      <br />location:
+      <a
+        href="https://www.turinpalacehotel.com/it/hotel-torino-centro/1-0.html"
+        target="_blank"
+        class="has-text-weight-bold"
+      >Turin Palace Hotel</a>
+    </p>
+  </story>
+</template>
+
+<script>
+import Story from '@/components/Story'
+
+const BASE_PATH = 'stories/chiaramarco/mobile'
+const IMAGE_COUNT = 65
+
+export default {
+  components: { Story },
+
+  data() {
+    return {
+      title: 'Chiara & Marco',
+      description:
+        'Torino non è mai stata bella come questa sera, in cui Chiara e Marco nel cuore della città hanno scelto di dirsi “sì” per sempre.',
+      type: 'website',
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  }
+}
+</script>
