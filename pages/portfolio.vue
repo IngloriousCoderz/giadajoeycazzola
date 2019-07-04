@@ -98,7 +98,7 @@ export default {
     return {
       title: 'Portfolio',
       description:
-        'Raccolta dei migliori lavori di reportage di matrimonio realizzati in location bellissime per matrimoni a Torino, Langhe, Piemonte, Toscana, Puglia, Italia.',
+        'Raccolta dei migliori lavori di reportage di matrimonio realizzati in location bellissime per matrimoni a Torino, Langhe, Piemonte, Roma, Toscana, Puglia, Italia.',
       url: 'https://www.giadajoeycazzola.com/portfolio/',
       image: 'https://www.giadajoeycazzola.com/images/portfolio/01.jpg',
 
