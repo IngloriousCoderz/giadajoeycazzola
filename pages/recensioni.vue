@@ -14,7 +14,7 @@
 
     <div class="content columns is-centered">
       <div class="column is-half">
-        <img src="/images/about_me.jpg" alt="about me">
+        <img src="/images/about_me.jpg" alt="about me" />
       </div>
     </div>
 
@@ -40,7 +40,7 @@
           target="_blank"
           class="has-text-weight-bold"
         >Un matrimonio autunnale ispirato al tè</a> - Wedding Wonderland, 3 maggio 2018
-        <br>
+        <br />
         <a
           href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
           target="_blank"
@@ -64,7 +64,7 @@
               <img
                 src="https://cdn1.matrimonio.com/assets/img/logos/gen_logoHeader.svg"
                 height="20"
-              >
+              />
             </a>
           </div>
         </div>
@@ -131,6 +131,11 @@ export default {
       reviews: [
         {
           text:
+            "Voi penserete come mai ho messo divertimento nel titolo, ecco io non cercavo un fotografo impostato, da matrimonio, ma cercavo spontaneità per quel giorno e con lei l'ho trovata. Da subito sono entrata in sintonia con lei, il suo modo di fotografare e catturare dei dettagli, delle luci o dei colori mi ha fatto e tutt'ora mi fa impazzire. Quel giorno saprà mettervi a vostro agio e farvi divertire. La consiglio al 100%, è professionale ma allo stesso tempo amichevole, concentrata nel lavoro ma allo stesso tempo solare. Grande Giada, ancora grazie per aver dato immagine al nostro grande giorno.",
+          author: 'Elena e Luca'
+        },
+        {
+          text:
             'Mi sono imbattuta in Giada grazie a un sito nel quale cercavo spunti e idee per il mio matrimonio. Appena ho visto le sue foto ho subito pensato "Ecco, queste sono proprio le foto che piacciono a me!". Anche il mio fidanzato (ormai marito), di gusti piuttosto difficili, ne rimase piacevolmente sorpreso. Fin da subito Giada si è resa disponibilissima e aperta a soddisfare le nostre esigenze. Durante la cerimonia e tutto il resto della giornata è stata capace di immortalare attimi e dettagli dei quali non mi ero neppure accorta, regalandoci immagini meravigliose che, già con un po\' di nostalgia, ci faranno rivivere uno dei giorni più belli ed emozionanti della nostra vita.',
           author: 'Alessandra e Attilio'
         },
@@ -178,6 +183,11 @@ export default {
           text:
             'Una fotografa con i fiocchi. Non potevamo aspettarci nulla di più di ciò che abbiamo ricevuto. Una persona attenta ai dettagli, professionale e divertente! La consiglio assolutamente, perché una così non la si trova tanto facilmente! Grazie Giada per averci dedicato il tuo tempo!',
           author: 'Carlotta e Salvatore'
+        },
+        {
+          text:
+            "Durante la scelta della fotografa di matrimonio, siamo stati colpiti dalla naturalezza delle foto di Giada. Io e mio marito siamo un po' timidi davanti all'obiettivo e volevamo qualcosa di spontaneo. Giada è stata eccezionale, lei e il suo collega Giorgio sono stati discretissimi. È stato un piacere lavorare con Giada e le foto sono state ben oltre le aspettative: ci siamo commossi tanti anche a distanza di qualche mese. Sono stati catturati dei momenti che nemmeno mi ricordavo o di cui non ci siamo resi conto. Giada è stata professionale, creativa e disponibile e la consiglio vivamente. Ogni volta che riguardiamo le foto (e il video) ci sembra di rivivere quella giornata in loop. Grazie mille per lo splendido lavoro svolto.",
+          author: 'Giulia & John'
         },
         {
           text:

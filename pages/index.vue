@@ -169,7 +169,7 @@
 import zpad from 'zpad'
 
 const BASE_PATH = '/images/home'
-const IMAGE_COUNT = 10
+const IMAGE_COUNT = 11
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
