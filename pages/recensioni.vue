@@ -131,7 +131,12 @@ export default {
       reviews: [
         {
           text:
-            "Voi penserete come mai ho messo divertimento nel titolo, ecco io non cercavo un fotografo impostato, da matrimonio, ma cercavo spontaneità per quel giorno e con lei l'ho trovata. Da subito sono entrata in sintonia con lei, il suo modo di fotografare e catturare dei dettagli, delle luci o dei colori mi ha fatto e tutt'ora mi fa impazzire. Quel giorno saprà mettervi a vostro agio e farvi divertire. La consiglio al 100%, è professionale ma allo stesso tempo amichevole, concentrata nel lavoro ma allo stesso tempo solare. Grande Giada, ancora grazie per aver dato immagine al nostro grande giorno.",
+            "Ci siamo sposati l'altro ieri ed abbiamo avuto la fortuna di incontrare questa persona per noi davvero speciale che ha raccontato la nostra storia con le sue fotografie.. Non potete capire l'amore che questa ragazza prova per il suo lavoro finché non la incontrate, pare vedere una ragazza al suo primo appuntamento con la persona giusta: guardate le sue foto parlano da sole. Aver avuto lei è stata una fortuna, entra dentro la vostra storia, la vive e la racconta: ho visto moltissimi fotografi di matrimonio ma una persona che oltre a fare bene il suo lavoro ci entra dentro non ha prezzo. Vale ogni centesimo speso: se pensate che le sue foto siano belle incontratela, e chi ama le cose sincere spontanee emozionanti e naturali sono sicura che la sceglierà per il suo matrimonio. Se ve la consiglio? Non potete farne a meno per il vostro giorno.",
+          author: 'Alessia e Matteo'
+        },
+        {
+          text:
+            "Divertimento: Voi penserete come mai ho messo divertimento nel titolo, ecco io non cercavo un fotografo impostato, da matrimonio, ma cercavo spontaneità per quel giorno e con lei l'ho trovata. Da subito sono entrata in sintonia con lei, il suo modo di fotografare e catturare dei dettagli, delle luci o dei colori mi ha fatto e tutt'ora mi fa impazzire. Quel giorno saprà mettervi a vostro agio e farvi divertire. La consiglio al 100%, è professionale ma allo stesso tempo amichevole, concentrata nel lavoro ma allo stesso tempo solare. Grande Giada, ancora grazie per aver dato immagine al nostro grande giorno.",
           author: 'Elena e Luca'
         },
         {

@@ -106,18 +106,23 @@ export default {
         // http://vimeo.com/api/v2/video/286857992.xml
         {
           id: 1,
-          src: 'https://player.vimeo.com/video/286857992',
-          thumb: 'http://i.vimeocdn.com/video/721857555_640.jpg'
+          src: 'https://player.vimeo.com/video/351338696',
+          thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
         },
         {
           id: 2,
-          src: 'https://player.vimeo.com/video/273849529',
-          thumb: 'http://i.vimeocdn.com/video/705748390_640.jpg'
+          src: 'https://player.vimeo.com/video/286857992',
+          thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
         },
         {
           id: 3,
+          src: 'https://player.vimeo.com/video/273849529',
+          thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
+        },
+        {
+          id: 4,
           src: 'https://player.vimeo.com/video/319229237',
-          thumb: 'http://i.vimeocdn.com/video/761746985_640.jpg'
+          thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
         }
       ],
 
