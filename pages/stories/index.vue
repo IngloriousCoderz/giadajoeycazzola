@@ -102,12 +102,28 @@ export default {
             '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.'
         },
         {
+          id: 'elenaluca',
+          src: '/images/stories/elenaluca/59.jpg',
+          href: 'stories-elenaluca',
+          title: 'Elena & Luca',
+          description:
+            'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.'
+        },
+        {
+          id: 'alessiamatteo',
+          src: '/images/stories/alessiamatteo/96.jpg',
+          href: 'stories-alessiamatteo',
+          title: 'Alessia & Matteo',
+          description:
+            'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.'
+        },
+        {
           id: 'martinasalvador',
           src: '/images/stories/martinasalvador/01.jpg',
           href: 'stories-martinasalvador',
           title: 'Martina & Salvador',
           description:
-            "Magico matrimonio tra i vigneti dell'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all'amore di Martina e Salvador."
+            'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.'
         },
         {
           id: 'vittorialuigi',
@@ -147,7 +163,7 @@ export default {
           href: 'stories-cassandracarlo',
           title: 'Cassandra & Carlo',
           description:
-            "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno."
+            'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
         },
         {
           id: 'danielamichele',

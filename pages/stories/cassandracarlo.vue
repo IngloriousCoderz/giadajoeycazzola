@@ -21,7 +21,7 @@ export default {
     return {
       title: 'Cassandra & Carlo',
       description:
-        "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.",
+        'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.',
       type: 'website',
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
