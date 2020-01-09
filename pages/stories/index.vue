@@ -126,6 +126,14 @@ export default {
             'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.'
         },
         {
+          id: 'irenedavide',
+          src: '/images/stories/irenedavide/96.jpg',
+          href: 'stories-irenedavide',
+          title: 'Irene & Davide',
+          description:
+            "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto."
+        },
+        {
           id: 'vittorialuigi',
           src: '/images/stories/vittorialuigi/58.jpg',
           href: 'stories-vittorialuigi',
