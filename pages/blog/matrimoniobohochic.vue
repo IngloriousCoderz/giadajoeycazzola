@@ -7,13 +7,14 @@
     :type="type"
     :date="date"
   >
-    <p class="is-size-7 has-text-centered-mobile">fiori &amp; bouquet:
+    <p class="is-size-7 has-text-centered-mobile">
+      fiori &amp; bouquet:
       <a
         href="https://www.facebook.com/ilpoderelerocche/"
         target="_blank"
         class="has-text-weight-bold"
       >Ilpoderelerocche</a>
-      <br>abito da sposa:
+      <br />abito da sposa:
       <a
         href="https://www.celiadragouni.com/"
         target="_blank"
@@ -26,9 +27,10 @@
       >White Le Spose</a>
     </p>
 
-    <p>Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
-      <br>&ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
-      <br>Ma cosa rende un matrimonio come questo diverso dagli altri?
+    <p>
+      Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
+      <br />&ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
+      <br />Ma cosa rende un matrimonio come questo diverso dagli altri?
     </p>
 
     <h3 class="title is-4 has-text-centered has-text-weight-bold">Decorazioni e dettagli</h3>
@@ -90,12 +92,15 @@
       Una location che si presta perfettamente per questo tipo di wedding è Tenuta Tamburnin, a Castelnuovo Don Bosco. Immersa nei vigneti del Basso Monferrato Astigiano, questa struttura vanta 20 ettari di terreno di cui 9 di vigneto, 2 di noccioleto, prati,
       boschi e una pregiata cantina, tutti luoghi in cui è possibile ricreare l&rsquo;atmosfera del matrimonio bohemien senza rinunciare alla presenza di una cucina, un&rsquo;ampia sala in cui consumare il pasto e un luogo coperto in cui ballare anche
       in caso di pioggia. (Per saperne di più visita il sito
-      <a href="http://tamburnin.it/">tamburnin.it</a>).
+      <a
+        href="http://tamburnin.it/"
+      >tamburnin.it</a>).
     </p>
 
     <lightbox :images="images.location"></lightbox>
 
-    <p>Guarda
+    <p>
+      Guarda
       <nuxt-link :to="{name: 'stories-martinasalvador'}" class="has-text-weight-bold">qui</nuxt-link>le foto scattate durante il matrimonio boho chic celebrato alla Tenuta Tamburnin.
     </p>
   </post>
@@ -118,6 +123,51 @@ const IMAGE_COUNT = {
 
 export default {
   components: { Post, Lightbox },
+
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.description
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: this.url
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.image
+        },
+        {
+          hid: 'og:type',
+          property: 'og:type',
+          content: this.type
+        }
+      ],
+      link: [
+        {
+          hid: 'canonical',
+          rel: 'canonical',
+          href: this.url
+        }
+      ]
+    }
+  },
 
   data() {
     return {
