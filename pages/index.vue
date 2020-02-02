@@ -283,13 +283,13 @@ export default {
 .swiper-container {
   height: 100vh;
   overflow: hidden;
-  @media (max-width: 1024px) {
+  @media (max-width: 1023px) {
     height: 720px;
   }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     height: 480px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: 479px) {
     height: 240px;
   }
 }
