@@ -70,7 +70,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: this.type
+          content: 'website'
         }
       ],
       link: [
@@ -89,6 +89,7 @@ export default {
       description:
         'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.',
       type: 'website',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

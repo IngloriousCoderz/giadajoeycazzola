@@ -64,7 +64,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: this.type
+          content: 'website'
         }
       ],
       link: [
@@ -83,6 +83,7 @@ export default {
       description:
         '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.',
       type: 'website',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

@@ -49,7 +49,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: this.type
+          content: 'website'
         }
       ],
       link: [
@@ -68,6 +68,7 @@ export default {
       description:
         'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.',
       type: 'website',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

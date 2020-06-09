@@ -70,7 +70,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: this.type
+          content: 'website'
         }
       ],
       link: [
@@ -89,6 +89,7 @@ export default {
       description:
         'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.',
       type: 'website',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

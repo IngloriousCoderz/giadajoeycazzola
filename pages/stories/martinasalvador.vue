@@ -81,7 +81,7 @@ export default {
         {
           hid: 'og:type',
           property: 'og:type',
-          content: this.type
+          content: 'website'
         }
       ],
       link: [
@@ -100,6 +100,7 @@ export default {
       description:
         'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.',
       type: 'website',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

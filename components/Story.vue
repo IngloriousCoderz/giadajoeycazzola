@@ -29,13 +29,12 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 export default {
-  props: ['title', 'description', 'type', 'basePath', 'imageCount', 'video'],
+  props: ['title', 'basePath', 'imageCount', 'video'],
 
   components: { Lightbox },
 
   data() {
     return {
-      url: `https://www.giadajoeycazzola.com/${this.basePath}/`,
       image: `https://www.giadajoeycazzola.com/images/${this.basePath}/01.jpg`,
 
       images: Array.from(Array(this.imageCount).keys()).map(index => ({
@@ -48,7 +47,7 @@ export default {
   mounted() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
       this.images.forEach(
-        image => (image.src = image.src.replace(/\/mobile\//g, '/'))
+        image => (image.src = image.src.replace(/\/mobile/g, ''))
       )
     }
   }

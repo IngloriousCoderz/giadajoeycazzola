@@ -162,7 +162,7 @@ export default {
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
-  z-index: 3;
+  z-index: 31;
 
   .holder {
     max-width: 600px;
