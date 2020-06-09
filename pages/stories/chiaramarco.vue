@@ -13,13 +13,13 @@
         target="_blank"
         class="has-text-weight-bold"
       >Lady Mi.Lù.</a>
-      <br />location:
+      <br >location:
       <a
         href="https://www.turinpalacehotel.com/it/hotel-torino-centro/1-0.html"
         target="_blank"
         class="has-text-weight-bold"
       >Turin Palace Hotel</a>
-      <br />musica:
+      <br >musica:
       <a
         href="https://matrimonioeasy.it/"
         target="_blank"
@@ -89,7 +89,10 @@ export default {
       description:
         'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

@@ -14,7 +14,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >Principi di Piemonte</a>
-      <br />abiti:
+      <br >abiti:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"
@@ -84,7 +84,10 @@ export default {
       description:
         'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT,
       video: 'https://player.vimeo.com/video/273849529?portrait=0'

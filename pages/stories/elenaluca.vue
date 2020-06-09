@@ -13,19 +13,19 @@
         target="_blank"
         class="has-text-weight-bold"
       >Villa Fiorita</a>
-      <br />wedding planner:
+      <br >wedding planner:
       <a
         href="http://www.organizzazionematrimoniotorino.it"
         target="_blank"
         class="has-text-weight-bold"
       >Manuela Mantovani - Martina Filomena</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="http://www.whitelesposetorino.com"
         target="_blank"
         class="has-text-weight-bold"
       >White Le Spose Torino</a>
-      <br />fiorista:
+      <br >fiorista:
       <a
         href="https://www.danielledesign.it"
         target="_blank"
@@ -95,7 +95,10 @@ export default {
       description:
         'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/59.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

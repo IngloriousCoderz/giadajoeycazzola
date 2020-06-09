@@ -1,10 +1,13 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Storie</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Storie
+    </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.&rdquo;
+        &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima
+        che vengano fotografate.&rdquo;
         <footer>
           &mdash;
           <cite>Diane Arbus</cite>
@@ -20,20 +23,24 @@
               <div class="image is-4by3">
                 <div
                   class="is-overlay has-clipped-background clickable"
-                  :style="{'background-image': `url(${image.src})`}"
+                  :style="{ 'background-image': `url(${image.src})` }"
                 />
               </div>
             </div>
             <div class="card-content has-text-centered">
-              <h3 class="title is-5">{{image.title}}</h3>
-              <p>{{image.description}}</p>
+              <h3 class="title is-5">
+                {{ image.title }}
+              </h3>
+              <p>{{ image.description }}</p>
             </div>
           </div>
         </nuxt-link>
       </div>
     </div>
 
-    <div class="content has-text-centered">Altri album in arrivo...</div>
+    <div class="content has-text-centered">
+      Altri album in arrivo...
+    </div>
   </section>
 </template>
 

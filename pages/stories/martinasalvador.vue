@@ -13,24 +13,25 @@
         target="_blank"
         class="has-text-weight-bold"
       >Ilpoderelerocche</a>
-      <br />catering:
+      <br >catering:
       <a
         href="http://www.ristorantespazio7.it/"
         target="_blank"
         class="has-text-weight-bold"
       >Spazio7</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="https://www.celiadragouni.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Celia Dragouni</a> -
+      >Celia Dragouni</a>
+      -
       <a
         href="http://www.whitelesposetorino.com/"
         target="_blank"
         class="has-text-weight-bold"
       >White Le Spose</a>
-      <br />location:
+      <br >location:
       <a
         href="http://tamburnin.it/"
         target="_blank"
@@ -100,7 +101,10 @@ export default {
       description:
         'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

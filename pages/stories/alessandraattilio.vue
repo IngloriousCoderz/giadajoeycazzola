@@ -13,7 +13,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >Tenuta Tamburnin</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="https://www.atelier-eme.it/atelier-torino/?IDstore=23"
         target="_blank"
@@ -82,8 +82,11 @@ export default {
       title: 'Alessandra & Attilio',
       description:
         '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.',
-      image: `https://www.giadajoeycazzola.com/images/${this.basePath}/63.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/63.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

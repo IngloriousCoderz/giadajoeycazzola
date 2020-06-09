@@ -1,10 +1,13 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Portfolio</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Portfolio
+    </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;La fotografia è una cosa semplice, a condizione di avere qualcosa da dire.&rdquo;
+        &ldquo;La fotografia è una cosa semplice, a condizione di avere qualcosa
+        da dire.&rdquo;
         <footer>
           &mdash;
           <cite>Mario Giacomelli</cite>
@@ -14,12 +17,19 @@
 
     <div class="content has-text-centered">
       <p>
-        Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere le gallery complete clicca
-        <nuxt-link :to="{name: 'stories'}" class="has-text-weight-bold">qui</nuxt-link>.
+        Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere
+        le gallery complete clicca
+        <nuxt-link
+:to="{ name: 'stories' }"
+class="has-text-weight-bold">
+          qui </nuxt-link
+        >.
       </p>
     </div>
 
-    <h2 class="is-size-2 has-text-centered">Video</h2>
+    <h2 class="is-size-2 has-text-centered">
+      Video
+    </h2>
 
     <!-- <div class="content has-text-centered">
       <div style="padding:56.25% 0 0 0;position:relative;">
@@ -30,11 +40,13 @@
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
       </div>
     </div>-->
-    <lightbox :images="videos"></lightbox>
+    <lightbox :images="videos" />
 
-    <h2 class="is-size-2 has-text-centered">Foto</h2>
+    <h2 class="is-size-2 has-text-centered">
+      Foto
+    </h2>
 
-    <lightbox :images="images"></lightbox>
+    <lightbox :images="images" />
   </section>
 </template>
 

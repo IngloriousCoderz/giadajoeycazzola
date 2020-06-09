@@ -1,53 +1,71 @@
 <template>
   <div class="has-navbar-fixed-top">
-    <nav class="navbar is-hidden-desktop" role="navigation" aria-label="main navigation">
+    <nav
+      class="navbar is-hidden-desktop"
+      role="navigation"
+      aria-label="main navigation"
+    >
       <div class="navbar-brand">
-        <nuxt-link :to="{name: 'index'}" class="navbar-item">
-          <h1 class="has-text-weight-bold is-marginless">GJC</h1>
+        <nuxt-link :to="{ name: 'index' }" class="navbar-item">
+          <h1 class="has-text-weight-bold is-marginless">
+            GJC
+          </h1>
         </nuxt-link>
 
         <button
           class="button navbar-burger"
-          :class="{'is-active': burgerActive}"
+          :class="{ 'is-active': burgerActive }"
           @click="onClickBurger"
         >
-          <span></span>
-          <span></span>
-          <span></span>
+          <span />
+          <span />
+          <span />
         </button>
       </div>
 
-      <div class="navbar-menu" :class="{'is-active': burgerActive}">
+      <div class="navbar-menu" :class="{ 'is-active': burgerActive }">
         <nuxt-link
-          :to="{name: 'index'}"
+          :to="{ name: 'index' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Home &rsaquo;</nuxt-link>
+        >
+          Home &rsaquo;
+        </nuxt-link>
         <nuxt-link
-          :to="{name: 'recensioni'}"
+          :to="{ name: 'recensioni' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Recensioni &rsaquo;</nuxt-link>
+        >
+          Recensioni &rsaquo;
+        </nuxt-link>
         <nuxt-link
-          :to="{name: 'portfolio'}"
+          :to="{ name: 'portfolio' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Portfolio &rsaquo;</nuxt-link>
+        >
+          Portfolio &rsaquo;
+        </nuxt-link>
         <nuxt-link
-          :to="{name: 'stories'}"
+          :to="{ name: 'stories' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Stories &rsaquo;</nuxt-link>
+        >
+          Stories &rsaquo;
+        </nuxt-link>
         <nuxt-link
-          :to="{name: 'blog'}"
+          :to="{ name: 'blog' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Blog &rsaquo;</nuxt-link>
+        >
+          Blog &rsaquo;
+        </nuxt-link>
         <nuxt-link
-          :to="{name: 'contacts'}"
+          :to="{ name: 'contacts' }"
           class="navbar-item"
           @click.native="closeBurger"
-        >Contacts &rsaquo;</nuxt-link>
+        >
+          Contacts &rsaquo;
+        </nuxt-link>
       </div>
     </nav>
 
@@ -55,27 +73,41 @@
       class="navbar level container has-text-centered is-uppercase is-fixed-top is-hidden-mobile"
     >
       <div class="level-item">
-        <nuxt-link :to="{name: 'index'}">Home</nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{name: 'recensioni'}">Recensioni</nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{name: 'portfolio'}">Portfolio</nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{name: 'index'}">
-          <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
+        <nuxt-link :to="{ name: 'index' }">
+          Home
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link :to="{name: 'stories'}">Stories</nuxt-link>
+        <nuxt-link :to="{ name: 'recensioni' }">
+          Recensioni
+        </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link :to="{name: 'blog'}">Blog</nuxt-link>
+        <nuxt-link :to="{ name: 'portfolio' }">
+          Portfolio
+        </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link :to="{name: 'contacts'}">Contacts</nuxt-link>
+        <nuxt-link :to="{ name: 'index' }">
+          <h1 class="is-size-2 has-text-weight-bold is-marginless">
+            GJC
+          </h1>
+        </nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{ name: 'stories' }">
+          Stories
+        </nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{ name: 'blog' }">
+          Blog
+        </nuxt-link>
+      </div>
+      <div class="level-item">
+        <nuxt-link :to="{ name: 'contacts' }">
+          Contacts
+        </nuxt-link>
       </div>
     </nav>
 

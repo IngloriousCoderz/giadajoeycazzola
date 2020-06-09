@@ -1,14 +1,24 @@
 <template>
-  <div :class="{ 'vue-lightbox' : !resetstyles }">
-    <h1 v-if="title">{{ title }}</h1>
+  <div :class="{ 'vue-lightbox': !resetstyles }">
+    <h1 v-if="title">
+      {{ title }}
+    </h1>
 
     <ul v-if="images">
       <li v-for="(image, index) in images" :key="image.src">
-        <img :src="image.thumb || image.src" :alt="image.caption" @click="clickImage(index)" />
+        <img
+          :src="image.thumb || image.src"
+          :alt="image.caption"
+          @click="clickImage(index)"
+        />
       </li>
     </ul>
 
-    <div class="lightbox-overlay" v-if="overlayActive" @click.self="closeOverlay">
+    <div
+      v-if="overlayActive"
+      class="lightbox-overlay"
+      @click.self="closeOverlay"
+    >
       <div class="holder">
         <div v-if="images[currentImage].thumb" style="padding:56.25% 0 0 0;">
           <iframe
@@ -18,25 +28,38 @@
             webkitallowfullscreen
             mozallowfullscreen
             allowfullscreen
-          ></iframe>
+          />
         </div>
 
-        <img v-if="!images[currentImage].thumb" :src="images[currentImage].src" />
+        <img
+          v-if="!images[currentImage].thumb"
+          :src="images[currentImage].src"
+        />
 
-        <div class="nav" v-if="nav">
+        <div v-if="nav" class="nav">
           <a class="close" nohref @click="closeOverlay">
             <span>&times;</span>
           </a>
           <a class="prev" nohref @click="prevImage">
             <!-- <span>&#8592;</span> -->
-            <div data-v-2a183b29 slot="button-prev" class="swiper-button-prev swiper-button-white"></div>
+            <div
+              slot="button-prev"
+              data-v-2a183b29
+              class="swiper-button-prev swiper-button-white"
+            />
           </a>
           <a class="next" nohref @click="nextImage">
             <!-- <span>&#8594;</span> -->
-            <div data-v-2a183b29 slot="button-next" class="swiper-button-next swiper-button-white"></div>
+            <div
+              slot="button-next"
+              data-v-2a183b29
+              class="swiper-button-next swiper-button-white"
+            />
           </a>
         </div>
-        <p v-if="caption && images[currentImage].caption">{{ images[currentImage].caption }}</p>
+        <p v-if="caption && images[currentImage].caption">
+          {{ images[currentImage].caption }}
+        </p>
       </div>
     </div>
   </div>

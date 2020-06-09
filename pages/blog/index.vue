@@ -1,27 +1,36 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Blog</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Blog
+    </h1>
 
-    <div
-      class="content has-text-centered"
-    >Dall&rsquo;unione di due passioni, scrittura e fotografia, nasce questo blog: uno spazio in cui i futuri sposi, alle prese con l&rsquo;organizzazione del matrimonio, possono trovare spunti interessanti. Un viaggio tra parole e immagini che insieme compongono articoli riguardanti vari argomenti: dallo stile alle location, dagli abiti alle bomboniere. Buona lettura!</div>
+    <div class="content has-text-centered">
+      Dall&rsquo;unione di due passioni, scrittura e fotografia, nasce questo
+      blog: uno spazio in cui i futuri sposi, alle prese con
+      l&rsquo;organizzazione del matrimonio, possono trovare spunti
+      interessanti. Un viaggio tra parole e immagini che insieme compongono
+      articoli riguardanti vari argomenti: dallo stile alle location, dagli
+      abiti alle bomboniere. Buona lettura!
+    </div>
 
     <div class="content">
-      <nuxt-link :to="{name: post.href}" v-for="post in posts" :key="post.id">
+      <nuxt-link v-for="post in posts" :key="post.id" :to="{ name: post.href }">
         <article class="columns card">
           <div class="card-image column is-one-third is-paddingless">
             <div class="image is-4by3">
               <div
                 class="is-overlay has-clipped-background clickable"
-                :style="{'background-image': `url(${post.src})`}"
+                :style="{ 'background-image': `url(${post.src})` }"
               />
             </div>
           </div>
 
           <div class="card-content column">
-            <h3 class="title is-5">{{post.title}}</h3>
+            <h3 class="title is-5">
+              {{ post.title }}
+            </h3>
             <small class="is-italic">2 febbraio 2018</small>
-            <p v-html="post.description"></p>
+            <p v-html="post.description" />
             <div class="has-text-weight-bold">
               [
               <span class="is-italic">continua a leggere...</span>
@@ -32,7 +41,9 @@
       </nuxt-link>
     </div>
 
-    <div class="content has-text-centered">Altri post in arrivo...</div>
+    <div class="content has-text-centered">
+      Altri post in arrivo...
+    </div>
   </section>
 </template>
 

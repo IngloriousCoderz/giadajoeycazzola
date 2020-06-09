@@ -13,24 +13,25 @@
         target="_blank"
         class="has-text-weight-bold"
       >Cantine Luzi Donadei</a>
-      <br />wedding planner:
+      <br >wedding planner:
       <a
         href="https://www.matrimonio.com/wedding-planner/manuela-mantovani-weddings-&-special-events--e167814"
         target="_blank"
         class="has-text-weight-bold"
-      >Manuela Mantovani</a> &
+      >Manuela Mantovani</a>
+      &
       <a
         href="https://www.matrimonio.com/wedding-planner/martina-filomena--e167432"
         target="_blank"
         class="has-text-weight-bold"
       >Martina Filomena</a>
-      <br />fiori:
+      <br >fiori:
       <a
         href="http://www.maisondesfleurs.it/"
         target="_blank"
         class="has-text-weight-bold"
       >Maison des fleurs</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="https://www.matrimonio.com/abiti-da-sposa/stefania-e-le-sue-spose--e152389"
         target="_blank"
@@ -100,7 +101,10 @@ export default {
       description:
         'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

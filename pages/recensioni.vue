@@ -1,10 +1,14 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Dicono di me
+    </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.&rdquo;
+        &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non
+        la fotografia. Importante è raccontare. Se si parte dalla fotografia non
+        si arriva in nessun altro posto che alla fotografia.&rdquo;
         <footer>
           &mdash;
           <cite>Ferdinando Scianna</cite>
@@ -14,7 +18,7 @@
 
     <div class="content columns is-centered">
       <div class="column is-half">
-        <img src="/images/about_me.jpg" alt="about me" />
+        <img src="/images/about_me.jpg" alt="about me" >
       </div>
     </div>
 
@@ -31,7 +35,9 @@
       </div>
     </div>
 
-    <h1 class="is-size-1 has-text-centered">Menzioni</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Menzioni
+    </h1>
 
     <div class="content has-text-centered">
       <p>
@@ -39,13 +45,15 @@
           href="http://weddingwonderland.it/2018/05/matrimonio-autunnale-ispirato-al-te.html"
           target="_blank"
           class="has-text-weight-bold"
-        >Un matrimonio autunnale ispirato al tè</a> - Wedding Wonderland, 3 maggio 2018
-        <br />
+        >Un matrimonio autunnale ispirato al tè</a>
+        - Wedding Wonderland, 3 maggio 2018
+        <br >
         <a
           href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
           target="_blank"
           class="has-text-weight-bold"
-        >Un matrimonio boho e handmade</a> - Wedding Wonderland, 5 giugno 2018
+        >Un matrimonio boho e handmade</a>
+        - Wedding Wonderland, 5 giugno 2018
       </p>
 
       <p>&ctdot;</p>
@@ -59,7 +67,8 @@
             <a
               href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658/opinioni"
               target="_blank"
-            >le nostre raccomandazioni</a> su
+            >le nostre raccomandazioni</a>
+            su
             <a href="https://www.matrimonio.com" target="_blank">
               <img
                 src="https://cdn1.matrimonio.com/assets/img/logos/gen_logoHeader.svg"

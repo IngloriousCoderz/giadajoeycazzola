@@ -1,9 +1,11 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">{{title}}</h1>
+    <h1 class="is-size-1 has-text-centered">
+      {{ title }}
+    </h1>
 
     <section class="content has-text-centered-mobile">
-      <slot></slot>
+      <slot />
     </section>
 
     <section v-if="video" class="content has-text-centered">
@@ -15,11 +17,11 @@
           webkitallowfullscreen
           mozallowfullscreen
           allowfullscreen
-        ></iframe>
+        />
       </div>
     </section>
 
-    <lightbox :images="images"></lightbox>
+    <lightbox :images="images" />
   </section>
 </template>
 
@@ -29,9 +31,14 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 export default {
-  props: ['title', 'basePath', 'imageCount', 'video'],
-
   components: { Lightbox },
+
+  props: {
+    title: String,
+    basePath: String,
+    imageCount: Number,
+    video: String
+  },
 
   data() {
     return {

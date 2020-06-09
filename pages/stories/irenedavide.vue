@@ -13,19 +13,19 @@
         target="_blank"
         class="has-text-weight-bold"
       >La Federica</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="http://www.whitelesposetorino.com/"
         target="_blank"
         class="has-text-weight-bold"
       >White Le Spose Torino</a>
-      <br />abito da sposo:
+      <br >abito da sposo:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"
         class="has-text-weight-bold"
       >Carlo Pignatelli</a>
-      <br />musica:
+      <br >musica:
       <a
         href="http://www.ambaradanpartyband.it/"
         target="_blank"
@@ -95,7 +95,10 @@ export default {
       description:
         "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto.",
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/96.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

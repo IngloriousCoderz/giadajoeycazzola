@@ -13,13 +13,13 @@
         target="_blank"
         class="has-text-weight-bold"
       >Villa Bria</a>
-      <br />abito da sposa:
+      <br >abito da sposa:
       <a
         href="https://www.pronovias.com/"
         target="_blank"
         class="has-text-weight-bold"
       >Pronovias</a>
-      <br />fiorista:
+      <br >fiorista:
       <a
         href="https://www.ifioridisaradue.it"
         target="_blank"
@@ -89,7 +89,10 @@ export default {
       description:
         'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/96.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }
