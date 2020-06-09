@@ -129,6 +129,22 @@
             <div id="wp-ratedWA" class="column is-3 has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
+                title="Giada Joey Cazzola, vincitore Wedding Awards 2020 matrimonio.com"
+                target="_blank"
+              >
+                <img
+                  width="250"
+                  height="250"
+                  alt="Giada Joey Cazzola, vincitore Wedding Awards 2020 matrimonio.com"
+                  id="wp-ratedWA-img-2020"
+                  src="https://cdn1.matrimonio.com/img/badges/2020/badge-weddingawards_it_IT.jpg"
+                />
+              </a>
+            </div>
+
+            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+              <a
+                href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
                 target="_blank"
               >
