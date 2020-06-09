@@ -5,7 +5,7 @@ module.exports = {
    * Headers of the page
    */
   head: {
-    title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
+    title: 'Giada Joey Cazzola - Fotografa matrimonio Torino e Roma',
 
     meta: [
       {
@@ -20,20 +20,18 @@ module.exports = {
         hid: 'description',
         name: 'description',
         content:
-          'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
-        // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
+          'Fotografa di matrimonio a Torino, Roma, in Toscana, Puglia, Costiera Amalfitana, Sicilia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
       },
       {
         hid: 'og:title',
         property: 'og:title',
-        content: 'Giada Joey Cazzola - Fotografa matrimonio Torino'
+        content: 'Giada Joey Cazzola - Fotografa matrimonio Torino e Roma'
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
-        // 'Destination wedding and elopement photographer in Turin, lake Como, lake Maggiore, Tuscany, Rome, Apulia and Europe. Specializing in spontaneous photo and video reportages.'
+          'Fotografa di matrimonio a Torino, Roma, in Toscana, Puglia, Costiera Amalfitana, Sicilia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
       },
       {
         hid: 'og:url',
