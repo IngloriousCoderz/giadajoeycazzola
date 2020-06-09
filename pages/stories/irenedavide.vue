@@ -94,7 +94,7 @@ export default {
       title: 'Irene & Davide',
       description:
         "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto.",
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/96.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT

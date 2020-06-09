@@ -83,7 +83,7 @@ export default {
       title: 'Pierpaolo & Fernando',
       description:
         'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.',
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT,

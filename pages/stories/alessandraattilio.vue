@@ -82,7 +82,7 @@ export default {
       title: 'Alessandra & Attilio',
       description:
         '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.',
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${this.basePath}/63.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT

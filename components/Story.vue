@@ -35,8 +35,6 @@ export default {
 
   data() {
     return {
-      image: `https://www.giadajoeycazzola.com/images/${this.basePath}/01.jpg`,
-
       images: Array.from(Array(this.imageCount).keys()).map(index => ({
         id: index + 1,
         src: `/images/${this.basePath}/${zpad(index + 1)}.jpg`

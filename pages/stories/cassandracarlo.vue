@@ -67,7 +67,7 @@ export default {
       title: 'Cassandra & Carlo',
       description:
         'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.',
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/03.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT

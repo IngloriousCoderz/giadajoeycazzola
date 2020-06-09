@@ -99,7 +99,7 @@ export default {
       title: 'Martina & Salvador',
       description:
         'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.',
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT

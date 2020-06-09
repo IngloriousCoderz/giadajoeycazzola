@@ -99,7 +99,7 @@ export default {
       title: 'Vittoria & Luigi',
       description:
         'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.',
-      type: 'website',
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
