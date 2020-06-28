@@ -1,8 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">
-      Dicono di me
-    </h1>
+    <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
 
     <div class="content has-text-centered">
       <blockquote>
@@ -18,7 +16,7 @@
 
     <div class="content columns is-centered">
       <div class="column is-half">
-        <img src="/images/about_me.jpg" alt="about me" >
+        <img src="/images/about_me.jpg" alt="about me" />
       </div>
     </div>
 
@@ -35,9 +33,7 @@
       </div>
     </div>
 
-    <h1 class="is-size-1 has-text-centered">
-      Menzioni
-    </h1>
+    <h1 class="is-size-1 has-text-centered">Menzioni</h1>
 
     <div class="content has-text-centered">
       <p>
@@ -47,7 +43,7 @@
           class="has-text-weight-bold"
         >Un matrimonio autunnale ispirato al tè</a>
         - Wedding Wonderland, 3 maggio 2018
-        <br >
+        <br />
         <a
           href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
           target="_blank"
@@ -138,6 +134,11 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
 
       reviews: [
+        {
+          text:
+            'Semplice! Se volete emozionarvi ogni volta nel rivedere gli scatti del vostro giorno scegliete lei. Giada è un talento! Non solo nei suoi scatti ma come persona! Sensibile, dolce e attenta! È capace di comprendere quello che desideri: il tuo stile, i tuoi sogni. Ti mette a tuo agio e riesce a non farti pensare troppo alla posa ma a goderti il tuo giorno! Il giorno più bello della nostra vita è trascorso come lo avevamo sempre sognato, tra felicità, pianti, sorrisi, baci e abbracci! In tutto ciò non ci siamo preoccupati della pose, di forzare un abbraccio, un bacio, una carezza o un sorriso. Il rapporto con lei è stato sempre naturale, sia il giorno delle nozze, sia prima che dopo! È stata comprensiva, disponibile ed elastica in tutto! Il risultato finale nelle foto e nel video è da brivido dietro la schiena, da groppo in gola e da lacrime ogni volta che ci si rivede! Ha saputo cogliere sfumature e particolari inediti e stupendi! I nostri amici e parenti quando hanno rivisto il tutto si sono commossi con noi!! Questa fotografa ed i suoi collaboratori sono semplicemente di un’ altra categoria! Grazie di tutto davvero! Sei speciale!',
+          author: 'Michela e Manuel'
+        },
         {
           text:
             "Ci siamo sposati l'altro ieri ed abbiamo avuto la fortuna di incontrare questa persona per noi davvero speciale che ha raccontato la nostra storia con le sue fotografie.. Non potete capire l'amore che questa ragazza prova per il suo lavoro finché non la incontrate, pare vedere una ragazza al suo primo appuntamento con la persona giusta: guardate le sue foto parlano da sole. Aver avuto lei è stata una fortuna, entra dentro la vostra storia, la vive e la racconta: ho visto moltissimi fotografi di matrimonio ma una persona che oltre a fare bene il suo lavoro ci entra dentro non ha prezzo. Vale ogni centesimo speso: se pensate che le sue foto siano belle incontratela, e chi ama le cose sincere spontanee emozionanti e naturali sono sicura che la sceglierà per il suo matrimonio. Se ve la consiglio? Non potete farne a meno per il vostro giorno.",
