@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       fiori &amp; bouquet:
       <a
@@ -13,13 +7,13 @@
         target="_blank"
         class="has-text-weight-bold"
       >Ilpoderelerocche</a>
-      <br >catering:
+      <br />catering:
       <a
         href="http://www.ristorantespazio7.it/"
         target="_blank"
         class="has-text-weight-bold"
       >Spazio7</a>
-      <br >abito da sposa:
+      <br />abito da sposa:
       <a
         href="https://www.celiadragouni.com/"
         target="_blank"
@@ -31,7 +25,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >White Le Spose</a>
-      <br >location:
+      <br />location:
       <a
         href="http://tamburnin.it/"
         target="_blank"

@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       location:
       <a
@@ -13,13 +7,13 @@
         target="_blank"
         class="has-text-weight-bold"
       >Villa Bria</a>
-      <br >abito da sposa:
+      <br />abito da sposa:
       <a
         href="https://www.pronovias.com/"
         target="_blank"
         class="has-text-weight-bold"
       >Pronovias</a>
-      <br >fiorista:
+      <br />fiorista:
       <a
         href="https://www.ifioridisaradue.it"
         target="_blank"

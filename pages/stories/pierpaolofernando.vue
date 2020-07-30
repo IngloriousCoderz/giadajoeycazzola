@@ -2,7 +2,6 @@
   <story
     :title="title"
     :description="description"
-    :type="type"
     :base-path="basePath"
     :image-count="imageCount"
     :video="video"
@@ -14,7 +13,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >Principi di Piemonte</a>
-      <br >abiti:
+      <br />abiti:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"

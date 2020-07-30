@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       location:
       <a
@@ -13,19 +7,19 @@
         target="_blank"
         class="has-text-weight-bold"
       >Villa Fiorita</a>
-      <br >wedding planner:
+      <br />wedding planner:
       <a
         href="http://www.organizzazionematrimoniotorino.it"
         target="_blank"
         class="has-text-weight-bold"
       >Manuela Mantovani - Martina Filomena</a>
-      <br >abito da sposa:
+      <br />abito da sposa:
       <a
         href="http://www.whitelesposetorino.com"
         target="_blank"
         class="has-text-weight-bold"
       >White Le Spose Torino</a>
-      <br >fiorista:
+      <br />fiorista:
       <a
         href="https://www.danielledesign.it"
         target="_blank"

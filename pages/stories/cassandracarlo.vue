@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  />
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount" />
 </template>
 
 <script>
@@ -68,7 +62,10 @@ export default {
       description:
         'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.',
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/03.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(/\/mobile/g, '')}/`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
       basePath: BASE_PATH,
       imageCount: IMAGE_COUNT
     }

@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       abito da sposa:
       <a
@@ -13,13 +7,13 @@
         target="_blank"
         class="has-text-weight-bold"
       >Lady Mi.Lù.</a>
-      <br >location:
+      <br />location:
       <a
         href="https://www.turinpalacehotel.com/it/hotel-torino-centro/1-0.html"
         target="_blank"
         class="has-text-weight-bold"
       >Turin Palace Hotel</a>
-      <br >musica:
+      <br />musica:
       <a
         href="https://matrimonioeasy.it/"
         target="_blank"

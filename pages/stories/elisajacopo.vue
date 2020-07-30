@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       floral designer:
       <a

@@ -1,11 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :type="type"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       location:
       <a
@@ -13,7 +7,7 @@
         target="_blank"
         class="has-text-weight-bold"
       >Tenuta Tamburnin</a>
-      <br >abito da sposa:
+      <br />abito da sposa:
       <a
         href="https://www.atelier-eme.it/atelier-torino/?IDstore=23"
         target="_blank"
