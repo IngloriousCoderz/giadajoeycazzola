@@ -1,8 +1,6 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">
-      Storie
-    </h1>
+    <h1 class="is-size-1 has-text-centered">Storie</h1>
 
     <div class="content has-text-centered">
       <blockquote>
@@ -28,9 +26,7 @@
               </div>
             </div>
             <div class="card-content has-text-centered">
-              <h3 class="title is-5">
-                {{ image.title }}
-              </h3>
+              <h3 class="title is-5">{{ image.title }}</h3>
               <p>{{ image.description }}</p>
             </div>
           </div>
@@ -38,9 +34,7 @@
       </div>
     </div>
 
-    <div class="content has-text-centered">
-      Altri album in arrivo...
-    </div>
+    <div class="content has-text-centered">Altri album in arrivo...</div>
   </section>
 </template>
 
@@ -100,6 +94,14 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
 
       images: [
+        {
+          id: 'elisajacopo',
+          src: '/images/stories/elisajacopo/31.jpg',
+          href: 'stories-elisajacopo',
+          title: 'Elisa & Jacopo',
+          description:
+            'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
+        },
         {
           id: 'alessandraattilio',
           src: '/images/stories/alessandraattilio/63.jpg',
