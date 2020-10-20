@@ -1,6 +1,8 @@
 global.File = typeof window === 'undefined' ? Object : window.File
 
 module.exports = {
+  target: 'static',
+
   /**
    * Headers of the page
    */
