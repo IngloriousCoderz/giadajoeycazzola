@@ -25,11 +25,12 @@
           <a
             href="mailto:giada.cazzola93@gmail.com"
             class="has-text-weight-bold"
-          >giada.cazzola93@gmail.com</a>
+            >giada.cazzola93@gmail.com</a>
           //
           <a
-href="tel:+393475045548"
-class="has-text-weight-bold">+39 347 5045548</a>
+            href="tel:+393475045548"
+            class="has-text-weight-bold"
+            >+39 347 5045548</a>
         </p>
       </div>
 
@@ -37,11 +38,11 @@ class="has-text-weight-bold">+39 347 5045548</a>
         <div class="box">
           <form
             ref="form"
-            action="https://formspree.io/giada.cazzola93@gmail.com"
+            action="https://formspree.io/f/giada.cazzola93@gmail.com"
             method="POST"
           >
             <div class="field">
-              <input class="input" name="name" placeholder="Nome" >
+              <input class="input" name="name" placeholder="Nome" />
             </div>
 
             <div class="field">
@@ -54,7 +55,7 @@ class="has-text-weight-bold">+39 347 5045548</a>
             </div>
 
             <div class="field">
-              <input class="input" name="phone" placeholder="Telefono" >
+              <input class="input" name="phone" placeholder="Telefono" />
             </div>
 
             <div class="field">
@@ -72,7 +73,8 @@ class="has-text-weight-bold">+39 347 5045548</a>
                   href="https://www.iubenda.com/privacy-policy/10318033"
                   target="_blank"
                   class="has-text-weight-bold"
-                >privacy policy</a>
+                  >privacy policy</a
+                >
               </b-switch>
             </div>
 
