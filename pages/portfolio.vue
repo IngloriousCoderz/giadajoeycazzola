@@ -28,25 +28,16 @@ class="has-text-weight-bold">
     </div>
 
     <h2 class="is-size-2 has-text-centered">
-      Video
-    </h2>
-
-    <!-- <div class="content has-text-centered">
-      <div style="padding:56.25% 0 0 0;position:relative;">
-        <iframe
-            src="https://player.vimeo.com/video/273849529?portrait=0"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
-            frameborder="0"
-            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-      </div>
-    </div>-->
-    <lightbox :images="videos" />
-
-    <h2 class="is-size-2 has-text-centered">
       Foto
     </h2>
 
     <lightbox :images="images" />
+
+    <h2 class="is-size-2 has-text-centered">
+      Video
+    </h2>
+
+    <lightbox :images="videos" />
   </section>
 </template>
 
@@ -114,39 +105,39 @@ export default {
       url: 'https://www.giadajoeycazzola.com/portfolio/',
       image: 'https://www.giadajoeycazzola.com/images/portfolio/01.jpg',
 
-      videos: [
-        // http://vimeo.com/api/v2/video/286857992.xml
-        {
-          id: 1,
-          src: 'https://player.vimeo.com/video/389582661',
-          thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
-        },
-        {
-          id: 2,
-          src: 'https://player.vimeo.com/video/351338696',
-          thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
-        },
-        {
-          id: 3,
-          src: 'https://player.vimeo.com/video/286857992',
-          thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
-        },
-        {
-          id: 4,
-          src: 'https://player.vimeo.com/video/273849529',
-          thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
-        },
-        {
-          id: 5,
-          src: 'https://player.vimeo.com/video/319229237',
-          thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
-        }
-      ],
-
       images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
         src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
-      }))
+      })),
+
+      videos: [
+                // http://vimeo.com/api/v2/video/286857992.xml
+                {
+                  id: 1,
+                  src: 'https://player.vimeo.com/video/389582661',
+                  thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
+                },
+                {
+                  id: 2,
+                  src: 'https://player.vimeo.com/video/351338696',
+                  thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
+                },
+                {
+                  id: 3,
+                  src: 'https://player.vimeo.com/video/286857992',
+                  thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
+                },
+                {
+                  id: 4,
+                  src: 'https://player.vimeo.com/video/273849529',
+                  thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
+                },
+                {
+                  id: 5,
+                  src: 'https://player.vimeo.com/video/319229237',
+                  thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
+                }
+              ],
     }
   },
 

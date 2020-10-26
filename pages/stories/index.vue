@@ -95,8 +95,16 @@ export default {
 
       images: [
         {
+          id: 'eleonoralorenzo',
+          src: '/images/stories/eleonoralorenzo/59.jpg',
+          href: 'stories-eleonoralorenzo',
+          title: 'Eleonora & Lorenzo',
+          description:
+            'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!'
+        },
+        {
           id: 'elisajacopo',
-          src: '/images/stories/elisajacopo/31.jpg',
+          src: '/images/stories/elisajacopo/34.jpg',
           href: 'stories-elisajacopo',
           title: 'Elisa & Jacopo',
           description:

@@ -108,7 +108,7 @@ export default {
       title: 'Elisa & Jacopo',
       description:
         'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/31.jpg`,
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/34.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
