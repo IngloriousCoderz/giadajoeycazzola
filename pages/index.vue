@@ -95,23 +95,17 @@
       class="navbar level container has-text-centered is-uppercase is-hidden-touch"
     >
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'index' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'index' }" class="has-text-white">
           Home
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'recensioni' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'recensioni' }" class="has-text-white">
           Recensioni
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'portfolio' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'portfolio' }" class="has-text-white">
           Portfolio
         </nuxt-link>
       </div>
@@ -123,23 +117,17 @@ class="has-text-white">
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'stories' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'stories' }" class="has-text-white">
           Stories
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'blog' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'blog' }" class="has-text-white">
           Blog
         </nuxt-link>
       </div>
       <div class="level-item">
-        <nuxt-link
-:to="{ name: 'contacts' }"
-class="has-text-white">
+        <nuxt-link :to="{ name: 'contacts' }" class="has-text-white">
           Contacts
         </nuxt-link>
       </div>
@@ -178,7 +166,7 @@ class="has-text-white">
               La mia capacità di catturare la spontaneità delle persone non
               poteva che unirsi alla cosa più spontanea che esista:
               l&rsquo;amore.
-              <br>Ed è così che racconterò il giorno del vostro matrimonio:
+              <br />Ed è così che racconterò il giorno del vostro matrimonio:
               con discrezione e ricchezza di particolari.
             </p>
 
@@ -195,9 +183,9 @@ class="has-text-white">
             <p>
               Descriverei il mio lavoro come una ricerca della perfezione
               nell'imperfezione.
-              <br>Il racconto dettagliato del giorno più bello per una coppia,
+              <br />Il racconto dettagliato del giorno più bello per una coppia,
               realizzato con ricchezza di particolari ma anche con discrezione.
-              <br>Il miglior complimento che mi fanno gli sposi dopo aver
+              <br />Il miglior complimento che mi fanno gli sposi dopo aver
               visto le foto è che sembra loro di rivivere attraverso i miei
               scatti il giorno del matrimonio con dettagli che nemmeno loro
               ricordavano.
@@ -289,7 +277,7 @@ class="has-text-white">
 import zpad from 'zpad'
 
 const BASE_PATH = '/images/home'
-const IMAGE_COUNT = 11
+const IMAGE_COUNT = 8
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500

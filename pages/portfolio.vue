@@ -19,9 +19,7 @@
       <p>
         Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere
         le gallery complete clicca
-        <nuxt-link
-:to="{ name: 'stories' }"
-class="has-text-weight-bold">
+        <nuxt-link :to="{ name: 'stories' }" class="has-text-weight-bold">
           qui </nuxt-link
         >.
       </p>
@@ -47,7 +45,7 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 const BASE_PATH = '/images/portfolio'
-const IMAGE_COUNT = 96
+const IMAGE_COUNT = 84
 
 export default {
   components: { Lightbox },
@@ -111,33 +109,33 @@ export default {
       })),
 
       videos: [
-                // http://vimeo.com/api/v2/video/286857992.xml
-                {
-                  id: 1,
-                  src: 'https://player.vimeo.com/video/389582661',
-                  thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
-                },
-                {
-                  id: 2,
-                  src: 'https://player.vimeo.com/video/351338696',
-                  thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
-                },
-                {
-                  id: 3,
-                  src: 'https://player.vimeo.com/video/286857992',
-                  thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
-                },
-                {
-                  id: 4,
-                  src: 'https://player.vimeo.com/video/273849529',
-                  thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
-                },
-                {
-                  id: 5,
-                  src: 'https://player.vimeo.com/video/319229237',
-                  thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
-                }
-              ],
+        // http://vimeo.com/api/v2/video/286857992.xml
+        {
+          id: 1,
+          src: 'https://player.vimeo.com/video/389582661',
+          thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
+        },
+        {
+          id: 2,
+          src: 'https://player.vimeo.com/video/351338696',
+          thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
+        },
+        {
+          id: 3,
+          src: 'https://player.vimeo.com/video/286857992',
+          thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
+        },
+        {
+          id: 4,
+          src: 'https://player.vimeo.com/video/273849529',
+          thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
+        },
+        {
+          id: 5,
+          src: 'https://player.vimeo.com/video/319229237',
+          thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
+        }
+      ]
     }
   },
 
