@@ -111,6 +111,14 @@ export default {
             'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
         },
         {
+          id: 'eleonoravalentino',
+          src: '/images/stories/eleonoravalentino/56.jpg',
+          href: 'stories-eleonoravalentino',
+          title: 'Eleonora & Valentino',
+          description:
+            'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.'
+        },
+        {
           id: 'alessandraattilio',
           src: '/images/stories/alessandraattilio/63.jpg',
           href: 'stories-alessandraattilio',
