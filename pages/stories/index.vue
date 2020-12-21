@@ -1,6 +1,8 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Storie</h1>
+    <h1 class="is-size-1 has-text-centered">
+      Storie
+    </h1>
 
     <div class="content has-text-centered">
       <blockquote>
@@ -26,7 +28,9 @@
               </div>
             </div>
             <div class="card-content has-text-centered">
-              <h3 class="title is-5">{{ image.title }}</h3>
+              <h3 class="title is-5">
+                {{ image.title }}
+              </h3>
               <p>{{ image.description }}</p>
             </div>
           </div>
@@ -34,7 +38,7 @@
       </div>
     </div>
 
-    <div class="content has-text-centered">Altri album in arrivo...</div>
+    <!-- <div class="content has-text-centered">Altri album in arrivo...</div> -->
   </section>
 </template>
 
@@ -94,6 +98,14 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
 
       images: [
+        {
+          id: 'annamatteo',
+          src: '/images/stories/annamatteo/39.jpg',
+          href: 'stories-annamatteo',
+          title: 'Anna & Matteo',
+          description:
+            'Una dimora cinquecentesca a due passi da Milano, una coppia dolcissima e tante emozioni autentiche. Cosa volere di più?'
+        },
         {
           id: 'eleonoralorenzo',
           src: '/images/stories/eleonoralorenzo/59.jpg',
