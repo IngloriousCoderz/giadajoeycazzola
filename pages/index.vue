@@ -365,23 +365,23 @@ export default {
         speed: SLIDE_SPEED,
         lazy: { loadPrevNext: true, loadOnTransitionStart: true },
         keyboard: { enabled: true },
-        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true },
-        on: {
-          init: () => {
-            if (window.matchMedia('(min-width: 1024px)').matches) {
-              this.images.forEach(
-                image => (image.src = image.src.replace(/\/mobile\//g, '/'))
-              )
-              this.$nextTick(() => this.mySwiper.lazy.load())
-            }
-          }
-        }
+        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true }
+        // on: {
+        //   init: () => {
+        //     if (window.matchMedia('(min-width: 1024px)').matches) {
+        //       this.images.forEach(
+        //         image => (image.src = image.src.replace(/\/mobile\//g, '/'))
+        //       )
+        //       this.$nextTick(() => this.mySwiper.lazy.load())
+        //     }
+        //   }
+        // }
       }
     }
   },
 
   mounted() {
-    window.wpShowRatedWAv3 && window.wpShowRatedWAv3('159658', '2019')
+    window.wpShowRatedWAv3 && window.wpShowRatedWAv3('159658', '2021')
   },
 
   methods: {
