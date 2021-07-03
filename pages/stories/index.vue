@@ -99,6 +99,14 @@ export default {
 
       images: [
         {
+          id: 'lauraeldar',
+          src: '/images/stories/lauraeldar/01.jpg',
+          href: 'stories-lauraeldar',
+          title: 'Laura & Eldar',
+          description:
+            'Una cerimonia intima immersi in un’atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.'
+        },
+        {
           id: 'annamatteo',
           src: '/images/stories/annamatteo/39.jpg',
           href: 'stories-annamatteo',

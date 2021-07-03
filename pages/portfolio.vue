@@ -45,7 +45,7 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 const BASE_PATH = '/images/portfolio'
-const IMAGE_COUNT = 84
+const IMAGE_COUNT = 96
 
 export default {
   components: { Lightbox },
@@ -105,7 +105,8 @@ export default {
 
       images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
-        src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
+        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
+        // src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
       })),
 
       videos: [

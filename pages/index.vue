@@ -221,6 +221,22 @@
             <div id="wp-ratedWA" class="column is-3 has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
+                title="Giada Joey Cazzola, vincitore Wedding Awards 2021 Matrimonio.com"
+                target="_blank"
+              >
+                <img
+                  id="wp-ratedWA-img-2021"
+                  width="250"
+                  height="250"
+                  alt="Giada Joey Cazzola, vincitore Wedding Awards 2021 Matrimonio.com"
+                  src="https://cdn1.matrimonio.com/img/badges/2021/badge-weddingawards_it_IT.jpg"
+                />
+              </a>
+            </div>
+
+            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+              <a
+                href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2020 matrimonio.com"
                 target="_blank"
               >
@@ -277,7 +293,7 @@
 import zpad from 'zpad'
 
 const BASE_PATH = '/images/home'
-const IMAGE_COUNT = 8
+const IMAGE_COUNT = 9
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
@@ -341,7 +357,8 @@ export default {
       burgerActive: false,
       images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
         id: index + 1,
-        src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
+        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
+        // src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
       })),
       swiperOptions: {
         loop: true,
