@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/it/blog/matrimoniobohochic", {data:[{}],fetch:{},mutations:void 0});
