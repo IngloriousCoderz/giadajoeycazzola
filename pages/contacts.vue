@@ -25,12 +25,12 @@
           <a
             href="mailto:giada.cazzola93@gmail.com"
             class="has-text-weight-bold"
-            >giada.cazzola93@gmail.com</a>
+            >giada.cazzola93@gmail.com</a
+          >
           //
-          <a
-            href="tel:+393475045548"
-            class="has-text-weight-bold"
-            >+39 347 5045548</a>
+          <a href="tel:+393475045548" class="has-text-weight-bold"
+            >+39 347 5045548</a
+          >
         </p>
       </div>
 

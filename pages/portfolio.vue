@@ -19,7 +19,7 @@
       <p>
         Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere
         le gallery complete clicca
-        <nuxt-link :to="{ name: 'stories' }" class="has-text-weight-bold">
+        <nuxt-link :to="localePath('stories')" class="has-text-weight-bold">
           qui </nuxt-link
         >.
       </p>

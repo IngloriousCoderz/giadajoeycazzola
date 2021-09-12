@@ -12,13 +12,15 @@
         href="https://www.facebook.com/principidipiemontetorino/"
         target="_blank"
         class="has-text-weight-bold"
-      >Principi di Piemonte</a>
+        >Principi di Piemonte</a
+      >
       <br />abiti:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Carlo Pignatelli</a>
+        >Carlo Pignatelli</a
+      >
     </p>
   </story>
 </template>

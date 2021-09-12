@@ -1,12 +1,12 @@
 <template>
   <div class="has-navbar-fixed-top">
     <nav
-      class="navbar is-hidden-desktop"
+      class="navbar is-fixed-top is-hidden-desktop"
       role="navigation"
       aria-label="main navigation"
     >
       <div class="navbar-brand">
-        <nuxt-link :to="{ name: 'index' }" class="navbar-item">
+        <nuxt-link :to="localePath('index')" class="navbar-item">
           <h1 class="has-text-weight-bold is-marginless">
             GJC
           </h1>
@@ -24,92 +24,131 @@
       </div>
 
       <div class="navbar-menu" :class="{ 'is-active': burgerActive }">
-        <nuxt-link
-          :to="{ name: 'index' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Home &rsaquo;
-        </nuxt-link>
-        <nuxt-link
-          :to="{ name: 'recensioni' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Recensioni &rsaquo;
-        </nuxt-link>
-        <nuxt-link
-          :to="{ name: 'portfolio' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Portfolio &rsaquo;
-        </nuxt-link>
-        <nuxt-link
-          :to="{ name: 'stories' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Stories &rsaquo;
-        </nuxt-link>
-        <nuxt-link
-          :to="{ name: 'blog' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Blog &rsaquo;
-        </nuxt-link>
-        <nuxt-link
-          :to="{ name: 'contacts' }"
-          class="navbar-item"
-          @click.native="closeBurger"
-        >
-          Contacts &rsaquo;
-        </nuxt-link>
+        <div class="navbar-start">
+          <nuxt-link
+            :to="localePath('index')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.home') }} &rsaquo;
+          </nuxt-link>
+
+          <nuxt-link
+            :to="localePath('reviews')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.reviews') }} &rsaquo;
+          </nuxt-link>
+
+          <nuxt-link
+            :to="localePath('portfolio')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.portfolio') }} &rsaquo;
+          </nuxt-link>
+
+          <nuxt-link
+            :to="localePath('stories')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.stories') }} &rsaquo;
+          </nuxt-link>
+
+          <nuxt-link
+            :to="localePath('blog')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.blog') }} &rsaquo;
+          </nuxt-link>
+
+          <nuxt-link
+            :to="localePath('contacts')"
+            class="navbar-item"
+            @click.native="closeBurger"
+          >
+            {{ $t('menu.contacts') }} &rsaquo;
+          </nuxt-link>
+
+          <hr class="navbar-divider" />
+
+          <nuxt-link
+            v-if="$i18n.locale !== 'en'"
+            :to="switchLocalePath('en')"
+            class="navbar-item"
+          >
+            🇬🇧
+          </nuxt-link>
+          <nuxt-link
+            v-if="$i18n.locale !== 'it'"
+            :to="switchLocalePath('it')"
+            class="navbar-item"
+          >
+            🇮🇹
+          </nuxt-link>
+        </div>
       </div>
     </nav>
 
-    <nav
-      class="navbar level container has-text-centered is-uppercase is-fixed-top is-hidden-mobile"
-    >
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'index' }">
-          Home
+    <div class="navbar level is-fixed-top is-hidden-touch">
+      <div class="languages">
+        <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
+          🇬🇧
+        </nuxt-link>
+        <nuxt-link v-if="$i18n.locale !== 'it'" :to="switchLocalePath('it')">
+          🇮🇹
         </nuxt-link>
       </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'recensioni' }">
-          Recensioni
-        </nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'portfolio' }">
-          Portfolio
-        </nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'index' }">
-          <h1 class="is-size-2 has-text-weight-bold is-marginless">
-            GJC
-          </h1>
-        </nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'stories' }">
-          Stories
-        </nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'blog' }">
-          Blog
-        </nuxt-link>
-      </div>
-      <div class="level-item">
-        <nuxt-link :to="{ name: 'contacts' }">
-          Contacts
-        </nuxt-link>
-      </div>
-    </nav>
+
+      <nav class="navbar level container has-text-centered is-uppercase">
+        <div class="level-item">
+          <nuxt-link :to="localePath('index')">
+            {{ $t('menu.home') }}
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('reviews')">
+            {{ $t('menu.reviews') }}
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('portfolio')">
+            {{ $t('menu.portfolio') }}
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('index')">
+            <h1 class="is-size-2 has-text-weight-bold is-marginless">
+              GJC
+            </h1>
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('stories')">
+            {{ $t('menu.stories') }}
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('blog')">
+            {{ $t('menu.blog') }}
+          </nuxt-link>
+        </div>
+
+        <div class="level-item">
+          <nuxt-link :to="localePath('contacts')">
+            {{ $t('menu.contacts') }}
+          </nuxt-link>
+        </div>
+      </nav>
+    </div>
 
     <nuxt />
   </div>

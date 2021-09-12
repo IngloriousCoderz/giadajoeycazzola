@@ -1,5 +1,10 @@
 <template>
-  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount" />
+  <story
+    :title="title"
+    :description="description"
+    :base-path="basePath"
+    :image-count="imageCount"
+  />
 </template>
 
 <script>

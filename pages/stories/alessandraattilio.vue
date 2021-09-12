@@ -1,18 +1,25 @@
 <template>
-  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
+  <story
+    :title="title"
+    :description="description"
+    :base-path="basePath"
+    :image-count="imageCount"
+  >
     <p class="is-size-7">
       location:
       <a
         href="http://tamburnin.it/"
         target="_blank"
         class="has-text-weight-bold"
-      >Tenuta Tamburnin</a>
+        >Tenuta Tamburnin</a
+      >
       <br />abito da sposa:
       <a
         href="https://www.atelier-eme.it/atelier-torino/?IDstore=23"
         target="_blank"
         class="has-text-weight-bold"
-      >Atelier Emé Torino</a>
+        >Atelier Emé Torino</a
+      >
     </p>
   </story>
 </template>

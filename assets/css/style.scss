@@ -43,7 +43,22 @@ footer {
 /* HACK: fixes home navbar after Buefy upgrade */
 @media screen and (min-width: 1024px) {
   .container {
-      width: 960px;
+    width: 960px;
+  }
+}
+
+.languages {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-shadow: 1px 1px 1px black;
+    padding: 1rem;
   }
 }
 
@@ -93,9 +108,11 @@ footer {
 }
 
 .has-navbar-fixed-top {
-  /* apply only to IE */
-  @media (min-width: 1024px) and (-ms-high-contrast: none),
-    (-ms-high-contrast: active) {
+  @media (max-width: 1008px) {
+    padding-top: 3.25rem;
+  }
+
+  @media (min-width: 1024px) {
     padding-top: 5rem;
   }
 }

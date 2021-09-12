@@ -14,7 +14,11 @@
     </div>
 
     <div class="content">
-      <nuxt-link v-for="post in posts" :key="post.id" :to="{ name: post.href }">
+      <nuxt-link
+        v-for="post in posts"
+        :key="post.id"
+        :to="localePath(post.href)"
+      >
         <article class="columns card">
           <div class="card-image column is-one-third is-paddingless">
             <div class="image is-4by3">

@@ -1,24 +1,32 @@
 <template>
-  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
+  <story
+    :title="title"
+    :description="description"
+    :base-path="basePath"
+    :image-count="imageCount"
+  >
     <p class="is-size-7">
       location:
       <a
         href="https://www.villabria.com"
         target="_blank"
         class="has-text-weight-bold"
-      >Villa Bria</a>
+        >Villa Bria</a
+      >
       <br />abito da sposa:
       <a
         href="https://www.pronovias.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Pronovias</a>
+        >Pronovias</a
+      >
       <br />fiorista:
       <a
         href="https://www.ifioridisaradue.it"
         target="_blank"
         class="has-text-weight-bold"
-      >I Fiori Di Sara Due</a>
+        >I Fiori Di Sara Due</a
+      >
     </p>
   </story>
 </template>

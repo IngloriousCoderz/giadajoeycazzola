@@ -1,30 +1,39 @@
 <template>
-  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
+  <story
+    :title="title"
+    :description="description"
+    :base-path="basePath"
+    :image-count="imageCount"
+  >
     <p class="is-size-7">
       location:
       <a
         href="http://www.lafederica.it/"
         target="_blank"
         class="has-text-weight-bold"
-      >La Federica</a>
+        >La Federica</a
+      >
       <br />abito da sposa:
       <a
         href="http://www.whitelesposetorino.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >White Le Spose Torino</a>
+        >White Le Spose Torino</a
+      >
       <br />abito da sposo:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Carlo Pignatelli</a>
+        >Carlo Pignatelli</a
+      >
       <br />musica:
       <a
         href="http://www.ambaradanpartyband.it/"
         target="_blank"
         class="has-text-weight-bold"
-      >Ambaradan Party Band</a>
+        >Ambaradan Party Band</a
+      >
     </p>
   </story>
 </template>

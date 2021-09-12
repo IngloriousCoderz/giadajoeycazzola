@@ -41,14 +41,16 @@
           href="http://weddingwonderland.it/2018/05/matrimonio-autunnale-ispirato-al-te.html"
           target="_blank"
           class="has-text-weight-bold"
-        >Un matrimonio autunnale ispirato al tè</a>
+          >Un matrimonio autunnale ispirato al tè</a
+        >
         - Wedding Wonderland, 3 maggio 2018
         <br />
         <a
           href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
           target="_blank"
           class="has-text-weight-bold"
-        >Un matrimonio boho e handmade</a>
+          >Un matrimonio boho e handmade</a
+        >
         - Wedding Wonderland, 5 giugno 2018
       </p>
 
@@ -63,7 +65,8 @@
             <a
               href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658/opinioni"
               target="_blank"
-            >le nostre raccomandazioni</a>
+              >le nostre raccomandazioni</a
+            >
             su
             <a href="https://www.matrimonio.com" target="_blank">
               <img

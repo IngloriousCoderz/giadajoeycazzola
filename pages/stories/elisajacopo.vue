@@ -1,50 +1,67 @@
 <template>
-  <story :title="title" :description="description" :base-path="basePath" :image-count="imageCount">
+  <story
+    :title="title"
+    :description="description"
+    :base-path="basePath"
+    :image-count="imageCount"
+  >
     <p class="is-size-7">
       floral designer:
       <a
         href="https://carolinacarbone.it/"
         target="_blank"
         class="has-text-weight-bold"
-      >Carolina Carbone</a>
+        >Carolina Carbone</a
+      >
       <br />dress:
       <a
         href="https://linktr.ee/moreabitidasposa"
         target="_blank"
         class="has-text-weight-bold"
-      >MORE</a>
+        >MORE</a
+      >
       <br />atelier:
       <a
         href="https://www.merrymeroma.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Merry Me Roma</a>
+        >Merry Me Roma</a
+      >
       <br />hair accessory:
       <a
         href="https://www.guineverevines.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Guinevere Vines</a>
+        >Guinevere Vines</a
+      >
       <br />makeup artist:
       <a
         href="https://www.divasmakeup.it/"
         target="_blank"
         class="has-text-weight-bold"
-      >DivaS' MakeUp</a>
+        >DivaS' MakeUp</a
+      >
       <br />shoes:
       <a
         href="https://www.annielshop.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Anniel</a>
+        >Anniel</a
+      >
       <br />video:
-      <a href="https://www.913art.com/" target="_blank" class="has-text-weight-bold">913Art</a>
+      <a
+        href="https://www.913art.com/"
+        target="_blank"
+        class="has-text-weight-bold"
+        >913Art</a
+      >
       <br />model:
       <a
         href="https://www.instagram.com/elisaablasi/"
         target="_blank"
         class="has-text-weight-bold"
-      >Elisa Blasi</a>
+        >Elisa Blasi</a
+      >
     </p>
   </story>
 </template>

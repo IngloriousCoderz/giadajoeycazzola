@@ -1,18 +1,19 @@
-global.File = typeof window === 'undefined' ? Object : window.File
+import yaml from 'js-yaml'
+import fs from 'fs'
+
+const en = yaml.load(fs.readFileSync('./i18n/en.yml'))
+const it = yaml.load(fs.readFileSync('./i18n/it.yml'))
 
 module.exports = {
+  // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
-  /**
-   * Headers of the page
-   */
+  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Giada Joey Cazzola - Fotografa matrimonio Torino e Roma',
 
     meta: [
-      {
-        charset: 'utf-8'
-      },
+      { charset: 'utf-8' },
       {
         name: 'viewport',
         content:
@@ -24,6 +25,7 @@ module.exports = {
         content:
           'Fotografa di matrimonio a Torino, Roma, in Toscana, Puglia, Costiera Amalfitana, Sicilia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
       },
+      { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'og:title',
         property: 'og:title',
@@ -71,6 +73,7 @@ module.exports = {
     ]
   },
 
+  // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/css/style.scss'],
 
   /**
@@ -80,42 +83,61 @@ module.exports = {
     color: '#3B8070'
   },
 
+  // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~plugins/vue-awesome-swiper'],
 
-  modules: [
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-61816704-2'
-      }
-    ],
-    '@nuxtjs/sitemap',
-    'nuxt-buefy'
+  // Auto import components: https://go.nuxtjs.dev/config-components
+  components: true,
+
+  // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module'
   ],
+
+  // Modules: https://go.nuxtjs.dev/config-modules
+  modules: [
+    // https://go.nuxtjs.dev/buefy
+    'nuxt-buefy',
+    // https://go.nuxtjs.dev/pwa
+    '@nuxtjs/pwa',
+    ['@nuxtjs/google-analytics', { id: 'UA-61816704-2' }],
+    '@nuxtjs/sitemap',
+    [
+      '@nuxtjs/i18n',
+      {
+        detectBrowserLanguage: {
+          useCookie: true,
+          cookieKey: 'i18n_redirected',
+          redirectOn: 'root' // recommended
+        }
+      }
+    ]
+  ],
+
+  // PWA module configuration: https://go.nuxtjs.dev/pwa
+  pwa: {
+    manifest: {
+      lang: 'en'
+    }
+  },
 
   sitemap: {
     hostname: 'https://www.giadajoeycazzola.com',
     generate: true
   },
 
-  /**
-   * Build configuration
-   */
-  build: {
-    vendor: ['babel-polyfill', 'vue-awesome-swiper', 'zpad'],
-    /**
-     * You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
+  i18n: {
+    locales: ['en', 'it'],
+    defaultLocale: 'en',
+    vueI18n: {
+      fallbackLocale: 'en',
+      messages: { en, it }
     }
+  },
+
+  // Build Configuration: https://go.nuxtjs.dev/config-build
+  build: {
+    vendor: ['vue-awesome-swiper', 'zpad']
   }
 }

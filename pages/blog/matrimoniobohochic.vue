@@ -13,26 +13,29 @@
         href="https://www.facebook.com/ilpoderelerocche/"
         target="_blank"
         class="has-text-weight-bold"
-      >Ilpoderelerocche</a>
-      <br >abito da sposa:
+        >Ilpoderelerocche</a
+      >
+      <br />abito da sposa:
       <a
         href="https://www.celiadragouni.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >Celia Dragouni</a>
+        >Celia Dragouni</a
+      >
       -
       <a
         href="http://www.whitelesposetorino.com/"
         target="_blank"
         class="has-text-weight-bold"
-      >White Le Spose</a>
+        >White Le Spose</a
+      >
     </p>
 
     <p>
       Se stai pensando di organizzare un matrimonio in stile bohemien, questa è
       la guida che fa per te.
-      <br >&ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su
-      Google. <br >Ma cosa rende un matrimonio come questo diverso dagli altri?
+      <br />&ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su
+      Google. <br />Ma cosa rende un matrimonio come questo diverso dagli altri?
     </p>
 
     <h3 class="title is-4 has-text-centered has-text-weight-bold">
@@ -148,7 +151,7 @@
     <p>
       Guarda
       <nuxt-link
-        :to="{ name: 'stories-martinasalvador' }"
+        :to="localePath('stories-martinasalvador')"
         class="has-text-weight-bold"
       >
         qui </nuxt-link

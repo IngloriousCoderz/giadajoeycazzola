@@ -17,7 +17,7 @@
 
     <div class="content columns is-centered is-multiline">
       <div v-for="image in images" :key="image.id" class="column is-one-third">
-        <nuxt-link :to="{ name: image.href }">
+        <nuxt-link :to="localePath(image.href)">
           <div class="card">
             <div class="card-image">
               <div class="image is-4by3">
