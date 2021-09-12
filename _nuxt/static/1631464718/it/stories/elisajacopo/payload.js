@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/it/stories/elisajacopo", {data:[{}],fetch:{},mutations:void 0});
