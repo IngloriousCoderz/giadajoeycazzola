@@ -48,7 +48,8 @@ export default {
       title: this.$i18n.t('stories.seo.title'),
       description: this.$i18n.t('stories.seo.description'),
       url: 'https://www.giadajoeycazzola.com/stories/',
-      image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
+      image:
+        'https://www.giadajoeycazzola.com/images/stories/francescamarco/52.jpg',
 
       images: [
         {

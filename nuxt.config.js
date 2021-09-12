@@ -97,7 +97,6 @@ module.exports = {
     'nuxt-buefy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    ['@nuxtjs/google-analytics', { id: 'UA-61816704-2' }],
     '@nuxtjs/sitemap',
     [
       '@nuxtjs/i18n',
@@ -110,6 +109,8 @@ module.exports = {
       }
     ]
   ],
+
+  buildModules: ['@nuxtjs/google-analytics'],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
@@ -131,6 +132,10 @@ module.exports = {
       messages: { en, it },
       dateTimeFormats
     }
+  },
+
+  googleAnalytics: {
+    id: 'UA-61816704-2'
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
