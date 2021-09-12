@@ -16,7 +16,7 @@
 
     <div class="content columns is-centered is-multiline">
       <div v-for="image in images" :key="image.id" class="column is-one-third">
-        <nuxt-link :to="localePath(image.href)">
+        <nuxt-link :to="localePath(`stories-${image.id}`)">
           <div class="card">
             <div class="card-image">
               <div class="image is-4by3">
@@ -30,7 +30,7 @@
               <h3 class="title is-5">
                 {{ image.title }}
               </h3>
-              <p>{{ image.description }}</p>
+              <p>{{ image.description[$i18n.locale] }}</p>
             </div>
           </div>
         </nuxt-link>
@@ -43,6 +43,202 @@
 
 <script>
 export default {
+  data() {
+    return {
+      title: this.$i18n.t('stories.seo.title'),
+      description: this.$i18n.t('stories.seo.description'),
+      url: 'https://www.giadajoeycazzola.com/stories/',
+      image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
+
+      images: [
+        {
+          id: 'francescamarco',
+          src: ' /images/stories/francescamarco/52.jpg',
+          title: 'Francesca & Marco',
+          description: {
+            en:
+              'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
+            it:
+              'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.'
+          }
+        },
+        {
+          id: 'lauraeldar',
+          src: '/images/stories/lauraeldar/01.jpg',
+          title: 'Laura & Eldar',
+          description: {
+            en:
+              'An intimate ceremony immersed in a heavenly atmosphere with a Caribbean touch while being in the heart of the Langhe.',
+            it:
+              'Una cerimonia intima immersi in un’atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.'
+          }
+        },
+        {
+          id: 'annamatteo',
+          src: '/images/stories/annamatteo/39.jpg',
+          title: 'Anna & Matteo',
+          description: {
+            en:
+              'A fiveteenth-century residence on the outskirts of Milan. A very sweet couple and authentic emotions.',
+            it:
+              'Una dimora cinquecentesca a due passi da Milano, una coppia dolcissima e tante emozioni autentiche. Cosa volere di più?'
+          }
+        },
+        {
+          id: 'eleonoralorenzo',
+          src: '/images/stories/eleonoralorenzo/59.jpg',
+          title: 'Eleonora & Lorenzo',
+          description: {
+            en:
+              'An explosive couple, a contemporary location, lots of pampas and love.',
+            it:
+              'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!'
+          }
+        },
+        {
+          id: 'elisajacopo',
+          src: '/images/stories/elisajacopo/34.jpg',
+          title: 'Elisa & Jacopo',
+          description: {
+            en:
+              "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
+            it:
+              'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
+          }
+        },
+        {
+          id: 'eleonoravalentino',
+          src: '/images/stories/eleonoravalentino/56.jpg',
+          title: 'Eleonora & Valentino',
+          description: {
+            en:
+              'This is the story of a day of rain and tears of joy. Because even the sky of Taormina was moved by watching this splendid wedding.',
+            it:
+              'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.'
+          }
+        },
+        {
+          id: 'alessandraattilio',
+          src: '/images/stories/alessandraattilio/63.jpg',
+          title: 'Alessandra & Attilio',
+          description: {
+            en:
+              'A simple and refined wedding in the heart of Monferrato. Light colors and bucolic details made the difference.',
+            it:
+              '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.'
+          }
+        },
+        {
+          id: 'elenaluca',
+          src: '/images/stories/elenaluca/59.jpg',
+          title: 'Elena & Luca',
+          description: {
+            en:
+              'A young and colorful wedding, a villa in the countryside and many friends. What else?',
+            it:
+              'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.'
+          }
+        },
+        {
+          id: 'alessiamatteo',
+          src: '/images/stories/alessiamatteo/96.jpg',
+          title: 'Alessia & Matteo',
+          description: {
+            en:
+              'An eighteenth-century villa is the setting for an intimate and elegant wedding with a super guest: the dog of the newlyweds!',
+            it:
+              'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.'
+          }
+        },
+        {
+          id: 'martinasalvador',
+          src: '/images/stories/martinasalvador/01.jpg',
+          title: 'Martina & Salvador',
+          description: {
+            en:
+              'Magical marriage in the vineyards of the Asti area. Breathtaking views and suggestive settings are the setting for the love of Martina and Salvador.',
+            it:
+              'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.'
+          }
+        },
+        {
+          id: 'irenedavide',
+          src: '/images/stories/irenedavide/96.jpg',
+          title: 'Irene & Davide',
+          description: {
+            en:
+              'A genuine, nice, spontaneous couple. A pure reportage in a very charming rural location!',
+            it:
+              "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto."
+          }
+        },
+        {
+          id: 'vittorialuigi',
+          src: '/images/stories/vittorialuigi/58.jpg',
+          title: 'Vittoria & Luigi',
+          description: {
+            en:
+              'A chic wedding in a Piedmontese winery. For wine lovers, Piedmont is a certainty to get married!',
+            it:
+              'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
+          }
+        },
+        {
+          id: 'pierpaolofernando',
+          src: '/images/stories/pierpaolofernando/01.jpg',
+          title: 'Pierpaolo & Fernando',
+          description: {
+            en:
+              'A beautiful gay couple, in the heart of turin we have done magic!!',
+            it:
+              'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.'
+          }
+        },
+        {
+          id: 'chiaramarco',
+          src: '/images/stories/chiaramarco/mobile/50.jpg',
+          title: 'Chiara & Marco',
+          description: {
+            en:
+              'Two architects with a passion for art and a reportage in the heart of one of the most chaotic markets in Italy.',
+            it:
+              'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.'
+          }
+        },
+        // {
+        //   id: 'annamariaclaudio',
+        //   src: '/images/stories/annamariaclaudio/01.jpg',
+        //   title: 'Annamaria & Claudio',
+        //   description: {
+        //     en: '',
+        //     it:
+        //       'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
+        //   }
+        // },
+        {
+          id: 'cassandracarlo',
+          src: '/images/stories/cassandracarlo/03.jpg',
+          title: 'Cassandra & Carlo',
+          description: {
+            en: 'A sweet yes in a fairytale location!',
+            it:
+              'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
+          }
+        },
+        {
+          id: 'danielamichele',
+          src: '/images/stories/danielamichele/53.jpg',
+          title: 'Daniela & Michele',
+          description: {
+            en: 'A wonderful family and a special page: the little son!',
+            it:
+              'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
+          }
+        }
+      ]
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -83,147 +279,6 @@ export default {
           hid: 'canonical',
           rel: 'canonical',
           href: this.url
-        }
-      ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Stories',
-      description:
-        'Blog realizzato per raccontare i migliori reportage di matrimonio realizzati a Torino, Piemonte, Langhe, Toscana, Puglia, Italia. Location bellissime immerse nella natura, abiti da sposa unici.',
-      url: 'https://www.giadajoeycazzola.com/stories/',
-      image: 'https://www.giadajoeycazzola.com/images/slides/02.jpg',
-
-      images: [
-        {
-          id: 'lauraeldar',
-          src: '/images/stories/lauraeldar/01.jpg',
-          href: 'stories-lauraeldar',
-          title: 'Laura & Eldar',
-          description:
-            'Una cerimonia intima immersi in un’atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.'
-        },
-        {
-          id: 'annamatteo',
-          src: '/images/stories/annamatteo/39.jpg',
-          href: 'stories-annamatteo',
-          title: 'Anna & Matteo',
-          description:
-            'Una dimora cinquecentesca a due passi da Milano, una coppia dolcissima e tante emozioni autentiche. Cosa volere di più?'
-        },
-        {
-          id: 'eleonoralorenzo',
-          src: '/images/stories/eleonoralorenzo/59.jpg',
-          href: 'stories-eleonoralorenzo',
-          title: 'Eleonora & Lorenzo',
-          description:
-            'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!'
-        },
-        {
-          id: 'elisajacopo',
-          src: '/images/stories/elisajacopo/34.jpg',
-          href: 'stories-elisajacopo',
-          title: 'Elisa & Jacopo',
-          description:
-            'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
-        },
-        {
-          id: 'eleonoravalentino',
-          src: '/images/stories/eleonoravalentino/56.jpg',
-          href: 'stories-eleonoravalentino',
-          title: 'Eleonora & Valentino',
-          description:
-            'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.'
-        },
-        {
-          id: 'alessandraattilio',
-          src: '/images/stories/alessandraattilio/63.jpg',
-          href: 'stories-alessandraattilio',
-          title: 'Alessandra & Attilio',
-          description:
-            '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.'
-        },
-        {
-          id: 'elenaluca',
-          src: '/images/stories/elenaluca/59.jpg',
-          href: 'stories-elenaluca',
-          title: 'Elena & Luca',
-          description:
-            'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.'
-        },
-        {
-          id: 'alessiamatteo',
-          src: '/images/stories/alessiamatteo/96.jpg',
-          href: 'stories-alessiamatteo',
-          title: 'Alessia & Matteo',
-          description:
-            'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.'
-        },
-        {
-          id: 'martinasalvador',
-          src: '/images/stories/martinasalvador/01.jpg',
-          href: 'stories-martinasalvador',
-          title: 'Martina & Salvador',
-          description:
-            'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.'
-        },
-        {
-          id: 'irenedavide',
-          src: '/images/stories/irenedavide/96.jpg',
-          href: 'stories-irenedavide',
-          title: 'Irene & Davide',
-          description:
-            "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto."
-        },
-        {
-          id: 'vittorialuigi',
-          src: '/images/stories/vittorialuigi/58.jpg',
-          href: 'stories-vittorialuigi',
-          title: 'Vittoria & Luigi',
-          description:
-            'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
-        },
-        {
-          id: 'pierpaolofernando',
-          src: '/images/stories/pierpaolofernando/01.jpg',
-          href: 'stories-pierpaolofernando',
-          title: 'Pierpaolo & Fernando',
-          description:
-            'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.'
-        },
-        {
-          id: 'chiaramarco',
-          src: '/images/stories/chiaramarco/mobile/50.jpg',
-          href: 'stories-chiaramarco',
-          title: 'Chiara & Marco',
-          description:
-            'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.'
-        },
-        {
-          id: 'annamariaclaudio',
-          src: '/images/stories/annamariaclaudio/01.jpg',
-          href: 'stories-annamariaclaudio',
-          title: 'Annamaria & Claudio',
-          description:
-            'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
-        },
-        {
-          id: 'cassandracarlo',
-          src: '/images/stories/cassandracarlo/03.jpg',
-          href: 'stories-cassandracarlo',
-          title: 'Cassandra & Carlo',
-          description:
-            'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.'
-        },
-        {
-          id: 'danielamichele',
-          src: '/images/stories/danielamichele/53.jpg',
-          href: 'stories-danielamichele',
-          title: 'Daniela & Michele',
-          description:
-            'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.'
         }
       ]
     }

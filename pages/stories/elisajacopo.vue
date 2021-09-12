@@ -1,10 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       floral designer:
       <a
@@ -75,6 +70,25 @@ const IMAGE_COUNT = 41
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Elisa & Jacopo',
+      description: {
+        en:
+          "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
+        it:
+          'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/34.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -82,7 +96,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -92,7 +106,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -117,21 +131,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Elisa & Jacopo',
-      description:
-        'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/34.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
     }
   }
 }

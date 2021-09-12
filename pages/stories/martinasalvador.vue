@@ -1,10 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       fiori &amp; bouquet:
       <a
@@ -54,6 +49,25 @@ const IMAGE_COUNT = 92
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Martina & Salvador',
+      description: {
+        en:
+          'Magical marriage in the vineyards of the Asti area. Breathtaking views and suggestive settings are the setting for the love of Martina and Salvador.',
+        it:
+          'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -61,7 +75,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -71,7 +85,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -96,21 +110,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Martina & Salvador',
-      description:
-        'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
     }
   }
 }

@@ -1,10 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       location:
       <a
@@ -54,6 +49,25 @@ const IMAGE_COUNT = 99
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Vittoria & Luigi',
+      description: {
+        en:
+          'A chic wedding in a Piedmontese winery. For wine lovers, Piedmont is a certainty to get married!',
+        it:
+          'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -61,7 +75,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -71,7 +85,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -96,21 +110,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Vittoria & Luigi',
-      description:
-        'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
     }
   }
 }

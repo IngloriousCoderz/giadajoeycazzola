@@ -1,7 +1,6 @@
 <template>
   <story
     :title="title"
-    :description="description"
     :base-path="basePath"
     :image-count="imageCount"
     :video="video"
@@ -34,6 +33,26 @@ const IMAGE_COUNT = 41
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Pierpaolo & Fernando',
+      description: {
+        en:
+          'A beautiful gay couple, in the heart of turin we have done magic!!',
+        it:
+          'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT,
+      video: 'https://player.vimeo.com/video/273849529?portrait=0'
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -41,7 +60,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -51,7 +70,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -76,22 +95,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Pierpaolo & Fernando',
-      description:
-        'Una caotica ma affascinante Torino fa da sfondo al matrimonio di Pierpaolo e Fernando: una coppia bellissima e molto complice che ha emozionato tutti con la forza della loro unione.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT,
-      video: 'https://player.vimeo.com/video/273849529?portrait=0'
     }
   }
 }

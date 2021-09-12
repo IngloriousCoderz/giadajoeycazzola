@@ -1,10 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :base-path="basePath"
-    :image-count="imageCount"
-  />
+  <story :title="title" :base-path="basePath" :image-count="imageCount" />
 </template>
 
 <script>
@@ -16,6 +11,24 @@ const IMAGE_COUNT = 50
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Annamaria & Claudio',
+      description: {
+        en: '',
+        it:
+          'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -23,7 +36,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -33,7 +46,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -58,21 +71,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Annamaria & Claudio',
-      description:
-        'Cornice della romantica storia di Annamaria e Claudio è il castello Saffarone, suggestiva dimora settecentesca alle porte di Torino.',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
     }
   }
 }

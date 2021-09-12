@@ -158,7 +158,7 @@
 export default {
   head() {
     return {
-      titleTemplate: '%s | Giada Joey Cazzola - Fotografa matrimonio Torino'
+      titleTemplate: `%s | ${this.$i18n.t('default.seo.title')}`
     }
   },
 

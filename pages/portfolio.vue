@@ -48,6 +48,50 @@ const IMAGE_COUNT = 96
 export default {
   components: { Lightbox },
 
+  data() {
+    return {
+      title: this.$i18n.t('portfolio.seo.title'),
+      description: this.$i18n.t('portfolio.seo.description'),
+      url: 'https://www.giadajoeycazzola.com/portfolio/',
+      image: 'https://www.giadajoeycazzola.com/images/portfolio/01.jpg',
+
+      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
+        id: index + 1,
+        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
+        // src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
+      })),
+
+      videos: [
+        // http://vimeo.com/api/v2/video/286857992.xml
+        {
+          id: 1,
+          src: 'https://player.vimeo.com/video/389582661',
+          thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
+        },
+        {
+          id: 2,
+          src: 'https://player.vimeo.com/video/351338696',
+          thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
+        },
+        {
+          id: 3,
+          src: 'https://player.vimeo.com/video/286857992',
+          thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
+        },
+        {
+          id: 4,
+          src: 'https://player.vimeo.com/video/273849529',
+          thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
+        },
+        {
+          id: 5,
+          src: 'https://player.vimeo.com/video/319229237',
+          thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
+        }
+      ]
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -88,51 +132,6 @@ export default {
           hid: 'canonical',
           rel: 'canonical',
           href: this.url
-        }
-      ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Portfolio',
-      description:
-        'Raccolta dei migliori lavori di reportage di matrimonio realizzati in location bellissime per matrimoni a Torino, Langhe, Piemonte, Roma, Toscana, Puglia, Italia.',
-      url: 'https://www.giadajoeycazzola.com/portfolio/',
-      image: 'https://www.giadajoeycazzola.com/images/portfolio/01.jpg',
-
-      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
-        id: index + 1,
-        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
-        // src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
-      })),
-
-      videos: [
-        // http://vimeo.com/api/v2/video/286857992.xml
-        {
-          id: 1,
-          src: 'https://player.vimeo.com/video/389582661',
-          thumb: 'https://i.vimeocdn.com/video/853298583_640.jpg'
-        },
-        {
-          id: 2,
-          src: 'https://player.vimeo.com/video/351338696',
-          thumb: 'https://i.vimeocdn.com/video/802901548_640.jpg'
-        },
-        {
-          id: 3,
-          src: 'https://player.vimeo.com/video/286857992',
-          thumb: 'https://i.vimeocdn.com/video/721857555_640.jpg'
-        },
-        {
-          id: 4,
-          src: 'https://player.vimeo.com/video/273849529',
-          thumb: 'https://i.vimeocdn.com/video/705748390_640.jpg'
-        },
-        {
-          id: 5,
-          src: 'https://player.vimeo.com/video/319229237',
-          thumb: 'https://i.vimeocdn.com/video/761746985_640.jpg'
         }
       ]
     }

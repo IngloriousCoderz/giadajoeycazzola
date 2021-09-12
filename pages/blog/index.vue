@@ -12,7 +12,7 @@
       <nuxt-link
         v-for="post in posts"
         :key="post.id"
-        :to="localePath(post.href)"
+        :to="localePath(`blog-${post.id}`)"
       >
         <article class="columns card">
           <div class="card-image column is-one-third is-paddingless">
@@ -50,6 +50,26 @@
 
 <script>
 export default {
+  data() {
+    return {
+      title: this.$i18n.t('blog.seo.title'),
+      description: this.$i18n.t('blog.seo.description'),
+      url: 'https://www.giadajoeycazzola.com/blog/',
+      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+
+      posts: [
+        {
+          id: 'matrimoniobohochic',
+          src: '/images/blog/matrimoniobohochic/01.jpg',
+          title: 'Matrimonio Boho Chic',
+          description: `Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
+        <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
+        <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?`
+        }
+      ]
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -90,28 +110,6 @@ export default {
           hid: 'canonical',
           rel: 'canonical',
           href: this.url
-        }
-      ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Blog',
-      description:
-        "Una collezione di articoli ricchi di consigli per le future spose: location in Piemonte, tutte le nuove tendenze wedding dell'anno in corso e molto altro.",
-      url: 'https://www.giadajoeycazzola.com/blog/',
-      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
-
-      posts: [
-        {
-          id: 'matrimoniobohochic',
-          src: '/images/blog/matrimoniobohochic/01.jpg',
-          href: 'blog-matrimoniobohochic',
-          title: 'Matrimonio Boho Chic',
-          description: `Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
-        <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
-        <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?`
         }
       ]
     }

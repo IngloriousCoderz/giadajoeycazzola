@@ -1,10 +1,5 @@
 <template>
-  <story
-    :title="title"
-    :description="description"
-    :base-path="basePath"
-    :image-count="imageCount"
-  >
+  <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
       floral designer:
       <a
@@ -47,6 +42,25 @@ const IMAGE_COUNT = 99
 export default {
   components: { Story },
 
+  data() {
+    return {
+      title: 'Eleonora & Lorenzo',
+      description: {
+        en:
+          'An explosive couple, a contemporary location, lots of pampas and love.',
+        it:
+          'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!'
+      },
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/59.jpg`,
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+        /\/mobile/g,
+        ''
+      )}/`,
+      basePath: BASE_PATH,
+      imageCount: IMAGE_COUNT
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -54,7 +68,7 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:title',
@@ -64,7 +78,7 @@ export default {
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description[this.$i18n.locale]
         },
         {
           hid: 'og:url',
@@ -89,21 +103,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Eleonora & Lorenzo',
-      description:
-        'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!',
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/59.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
-        /\/mobile/g,
-        ''
-      )}/`,
-      basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
     }
   }
 }

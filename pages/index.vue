@@ -274,9 +274,8 @@ export default {
 
   data() {
     return {
-      title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
-      description:
-        'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.',
+      title: this.$i18n.t('default.seo.title'),
+      description: this.$i18n.t('home.seo.description'),
       url: 'https://www.giadajoeycazzola.com/',
       image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
 

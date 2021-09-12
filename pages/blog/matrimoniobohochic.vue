@@ -179,6 +179,26 @@ const IMAGE_COUNT = {
 export default {
   components: { Post, Lightbox },
 
+  data() {
+    return {
+      title: 'Matrimonio Boho Chic',
+      description:
+        'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
+      url: `https://www.giadajoeycazzola.com/${BASE_PATH}/`,
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      type: 'website',
+      date: '2 febbraio 2018',
+
+      images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
+        acc[section] = Array.from(Array(count).keys()).map(index => ({
+          id: index + 1,
+          src: `/images/${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`
+        }))
+        return acc
+      }, {})
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -221,26 +241,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Matrimonio Boho Chic',
-      description:
-        'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH}/`,
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      type: 'website',
-      date: '2 febbraio 2018',
-
-      images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
-        acc[section] = Array.from(Array(count).keys()).map(index => ({
-          id: index + 1,
-          src: `/images/${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`
-        }))
-        return acc
-      }, {})
     }
   }
 }

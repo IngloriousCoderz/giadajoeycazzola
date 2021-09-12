@@ -11,7 +11,8 @@ module.exports = {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Giada Joey Cazzola - Fotografa matrimonio Torino e Roma',
+    // title: 'Giada Joey Cazzola - Destination wedding photographer in Italy and Europe',
+    // title: 'Giada Joey Cazzola - Fotografo reportage matrimionio Italia - Piemonte, Toscana, Roma'
 
     meta: [
       { charset: 'utf-8' },
@@ -22,21 +23,22 @@ module.exports = {
       },
       {
         hid: 'description',
-        name: 'description',
-        content:
-          'Fotografa di matrimonio a Torino, Roma, in Toscana, Puglia, Costiera Amalfitana, Sicilia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
+        name: 'description'
+        // content: 'Wedding photographer in Rome, Piedmont, Tuscany, the rest of Italy and Europe. Specialized in spontaneous photo and video reportage.'
+        // content: 'Fotografa di matrimonio a Roma, in Piemonte, Toscana, resto di Italia ed Europa. Specializzata in reportage foto e video spontanei.'
       },
       { name: 'format-detection', content: 'telephone=no' },
       {
         hid: 'og:title',
-        property: 'og:title',
-        content: 'Giada Joey Cazzola - Fotografa matrimonio Torino e Roma'
+        property: 'og:title'
+        // content: 'Giada Joey Cazzola - Destination wedding photographer in Italy and Europe'
+        // content: 'Giada Joey Cazzola - Fotografo reportage matrimionio Italia - Piemonte, Toscana, Roma'
       },
       {
         hid: 'og:description',
-        property: 'og:description',
-        content:
-          'Fotografa di matrimonio a Torino, Roma, in Toscana, Puglia, Costiera Amalfitana, Sicilia e in tutta Europa. Specializzata in reportage foto e video spontanei.'
+        property: 'og:description'
+        // content: 'Wedding photographer in Rome, Piedmont, Tuscany, the rest of Italy and Europe. Specialized in spontaneous photo and video reportage.'
+        // content: 'Fotografa di matrimonio a Roma, in Piemonte, Toscana, resto di Italia ed Europa. Specializzata in reportage foto e video spontanei.'
       },
       {
         hid: 'og:url',
@@ -76,13 +78,6 @@ module.exports = {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: ['~/assets/css/style.scss'],
-
-  /**
-   * Customize the progress bar color
-   */
-  loading: {
-    color: '#3B8070'
-  },
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: ['~plugins/vue-awesome-swiper'],
@@ -139,7 +134,5 @@ module.exports = {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {
-    vendor: ['vue-awesome-swiper', 'zpad']
-  }
+  build: {}
 }

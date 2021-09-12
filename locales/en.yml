@@ -1,3 +1,5 @@
+default.seo.title: Giada Joey Cazzola - Destination wedding reportage photographer in Italy and Europe
+
 menu.home: Home
 menu.reviews: Reviews
 menu.portfolio: Portfolio
@@ -5,6 +7,8 @@ menu.stories: Stories
 menu.blog: Blog
 menu.contacts: Contacts
 
+home.seo.title: Homepage
+home.seo.description: Destination wedding photographer in Piedmont, Tuscany, Rome, the rest of Italy and Europe. She specializes in authentic photo and video reportage.
 home.about: >
   <p>I'm Giada and I'm a photographer specializing in wedding reportage.</p>
   <p>I was born in Turin, a city of art and magic. And it is in the streets of this city that my passion for photography was born. I have always been sentimental, in love with love and everything that this feeling can arouse in people.</p>
@@ -20,10 +24,14 @@ home.about: >
   <p>⋯</p>
 home.awards: Awards
 
-reviews.title: Press And Media
+reviews.seo.title: Reviews
+reviews.seo.description: Who is Giada Joey Cazzola, a young wedding and maternity reportage photographer in Italy. Based in Turin and Rome.
+reviews.title: Reviews
 reviews.quote: Photographing is a way of life. But life is important, not photography. It is important to tell. If you start from photography you get nowhere else than photography.
 reviews.mentions: Mentions
 
+portfolio.seo.title: Portfolio
+portfolio.seo.description: 'Collection of the best wedding reportage works made in beautiful locations: Piedmont, Rome, Tuscany, Amalfi Coast, Sicily, Cinque Terre, Italy, Europe.'
 portfolio.title: Portfolio
 portfolio.quote: Photography is a simple thing, provided you have something to say.
 portfolio.body: A collection of photos and videos made in different weddings. To see the complete galleries click
@@ -31,15 +39,21 @@ portfolio.body.link: here
 portfolio.photos: Photos
 portfolio.videos: Videos
 
+stories.seo.title: Stories
+stories.seo.description: A collection of the best of some weddings made in Italy and Europe. Spouses in love, modern and elegant settings, spontaneous photos, dream locations.
 stories.title: Stories
 stories.quote: I truly believe there are things that no one can see before they are photographed.
 
+blog.seo.title: Blog
+blog.seo.description: 'A collection of articles full of advice for future brides: boho chic, outdoor weddings, the new 2022/2023 wedding trends'
 blog.title: Blog
 blog.body: >
   From the union of two passions, writing and photography, this blog is born: a space where future spouses, struggling with the organization of the wedding, can find interesting ideas. A journey through words and images that together make up articles on various topics: from style to locations, from dresses to favors. Enjoy the reading!
 blog.keep-reading: keep reading...
 blog.coming-soon: More posts coming soon...
 
+contacts.seo.title: Contacts
+contacts.seo.description: Fill out the form to contact Giada Joey Cazzola. Wedding, couple, maternity services in Turin, Rome and throughout Italy.
 contacts.title: Contact Me
 contacts.body: >
   <p>Write me to receive more information about my services. I will be happy to answer your questions and confirm my availability for your wedding date.</p>

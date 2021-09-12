@@ -1,3 +1,5 @@
+default.seo.title: Giada Joey Cazzola - Fotografo reportage matrimionio in Italia ed Europa
+
 menu.home: Home
 menu.reviews: Recensioni
 menu.portfolio: Portfolio
@@ -5,6 +7,8 @@ menu.stories: Storie
 menu.blog: Blog
 menu.contacts: Contatti
 
+home.seo.title: Homepage
+home.seo.description: Fotografa matrimonio in Piemonte, Toscana, Roma, resto d’Italia ed Europa. Specializzata in reportage foto e video autentici.
 home.about: >
   <p>Sono Giada e sono una fotografa specializzata in reportage di matrimonio.</p>
   <p>Sono nata a Torino, città d’arte e magia. Ed è proprio tra le vie di questa città che è nata la mia passione per la fotografia. Sono sempre stata una sentimentale, innamorata dell’amore e di tutto ciò che questo sentimento riesce a suscitare nelle persone.</p>
@@ -20,10 +24,14 @@ home.about: >
   <p>⋯</p>
 home.awards: Riconoscimenti
 
-reviews.title: Dicono di me
+reviews.seo.title: Recensioni
+reviews.seo.description: Chi è Giada Joey Cazzola, fotografa reportage matrimonio e maternità in Italia. Sede a Torino e Roma.
+reviews.title: Recensioni
 reviews.quote: Fotografare è una maniera di vivere. Ma importante è la vita, non la fotografia. Importante è raccontare. Se si parte dalla fotografia non si arriva in nessun altro posto che alla fotografia.
 reviews.mentions: Menzioni
 
+portfolio.seo.title: Portfolio
+portfolio.seo.description: 'Raccolta dei migliori lavori di reportage di matrimonio realizzati in location bellissime: Piemonte, Roma, Toscana, Costiera Amalfitana, Sicilia, Cinque Terre, Italia, Europa.'
 portfolio.title: Portfolio
 portfolio.quote: La fotografia è una cosa semplice, a condizione di avere qualcosa da dire.
 portfolio.body: Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere le gallery complete clicca
@@ -31,15 +39,21 @@ portfolio.body.link: qui
 portfolio.photos: Foto
 portfolio.videos: Video
 
+stories.seo.title: Storie
+stories.seo.description: Raccolta del meglio di alcuni matrimoni realizzati in Italia ed Europa. Sposi innamorati, allestimenti moderni ed eleganti, foto spontanee, location da sogno.
 stories.title: Storie
 stories.quote: Credo davvero che ci siano cose che nessuno riesce a vedere prima che vengano fotografate.
 
+blog.seo.title: Blog
+blog.seo.description: 'Una collezione di articoli ricchi di consigli per le future spose: boho chic, matrimoni all’aperto, le nuove tendenze wedding 2022/2023'
 blog.title: Blog
 blog.body: >
   Dall’unione di due passioni, scrittura e fotografia, nasce questo blog: uno spazio in cui i futuri sposi, alle prese con l’organizzazione del matrimonio, possono trovare spunti interessanti. Un viaggio tra parole e immagini che insieme compongono articoli riguardanti vari argomenti: dallo stile alle location, dagli abiti alle bomboniere. Buona lettura!
 blog.keep-reading: continua a leggere...
 blog.coming-soon: Altri post in arrivo...
 
+contacts.seo.title: Contatti
+contacts.seo.description: Compila il form per contattare Giada Joey Cazzola. Servizi per matrimoni, sposi, maternità a Torino, Roma e in tutta Italia.
 contacts.title: Contattami
 contacts.body: >
   <p>Scrivimi per ricevere maggiori informazioni sui miei servizi. Sarò felice di rispondere alle tue domande e di confermarti la mia disponibiltà per la data del tuo matrimonio.</p>

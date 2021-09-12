@@ -90,6 +90,16 @@
 
 <script>
 export default {
+  data() {
+    return {
+      title: this.$i18n.t('contacts.seo.title'),
+      description: this.$i18n.t('contacts.seo.description'),
+      url: 'https://www.giadajoeycazzola.com/contacts/',
+      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+      privacyAccepted: false
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -132,17 +142,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Contatti',
-      description:
-        'Compila la form per contattare Giada Joey Cazzola. Disponibile anche per altri tipi di servizi fotografici a Torino.',
-      url: 'https://www.giadajoeycazzola.com/contacts/',
-      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
-      privacyAccepted: false
     }
   },
 
