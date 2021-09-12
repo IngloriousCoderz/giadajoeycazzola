@@ -1,8 +1,9 @@
 import yaml from 'js-yaml'
 import fs from 'fs'
+import { dateTimeFormats } from './locales/dateTimeFormats'
 
-const en = yaml.load(fs.readFileSync('./i18n/en.yml'))
-const it = yaml.load(fs.readFileSync('./i18n/it.yml'))
+const en = yaml.load(fs.readFileSync('./locales/en.yml'))
+const it = yaml.load(fs.readFileSync('./locales/it.yml'))
 
 module.exports = {
   // Target: https://go.nuxtjs.dev/config-target
@@ -132,7 +133,8 @@ module.exports = {
     defaultLocale: 'en',
     vueI18n: {
       fallbackLocale: 'en',
-      messages: { en, it }
+      messages: { en, it },
+      dateTimeFormats
     }
   },
 

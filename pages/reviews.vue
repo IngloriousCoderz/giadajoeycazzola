@@ -1,12 +1,12 @@
 <template>
   <section class="container">
-    <h1 class="is-size-1 has-text-centered">Dicono di me</h1>
+    <h1 class="is-size-1 has-text-centered">
+      {{ $t('reviews.title') }}
+    </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;Fotografare è una maniera di vivere. Ma importante è la vita, non
-        la fotografia. Importante è raccontare. Se si parte dalla fotografia non
-        si arriva in nessun altro posto che alla fotografia.&rdquo;
+        &ldquo;{{ $t('reviews.quote') }}&rdquo;
         <footer>
           &mdash;
           <cite>Ferdinando Scianna</cite>
@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <h1 class="is-size-1 has-text-centered">Menzioni</h1>
+    <h1 class="is-size-1 has-text-centered">{{ $t('reviews.mentions') }}</h1>
 
     <div class="content has-text-centered">
       <p>
@@ -43,7 +43,7 @@
           class="has-text-weight-bold"
           >Un matrimonio autunnale ispirato al tè</a
         >
-        - Wedding Wonderland, 3 maggio 2018
+        - Wedding Wonderland, {{ $d(new Date(2018, 4, 3), 'short') }}
         <br />
         <a
           href="http://weddingwonderland.it/2018/06/matrimonio-boho-handmade.html"
@@ -51,7 +51,7 @@
           class="has-text-weight-bold"
           >Un matrimonio boho e handmade</a
         >
-        - Wedding Wonderland, 5 giugno 2018
+        - Wedding Wonderland, {{ $d(new Date(2018, 5, 5), 'short') }}
       </p>
 
       <p>&ctdot;</p>

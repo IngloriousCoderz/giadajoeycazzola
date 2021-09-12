@@ -1,26 +1,13 @@
 <template>
   <section class="container">
     <h1 class="is-size-1 has-text-centered">
-      Contattami
+      {{ $t('contacts.title') }}
     </h1>
 
     <div class="content columns">
       <div class="column has-vertically-aligned-content">
-        <p>
-          Scrivimi per ricevere maggiori informazioni sui miei servizi. Sarò
-          felice di rispondere alle tue domande e di confermarti la mia
-          disponibiltà per la data del tuo matrimonio.
-        </p>
-        <p>Oltre che reportage di matrimonio, offro diversi servizi quali:</p>
-        <ul>
-          <li>maternità</li>
-          <li>newborn photography</li>
-          <li>reportage</li>
-          <li>book</li>
-          <li>servizi di coppia in esterni o in studio</li>
-          <li>ritratti</li>
-        </ul>
-        <p>Per saperne di più:</p>
+        <div v-html="$t('contacts.body')" />
+
         <p>
           <a
             href="mailto:giada.cazzola93@gmail.com"
@@ -42,7 +29,11 @@
             method="POST"
           >
             <div class="field">
-              <input class="input" name="name" placeholder="Nome" />
+              <input
+                class="input"
+                name="name"
+                :placeholder="$t('contacts.name')"
+              />
             </div>
 
             <div class="field">
@@ -50,30 +41,34 @@
                 class="input"
                 type="email"
                 name="email"
-                placeholder="Email"
+                :placeholder="$t('contacts.email')"
               />
             </div>
 
             <div class="field">
-              <input class="input" name="phone" placeholder="Telefono" />
+              <input
+                class="input"
+                name="phone"
+                :placeholder="$t('contacts.phone')"
+              />
             </div>
 
             <div class="field">
               <textarea
                 class="textarea"
                 name="message"
-                placeholder="Messaggio"
+                :placeholder="$t('contacts.message')"
               />
             </div>
 
             <div class="field">
               <b-switch v-model="privacyAccepted">
-                Accetto la
+                {{ $t('contacts.privacy-policy') }}
                 <a
                   href="https://www.iubenda.com/privacy-policy/10318033"
                   target="_blank"
                   class="has-text-weight-bold"
-                  >privacy policy</a
+                  >{{ $t('contacts.privacy-policy.link') }}</a
                 >
               </b-switch>
             </div>
@@ -84,7 +79,7 @@
               value="Richiesta di contatto dal sito giadajoeycazzola.com"
             />
             <button class="button" type="submit" @click.prevent="onClick">
-              Invia
+              {{ $t('contacts.send') }}
             </button>
           </form>
         </div>

@@ -1,13 +1,12 @@
 <template>
   <section class="container">
     <h1 class="is-size-1 has-text-centered">
-      Storie
+      {{ $t('stories.title') }}
     </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;Credo davvero che ci siano cose che nessuno riesce a vedere prima
-        che vengano fotografate.&rdquo;
+        &ldquo;{{ $t('stories.quote') }}&rdquo;
         <footer>
           &mdash;
           <cite>Diane Arbus</cite>

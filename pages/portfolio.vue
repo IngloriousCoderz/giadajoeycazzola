@@ -1,13 +1,12 @@
 <template>
   <section class="container">
     <h1 class="is-size-1 has-text-centered">
-      Portfolio
+      {{ $t('portfolio.title') }}
     </h1>
 
     <div class="content has-text-centered">
       <blockquote>
-        &ldquo;La fotografia è una cosa semplice, a condizione di avere qualcosa
-        da dire.&rdquo;
+        &ldquo;{{ $t('portfolio.quote') }}&rdquo;
         <footer>
           &mdash;
           <cite>Mario Giacomelli</cite>
@@ -17,22 +16,21 @@
 
     <div class="content has-text-centered">
       <p>
-        Una raccolta di foto e video realizzati in diversi matrimoni. Per vedere
-        le gallery complete clicca
+        {{ $t('portfolio.body') }}
         <nuxt-link :to="localePath('stories')" class="has-text-weight-bold">
-          qui </nuxt-link
+          {{ $t('portfolio.body.link') }}</nuxt-link
         >.
       </p>
     </div>
 
     <h2 class="is-size-2 has-text-centered">
-      Foto
+      {{ $t('portfolio.photos') }}
     </h2>
 
     <lightbox :images="images" />
 
     <h2 class="is-size-2 has-text-centered">
-      Video
+      {{ $t('portfolio.videos') }}
     </h2>
 
     <lightbox :images="videos" />

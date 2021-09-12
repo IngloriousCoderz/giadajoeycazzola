@@ -1,16 +1,11 @@
 <template>
   <section class="container">
     <h1 class="is-size-1 has-text-centered">
-      Blog
+      {{ $t('blog.title') }}
     </h1>
 
     <div class="content has-text-centered">
-      Dall&rsquo;unione di due passioni, scrittura e fotografia, nasce questo
-      blog: uno spazio in cui i futuri sposi, alle prese con
-      l&rsquo;organizzazione del matrimonio, possono trovare spunti
-      interessanti. Un viaggio tra parole e immagini che insieme compongono
-      articoli riguardanti vari argomenti: dallo stile alle location, dagli
-      abiti alle bomboniere. Buona lettura!
+      {{ $t('blog.body') }}
     </div>
 
     <div class="content">
@@ -33,11 +28,13 @@
             <h3 class="title is-5">
               {{ post.title }}
             </h3>
-            <small class="is-italic">2 febbraio 2018</small>
+            <small class="is-italic">{{
+              $d(new Date(2018, 1, 2), 'short')
+            }}</small>
             <p v-html="post.description" />
             <div class="has-text-weight-bold">
               [
-              <span class="is-italic">continua a leggere...</span>
+              <span class="is-italic">{{ $t('blog.keep-reading') }}</span>
               ]
             </div>
           </div>
@@ -46,7 +43,7 @@
     </div>
 
     <div class="content has-text-centered">
-      Altri post in arrivo...
+      {{ $t('blog.coming-soon') }}
     </div>
   </section>
 </template>

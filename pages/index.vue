@@ -179,79 +179,11 @@
             GiadaJoeyCazzola
           </h1>
 
-          <div class="content has-text-centered">
-            <p>
-              Sono Giada e sono una fotografa specializzata in reportage di
-              matrimonio.
-            </p>
-
-            <p>
-              Sono nata a Torino, città d&rsquo;arte e magia. Ed è proprio tra
-              le vie di questa città che è nata la mia passione per la
-              fotografia. Sono sempre stata una sentimentale, innamorata
-              dell&rsquo;amore e di tutto ciò che questo sentimento riesce a
-              suscitare nelle persone.
-            </p>
-            <p />
-            <p>
-              Sguardi complici, baci fugaci e dettagli impercettibili sono stati
-              da sempre la mia massima fonte d&rsquo;ispirazione. Per questo
-              motivo, in un susseguirsi di vicende che hanno incrociato il mio
-              cammino, ho scelto di dedicarmi alla fotografia di matrimonio e
-              nello specifico al reportage.
-            </p>
-
-            <p>
-              La mia capacità di catturare la spontaneità delle persone non
-              poteva che unirsi alla cosa più spontanea che esista:
-              l&rsquo;amore.
-              <br />Ed è così che racconterò il giorno del vostro matrimonio:
-              con discrezione e ricchezza di particolari.
-            </p>
-
-            <p>Mi commuoverò e sorriderò con voi.</p>
-
-            <p>
-              Il mio è uno studio serio e profondo che da anni mi permette di
-              crescere e ampliare il mio bagaglio visivo non solo direttamente
-              sul campo dei miei matrimoni ma anche guardando con attenzione
-              matrimoni di guru e mentori della fotografia di reportage di tutto
-              il mondo.
-            </p>
-
-            <p>
-              Descriverei il mio lavoro come una ricerca della perfezione
-              nell'imperfezione.
-              <br />Il racconto dettagliato del giorno più bello per una coppia,
-              realizzato con ricchezza di particolari ma anche con discrezione.
-              <br />Il miglior complimento che mi fanno gli sposi dopo aver
-              visto le foto è che sembra loro di rivivere attraverso i miei
-              scatti il giorno del matrimonio con dettagli che nemmeno loro
-              ricordavano.
-            </p>
-
-            <p>
-              Il mio successo, e il motivo per cui vi invito a scegliermi, è
-              proprio questo: racconterò la vostra storia, il vostro giorno
-              speciale, il vostro amore con un approccio fresco, giovane,
-              spontaneo e il più naturale possibile. Per me esistete voi, con i
-              vostri pregi e i vostri difetti che vi rendono unici e che sono
-              sicura siano quelli che hanno permesso alla vostra metà di
-              innamorarsi di voi. Mi interessano i vostri sguardi, i sorrisi
-              imbarazzati quando vi guardate dopo aver pronunciato quel "sì"
-              all'altare, i baci e le mani che si incrociano mentre camminate
-              uno di fianco all'altra. In una parola mi interessate voi, e io e
-              la mia macchina fotografica faremo tutto quello che è in nostro
-              potere per restituirvi le immagini perfette per descrivere quello
-              che siete.
-            </p>
-
-            <p>&ctdot;</p>
-          </div>
+          <div class="content has-text-centered" v-html="$t('home.about')" />
         </div>
 
         <h1 class="is-size-1 has-text-centered">
-          Riconoscimenti
+          {{ $t('home.awards') }}
         </h1>
 
         <!-- // Matrimonio.com -->
@@ -340,6 +272,29 @@ const MANUAL_SPEED = 500
 export default {
   layout: 'home',
 
+  data() {
+    return {
+      title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
+      description:
+        'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.',
+      url: 'https://www.giadajoeycazzola.com/',
+      image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
+
+      burgerActive: false,
+      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
+        id: index + 1,
+        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
+      })),
+      swiperOptions: {
+        loop: true,
+        speed: SLIDE_SPEED,
+        lazy: { loadPrevNext: true, loadOnTransitionStart: true },
+        keyboard: { enabled: true },
+        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true }
+      }
+    }
+  },
+
   head() {
     return {
       title: this.title,
@@ -382,40 +337,6 @@ export default {
           href: this.url
         }
       ]
-    }
-  },
-
-  data() {
-    return {
-      title: 'Giada Joey Cazzola - Fotografa matrimonio Torino',
-      description:
-        'Fotografa di matrimonio a Torino, lago di Como, lago Maggiore, Toscana, Roma, Puglia e in tutta Europa. Specializzata in reportage foto e video spontanei.',
-      url: 'https://www.giadajoeycazzola.com/',
-      image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
-
-      burgerActive: false,
-      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
-        id: index + 1,
-        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
-        // src: `${BASE_PATH}/mobile/${zpad(index + 1)}.jpg`
-      })),
-      swiperOptions: {
-        loop: true,
-        speed: SLIDE_SPEED,
-        lazy: { loadPrevNext: true, loadOnTransitionStart: true },
-        keyboard: { enabled: true },
-        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true }
-        // on: {
-        //   init: () => {
-        //     if (window.matchMedia('(min-width: 1024px)').matches) {
-        //       this.images.forEach(
-        //         image => (image.src = image.src.replace(/\/mobile\//g, '/'))
-        //       )
-        //       this.$nextTick(() => this.mySwiper.lazy.load())
-        //     }
-        //   }
-        // }
-      }
     }
   },
 
