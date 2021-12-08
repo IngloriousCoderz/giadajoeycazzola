@@ -6,7 +6,10 @@
 
     <article class="content">
       <p
-        class="is-size-7 is-italic has-text-centered-mobile has-text-right-desktop"
+        class="
+          is-size-7 is-italic
+          has-text-centered-mobile has-text-right-desktop
+        "
       >
         &mdash; {{ date }} &mdash;
       </p>
@@ -18,8 +21,8 @@
 <script>
 export default {
   props: {
-    title: String,
-    date: String
-  }
+    title: { type: String, default: '' },
+    date: { type: String, default: '' },
+  },
 }
 </script>

@@ -20,10 +20,16 @@
       @click.self="closeOverlay"
     >
       <div class="holder">
-        <div v-if="images[currentImage].thumb" style="padding:56.25% 0 0 0;">
+        <div v-if="images[currentImage].thumb" style="padding: 56.25% 0 0 0">
           <iframe
             :src="images[currentImage].src"
-            style="position:absolute;top:0;left:0;width:100%;height:100%;"
+            style="
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 100%;
+              height: 100%;
+            "
             frameborder="0"
             webkitallowfullscreen
             mozallowfullscreen
@@ -40,16 +46,16 @@
           <a class="close" nohref @click="closeOverlay">
             <span>&times;</span>
           </a>
+
           <a class="prev" nohref @click="prevImage">
-            <!-- <span>&#8592;</span> -->
             <div
               slot="button-prev"
               data-v-2a183b29
               class="swiper-button-prev swiper-button-white"
             />
           </a>
+
           <a class="next" nohref @click="nextImage">
-            <!-- <span>&#8594;</span> -->
             <div
               slot="button-next"
               data-v-2a183b29
@@ -57,6 +63,7 @@
             />
           </a>
         </div>
+
         <p v-if="caption && images[currentImage].caption">
           {{ images[currentImage].caption }}
         </p>
@@ -68,39 +75,23 @@
 <script>
 export default {
   props: {
-    resetstyles: {
-      default: false,
-      type: Boolean
-    },
-    title: {
-      type: String
-    },
-    images: {
-      type: Array
-    },
-    loop: {
-      default: true,
-      type: Boolean
-    },
-    nav: {
-      default: true,
-      type: Boolean
-    },
-    caption: {
-      deftault: true,
-      type: Boolean
-    }
+    resetstyles: { type: Boolean, default: false },
+    title: { type: String, default: '' },
+    images: { type: Array, default: () => [] },
+    loop: { type: Boolean, default: true },
+    nav: { type: Boolean, default: true },
+    caption: { type: Boolean, default: true },
   },
 
   data() {
     return {
       currentImage: null,
-      overlayActive: false
+      overlayActive: false,
     }
   },
 
   mounted() {
-    window.addEventListener('keydown', e => this.handleGlobalKeyDown(e))
+    window.addEventListener('keydown', (e) => this.handleGlobalKeyDown(e))
   },
 
   methods: {
@@ -147,8 +138,8 @@ export default {
         default:
           break
       }
-    }
-  }
+    },
+  },
 }
 </script>
 
@@ -158,7 +149,6 @@ export default {
   margin: 0 auto;
   padding: 0;
   display: block;
-  // max-width: 780px;
   text-align: center;
 
   li {
@@ -170,7 +160,7 @@ export default {
     img {
       display: block;
       width: 182px;
-      // width: 200px;
+      cursor: pointer;
     }
   }
 }
@@ -221,7 +211,7 @@ export default {
       a {
         color: white !important;
         opacity: 0.3;
-        -webkit-user-select: none;
+        user-select: none;
         cursor: pointer;
 
         &:hover {
@@ -240,23 +230,15 @@ export default {
         font-size: 40px;
         display: flex;
         align-items: center;
-
-        // span {
-        // top: 50%;
-        // transform: translateY(50%);
-        // position: relative;
-        // }
       }
 
       .next {
         right: 0;
-        // text-align: right;
         justify-content: flex-end;
       }
 
       .prev {
         left: 0;
-        // text-align: left;
         justify-content: flex-start;
       }
       .close {

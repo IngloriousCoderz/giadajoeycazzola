@@ -116,10 +116,8 @@ export default {
     return {
       title: 'Francesca & Marco',
       description: {
-        en:
-          'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
-        it:
-          'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.'
+        en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
+        it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
       },
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
@@ -127,7 +125,7 @@ export default {
         ''
       )}/`,
       basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
+      imageCount: IMAGE_COUNT,
     }
   },
 
@@ -138,42 +136,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

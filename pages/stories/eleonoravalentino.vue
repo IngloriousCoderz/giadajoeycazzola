@@ -32,10 +32,8 @@ export default {
     return {
       title: 'Eleonora & Valentino',
       description: {
-        en:
-          'This is the story of a day of rain and tears of joy. Because even the sky of Taormina was moved by watching this splendid wedding.',
-        it:
-          'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.'
+        en: 'This is the story of a day of rain and tears of joy. Because even the sky of Taormina was moved by watching this splendid wedding.',
+        it: 'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.',
       },
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/56.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
@@ -43,7 +41,7 @@ export default {
         ''
       )}/`,
       basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
+      imageCount: IMAGE_COUNT,
     }
   },
 
@@ -54,42 +52,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

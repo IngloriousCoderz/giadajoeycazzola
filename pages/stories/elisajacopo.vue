@@ -74,18 +74,16 @@ export default {
     return {
       title: 'Elisa & Jacopo',
       description: {
-        en:
-          "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
-        it:
-          'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.'
+        en: "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
+        it: 'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/34.jpg`,
+      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/07.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,
       basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
+      imageCount: IMAGE_COUNT,
     }
   },
 
@@ -96,42 +94,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

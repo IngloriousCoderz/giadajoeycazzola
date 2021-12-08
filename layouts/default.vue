@@ -7,9 +7,7 @@
     >
       <div class="navbar-brand">
         <nuxt-link :to="localePath('index')" class="navbar-item">
-          <h1 class="has-text-weight-bold is-marginless">
-            GJC
-          </h1>
+          <h1 class="has-text-weight-bold is-marginless">GJC</h1>
         </nuxt-link>
 
         <button
@@ -124,9 +122,7 @@
 
         <div class="level-item">
           <nuxt-link :to="localePath('index')">
-            <h1 class="is-size-2 has-text-weight-bold is-marginless">
-              GJC
-            </h1>
+            <h1 class="is-size-2 has-text-weight-bold is-marginless">GJC</h1>
           </nuxt-link>
         </div>
 
@@ -156,24 +152,24 @@
 
 <script>
 export default {
-  head() {
+  data() {
     return {
-      titleTemplate: `%s | ${this.$i18n.t('default.seo.title')}`
+      burgerActive: false,
     }
   },
 
-  data() {
+  head() {
     return {
-      burgerActive: false
+      titleTemplate: `%s | ${this.$i18n.t('default.seo.title')}`,
     }
   },
 
   mounted() {
-    window.fbAsyncInit = function() {
+    window.fbAsyncInit = function () {
       window.FB.init({
         appId: '1953139364946355',
         xfbml: true,
-        version: 'v2.12'
+        version: 'v2.12',
       })
 
       window.FB.AppEvents.logPageView()
@@ -187,7 +183,7 @@ export default {
 
     closeBurger() {
       this.burgerActive = false
-    }
-  }
+    },
+  },
 }
 </script>

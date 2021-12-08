@@ -8,7 +8,7 @@ for (let i = 1; i < 51; i++) {
   fs.rename(
     path.join(BASE_PATH, 'min', `${zpad(i)}-min.jpg`),
     path.join(BASE_PATH, `${zpad(i)}.jpg`),
-    err => {
+    (err) => {
       if (err) throw err
     }
   )

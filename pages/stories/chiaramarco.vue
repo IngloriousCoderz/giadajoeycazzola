@@ -39,10 +39,8 @@ export default {
     return {
       title: 'Chiara & Marco',
       description: {
-        en:
-          'Two architects with a passion for art and a reportage in the heart of one of the most chaotic markets in Italy.',
-        it:
-          'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.'
+        en: 'Two architects with a passion for art and a reportage in the heart of one of the most chaotic markets in Italy.',
+        it: 'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.',
       },
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
@@ -50,7 +48,7 @@ export default {
         ''
       )}/`,
       basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
+      imageCount: IMAGE_COUNT,
     }
   },
 
@@ -61,42 +59,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

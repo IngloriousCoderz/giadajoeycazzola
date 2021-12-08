@@ -9,10 +9,10 @@
     </section>
 
     <section v-if="video" class="content has-text-centered">
-      <div style="padding:56.25% 0 0 0;position:relative;">
+      <div style="padding: 56.25% 0 0 0; position: relative">
         <iframe
           :src="video"
-          style="position:absolute;top:0;left:0;width:100%;height:100%;"
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 100%"
           frameborder="0"
           webkitallowfullscreen
           mozallowfullscreen
@@ -34,27 +34,27 @@ export default {
   components: { Lightbox },
 
   props: {
-    title: String,
-    basePath: String,
-    imageCount: Number,
-    video: String
+    title: { type: String, default: '' },
+    basePath: { type: String, default: '' },
+    imageCount: { type: Number, default: 0 },
+    video: { type: String, default: '' },
   },
 
   data() {
     return {
-      images: Array.from(Array(this.imageCount).keys()).map(index => ({
+      images: Array.from(Array(this.imageCount).keys()).map((index) => ({
         id: index + 1,
-        src: `/images/${this.basePath}/${zpad(index + 1)}.jpg`
-      }))
+        src: `/images/${this.basePath}/${zpad(index + 1)}.jpg`,
+      })),
     }
   },
 
   mounted() {
     if (window.matchMedia('(min-width: 1024px)').matches) {
       this.images.forEach(
-        image => (image.src = image.src.replace(/\/mobile/g, ''))
+        (image) => (image.src = image.src.replace(/\/mobile/g, ''))
       )
     }
-  }
+  },
 }
 </script>

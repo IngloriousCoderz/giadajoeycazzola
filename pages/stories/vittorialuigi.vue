@@ -53,10 +53,8 @@ export default {
     return {
       title: 'Vittoria & Luigi',
       description: {
-        en:
-          'A chic wedding in a Piedmontese winery. For wine lovers, Piedmont is a certainty to get married!',
-        it:
-          'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.'
+        en: 'A chic wedding in a Piedmontese winery. For wine lovers, Piedmont is a certainty to get married!',
+        it: 'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.',
       },
       image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
@@ -64,7 +62,7 @@ export default {
         ''
       )}/`,
       basePath: BASE_PATH,
-      imageCount: IMAGE_COUNT
+      imageCount: IMAGE_COUNT,
     }
   },
 
@@ -75,42 +73,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description[this.$i18n.locale]
+          content: this.description[this.$i18n.locale],
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

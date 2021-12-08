@@ -3,7 +3,7 @@ export const dateTimeFormats = {
     short: {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
     },
     long: {
       year: 'numeric',
@@ -11,14 +11,14 @@ export const dateTimeFormats = {
       day: 'numeric',
       weekday: 'short',
       hour: 'numeric',
-      minute: 'numeric'
-    }
+      minute: 'numeric',
+    },
   },
   it: {
     short: {
       year: 'numeric',
       month: 'long',
-      day: 'numeric'
+      day: 'numeric',
     },
     long: {
       year: 'numeric',
@@ -26,7 +26,7 @@ export const dateTimeFormats = {
       day: 'numeric',
       weekday: 'short',
       hour: 'numeric',
-      minute: 'numeric'
-    }
-  }
+      minute: 'numeric',
+    },
+  },
 }

@@ -62,9 +62,7 @@
 
     <lightbox :images="images.decorations" class="lightbox-small" />
 
-    <h3 class="title is-4 has-text-centered has-text-weight-bold">
-      Bouquet
-    </h3>
+    <h3 class="title is-4 has-text-centered has-text-weight-bold">Bouquet</h3>
 
     <p>
       La parola d’ordine è &ldquo;selvaggio&rdquo;. Il bouquet deve essere
@@ -121,9 +119,7 @@
 
     <lightbox :images="images.cake" />
 
-    <h3 class="title is-4 has-text-centered has-text-weight-bold">
-      Location
-    </h3>
+    <h3 class="title is-4 has-text-centered has-text-weight-bold">Location</h3>
 
     <p>
       L&rsquo;ambientazione deve essere bucolica e probabilmente il luogo ideale
@@ -173,7 +169,7 @@ const IMAGE_COUNT = {
   bouquet: 7,
   dress: 9,
   cake: 10,
-  location: 7
+  location: 7,
 }
 
 export default {
@@ -190,12 +186,12 @@ export default {
       date: '2 febbraio 2018',
 
       images: Object.entries(IMAGE_COUNT).reduce((acc, [section, count]) => {
-        acc[section] = Array.from(Array(count).keys()).map(index => ({
+        acc[section] = Array.from(Array(count).keys()).map((index) => ({
           id: index + 1,
-          src: `/images/${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`
+          src: `/images/${BASE_PATH}/${section}/${zpad(index + 1)}.jpg`,
         }))
         return acc
-      }, {})
+      }, {}),
     }
   },
 
@@ -206,42 +202,42 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>

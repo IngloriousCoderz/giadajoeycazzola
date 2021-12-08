@@ -7,9 +7,7 @@
     >
       <div class="navbar-brand">
         <nuxt-link :to="localePath('index')" class="navbar-item">
-          <h2 class="has-text-weight-bold is-marginless">
-            GJC
-          </h2>
+          <h2 class="has-text-weight-bold is-marginless">GJC</h2>
         </nuxt-link>
 
         <button
@@ -95,14 +93,15 @@
 
     <div v-swiper:mySwiper="swiperOptions" class="swiper-container">
       <div class="swiper-wrapper">
-        <div v-for="image in images" :key="image.id" class="swiper-slide">
+        <div v-for="img in images" :key="img.id" class="swiper-slide">
           <div
             class="is-overlay has-clipped-background swiper-lazy"
-            :data-background="image.src"
+            :data-background="img.src"
           />
           <div class="swiper-lazy-preloader swiper-lazy-preloader-white" />
         </div>
       </div>
+
       <div
         slot="button-prev"
         class="swiper-button-prev swiper-button-white"
@@ -146,9 +145,7 @@
 
         <div class="level-item">
           <nuxt-link :to="localePath('index')" class="has-text-white">
-            <h2 class="is-size-2 has-text-weight-bold is-marginless">
-              GJC
-            </h2>
+            <h2 class="is-size-2 has-text-weight-bold is-marginless">GJC</h2>
           </nuxt-link>
         </div>
 
@@ -264,7 +261,7 @@
 import zpad from 'zpad'
 
 const BASE_PATH = '/images/home'
-const IMAGE_COUNT = 9
+const IMAGE_COUNT = 6
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
@@ -280,17 +277,17 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
 
       burgerActive: false,
-      images: Array.from(Array(IMAGE_COUNT).keys()).map(index => ({
+      images: Array.from(Array(IMAGE_COUNT).keys()).map((index) => ({
         id: index + 1,
-        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`
+        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`,
       })),
       swiperOptions: {
         loop: true,
         speed: SLIDE_SPEED,
         lazy: { loadPrevNext: true, loadOnTransitionStart: true },
         keyboard: { enabled: true },
-        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true }
-      }
+        autoplay: { delay: SLIDE_DELAY, disableOnInteraction: true },
+      },
     }
   },
 
@@ -301,41 +298,41 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
   },
 
@@ -358,8 +355,8 @@ export default {
 
     onClickNext() {
       this.mySwiper.slideNext(MANUAL_SPEED)
-    }
-  }
+    },
+  },
 }
 </script>
 

@@ -64,9 +64,9 @@ export default {
           title: 'Matrimonio Boho Chic',
           description: `Se stai pensando di organizzare un matrimonio in stile bohemien, questa è la guida che fa per te.
         <br /> &ldquo;Boho wedding&rdquo; è una delle ricerche più frequenti su Google.
-        <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?`
-        }
-      ]
+        <br /> Ma cosa rende un matrimonio come questo diverso dagli altri?`,
+        },
+      ],
     }
   },
 
@@ -77,43 +77,43 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
-  }
+  },
 }
 </script>
 

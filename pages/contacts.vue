@@ -96,7 +96,7 @@ export default {
       description: this.$i18n.t('contacts.seo.description'),
       url: 'https://www.giadajoeycazzola.com/contacts/',
       image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
-      privacyAccepted: false
+      privacyAccepted: false,
     }
   },
 
@@ -107,41 +107,41 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.title
+          content: this.title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.description
+          content: this.description,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: this.url
+          content: this.url,
         },
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.image
+          content: this.image,
         },
         {
           hid: 'og:type',
           property: 'og:type',
-          content: 'website'
-        }
+          content: 'website',
+        },
       ],
       link: [
         {
           hid: 'canonical',
           rel: 'canonical',
-          href: this.url
-        }
-      ]
+          href: this.url,
+        },
+      ],
     }
   },
 
@@ -153,7 +153,7 @@ export default {
       }
 
       this.$refs.form.submit()
-    }
-  }
+    },
+  },
 }
 </script>
