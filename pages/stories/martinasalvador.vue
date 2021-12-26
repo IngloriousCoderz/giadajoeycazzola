@@ -43,7 +43,7 @@
 <script>
 import Story from '@/components/Story'
 
-const BASE_PATH = 'stories/martinasalvador'
+const BASE_PATH = 'stories/martinasalvador/mobile'
 const IMAGE_COUNT = 92
 
 export default {

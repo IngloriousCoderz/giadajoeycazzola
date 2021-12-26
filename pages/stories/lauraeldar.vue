@@ -87,7 +87,7 @@
 <script>
 import Story from '@/components/Story'
 
-const BASE_PATH = 'stories/lauraeldar'
+const BASE_PATH = 'stories/lauraeldar/mobile'
 const IMAGE_COUNT = 83
 
 export default {
