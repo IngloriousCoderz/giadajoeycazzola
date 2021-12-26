@@ -172,9 +172,13 @@
     <section class="hero">
       <div class="hero-body">
         <div class="container">
-          <h1 class="is-size-1-desktop is-size-3-mobile has-text-centered">
+          <h1 class="is-size-1-tablet is-size-3-mobile has-text-centered">
             GiadaJoeyCazzola
           </h1>
+
+          <div class="content has-text-centered">
+            <img src="/images/home/me.jpg" alt="A picture of myself" />
+          </div>
 
           <div class="content has-text-centered" v-html="$t('home.about')" />
         </div>
@@ -183,10 +187,35 @@
           {{ $t('home.awards') }}
         </h1>
 
-        <!-- // Matrimonio.com -->
         <div class="container">
-          <div class="columns is-centered">
-            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+          <div class="columns is-mobile is-centered">
+            <!--
+              <div class="column has-text-centered">
+              <a
+                title="I migliori fotografi di tutto il mondo su MyWed"
+                href="https://mywed.com/"
+                target="_blank"
+                style="text-decoration: none"
+              >
+                <img
+                  width="100"
+                  alt="I migliori fotografi di tutto il mondo su MyWed"
+                  src="https://mywed.com/images/mywed-logo/logo_mywed_vertical_black.svg"
+                />
+              </a>
+            </div>
+            -->
+
+            <div class="column has-text-centered">
+              <a href="https://www.zankyou.it/f/giada-joey-cazzola-580999"
+                ><img
+                  width="100"
+                  alt="Consigliato da Zankyou"
+                  src="https://asset1.zankyou.com/img/sections/badgets/zk_recommend/circle/badge_green_it.png"
+              /></a>
+            </div>
+
+            <div id="wp-ratedWA" class="column has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2021 Matrimonio.com"
@@ -194,15 +223,14 @@
               >
                 <img
                   id="wp-ratedWA-img-2021"
-                  width="250"
-                  height="250"
+                  width="100"
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2021 Matrimonio.com"
                   src="https://cdn1.matrimonio.com/img/badges/2021/badge-weddingawards_it_IT.jpg"
                 />
               </a>
             </div>
 
-            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+            <div id="wp-ratedWA" class="column has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2020 matrimonio.com"
@@ -210,15 +238,14 @@
               >
                 <img
                   id="wp-ratedWA-img-2020"
-                  width="250"
-                  height="250"
+                  width="100"
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2020 matrimonio.com"
                   src="https://cdn1.matrimonio.com/img/badges/2020/badge-weddingawards_it_IT.jpg"
                 />
               </a>
             </div>
 
-            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+            <div id="wp-ratedWA" class="column has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
@@ -226,15 +253,14 @@
               >
                 <img
                   id="wp-ratedWA-img-2019"
-                  width="250"
-                  height="250"
+                  width="100"
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2019 matrimonio.com"
                   src="https://cdn1.matrimonio.com/img/badges/2019/badge-weddingawards_it_IT.jpg"
                 />
               </a>
             </div>
 
-            <div id="wp-ratedWA" class="column is-3 has-text-centered">
+            <div id="wp-ratedWA" class="column has-text-centered">
               <a
                 href="https://www.matrimonio.com/fotografo-matrimonio/giada-joey-cazzola--e159658"
                 title="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com"
@@ -242,8 +268,7 @@
               >
                 <img
                   id="wp-ratedWA-img-2018"
-                  width="250"
-                  height="250"
+                  width="100"
                   alt="Giada Joey Cazzola, vincitore Wedding Awards 2018 matrimonio.com"
                   src="https://cdn1.matrimonio.com/img/badges/2018/badge-weddingawards_it_IT.jpg"
                 />

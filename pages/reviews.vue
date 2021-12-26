@@ -20,6 +20,17 @@
       </div>
     </div>
 
+    <!-- 
+    <div class="container is-centered">
+      <iframe
+        sandbox="allow-same-origin allow-scripts"
+        src="https://www.zankyou.it/iframe/reviews-widget/wervice/580999"
+        frameborder="0"
+        style="width: 100%; height: 160px"
+      />
+    </div>
+    -->
+
     <div class="content has-text-centered">
       <div v-for="review in reviews" :key="review.text">
         <p class="has-text-weight-bold">
@@ -93,6 +104,20 @@ export default {
       image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
 
       reviews: [
+        {
+          text: {
+            en: 'Giada is simply unbelievable. Her shots come to life. We chose her for our wedding (and also for a maternity photo shoot with the belly) and she was a precise and impeccable professional. Always available, easy to contact, affable and kind, but first of all a photographer who can make you move in every shot: her talent in reportage services makes the photos not just simple memories, but a present, still vivid moment! I would choose her a thousand more times!',
+            it: "Giada è semplicemente pazzesca. I suoi scatti vivono. L'abbiamo scelta per il nostro matrimonio (ed anche per un servizio maternity per le foto con la pancia) ed è stata una professionista precisa ed impeccabile. Sempre disponibile, facile da contattare, affabile e gentile, ma prima di tutto una fotografa in grado di farti emozionare in ogni scatto: la sua dote nei servizi di reportage rende le foto non solo dei semplici ricordi, ma un momento presente, ancora vivido! La sceglierei altre mille volte!",
+          },
+          author: 'Eleonora & Lorenzo',
+        },
+        {
+          text: {
+            en: 'I have always thought that wedding photos were memories so important that they cannot be entrusted to any professional, and here I met Giada! As a Neapolitan now abroad for quite a few years, I was looking for a photographer who could not only report on our event that lasted 3 days (in Naples, in the height of summer and with over 200 guests), but who could create shots with the eyes of the artist who comes from afar, of the foreigner who looks at the same city of Naples with eyes intrigued by people, art, history and culture! I wanted to be able to recognize myself in the shots and not look like a "Virgin Mary", as I had seen in many shots of well-known photographers in my city. Yes, Giada has managed to make everything true with her freshness, authenticity and professionalism... Seeing her photos again gives me chills! I don\'t know how she does it, but the photos of her express emotions, as if she with her room could read you inside her! I am happy because in addition to being a great photographer, I met a beautiful person, and I am sure that she will continue to accompany us in the most important moments of our family! Merçi beaucoup Giada! :-)',
+            it: "Ho sempre pensato che le foto del matrimonio fossero rircordi così importanti da non poter essere affidati ad un professionista qualsiasi, ed ecco che ho conosciuto Giada! Da napoletana ormai all'estero da un bel po' di anni, cercavo un fotografo che non solo potesse fare il reportage del nostro evento durato bensì 3 giorni (a Napoli, in piena estate e con oltre 200 invitati), ma che potesse realizzare scatti con gli occhi dell'artista che arriva da lontano, dello straniero che guarda la stessa città di Napoli con occhi incuriositi dalla gente, dall'arte, dalla storia e dalla cultura! Volevo potermi riconoscere negli scatti e non sembrare una \"Madonna\", come avevo visto in molti scatti di fotografi noti della mia città. Ecco sì, Giada è riuscita a rendere tutto ciò vero con la sua freschezza, autenticità e professionalità... Rivedere ancora le foto mi dà i brividi! Non so come faccia, ma le sue foto esprimono emozioni, come se con la sua camera riuscisse a leggerti dentro! Sono felice perché oltre ad essere una grande fotografa, ho conosciuto una bella persona, e sono sicura che continuerà ad accompagnarci nei momenti più importanti della nostra famiglia! Merçi beaucoup Giada! :-)",
+          },
+          author: 'Mariachiara & Carlo',
+        },
         {
           text: {
             en: "Simple! If you want to get excited every time in reviewing the shots of your day, choose her. Giada is a talent! Not just in her shots but as a person! Sensitive, sweet and attentive! She is able to understand what you want: your style, your dreams. She puts you at ease and she manages not to make you think too much about the pose but to enjoy your day! The best day of our life passed as we had always dreamed of, between happiness, tears, smiles, kisses and hugs! In all of this we didn't bother with the pose, with forcing a hug, a kiss, a caress or a smile. Her relationship with her has always been natural, both on her wedding day and before and after! She was understanding, helpful and flexible in everything! The end result in the photos and video is a thrill behind her back, a lump in her throat and tears every time she sees each other again! You have been able to grasp unprecedented and wonderful nuances and details! Our friends and relatives when they saw it all were moved with us! This photographer and her collaborators are simply in another category! Thanks for everything really! You are special!",
