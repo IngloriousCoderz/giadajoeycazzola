@@ -159,29 +159,34 @@ export default {
 
     img {
       display: block;
-      width: 182px;
+      width: 160px;
       cursor: pointer;
     }
   }
 }
 
 .lightbox-overlay {
-  width: 100%;
-  height: 100%;
   position: fixed;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   background: rgba(0, 0, 0, 0.9);
   text-align: center;
   padding: 20px;
   box-sizing: border-box;
   z-index: 31;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .holder {
     max-width: 600px;
     margin: 0 auto;
     position: relative;
     max-height: 100vh;
+    transform: none;
 
     img {
       width: 100%;
