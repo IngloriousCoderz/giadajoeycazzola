@@ -53,6 +53,24 @@ export default {
 
       images: [
         {
+          id: 'annamark',
+          src: '/images/stories/annamark/61.jpg',
+          title: 'Anna & Mark',
+          description: {
+            en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
+            it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
+          },
+        },
+        {
+          id: 'saramirco',
+          src: '/images/stories/saramirco/73.jpg',
+          title: 'Sara & Mirco',
+          description: {
+            en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
+            it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
+          },
+        },
+        {
           id: 'francescaluca',
           src: '/images/stories/francescaluca/54.jpg',
           title: 'Francesca & Luca',
