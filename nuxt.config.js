@@ -97,7 +97,6 @@ export default {
     'nuxt-buefy',
     // https://go.nuxtjs.dev/pwa
     '@nuxtjs/pwa',
-    '@nuxtjs/sitemap',
     '@nuxtjs/google-gtag',
     [
       '@nuxtjs/i18n',
@@ -109,6 +108,7 @@ export default {
         },
       },
     ],
+    '@nuxtjs/sitemap',
   ],
 
   // PWA module configuration: https://go.nuxtjs.dev/pwa
@@ -116,11 +116,6 @@ export default {
     manifest: {
       lang: 'en',
     },
-  },
-
-  sitemap: {
-    hostname: 'https://www.giadajoeycazzola.com',
-    generate: true,
   },
 
   'google-gtag': {
@@ -135,6 +130,10 @@ export default {
       messages: { en, it },
       dateTimeFormats,
     },
+  },
+
+  sitemap: {
+    hostname: 'https://giadajoeycazzola.com',
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
