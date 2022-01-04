@@ -71,15 +71,6 @@ export default {
           },
         },
         {
-          id: 'francescaluca',
-          src: '/images/stories/francescaluca/54.jpg',
-          title: 'Francesca & Luca',
-          description: {
-            en: 'The dream of Francesca and Luca is crowned in one of the most historic and elegant buildings in Piedmont.',
-            it: 'In uno dei palazzi più storici ed eleganti del Piemonte si corona il sogno di Francesca e Luca.',
-          },
-        },
-        {
           id: 'montainejonathan',
           src: '/images/stories/montainejonathan/22.jpg',
           title: 'Montaine & Jonathan',
@@ -116,6 +107,15 @@ export default {
           },
         },
         {
+          id: 'francescaluca',
+          src: '/images/stories/francescaluca/54.jpg',
+          title: 'Francesca & Luca',
+          description: {
+            en: 'The dream of Francesca and Luca is crowned in one of the most historic and elegant buildings in Piedmont.',
+            it: 'In uno dei palazzi più storici ed eleganti del Piemonte si corona il sogno di Francesca e Luca.',
+          },
+        },
+        {
           id: 'lauraeldar',
           src: '/images/stories/lauraeldar/01.jpg',
           title: 'Laura & Eldar',
@@ -131,6 +131,15 @@ export default {
           description: {
             en: 'A fiveteenth-century residence on the outskirts of Milan. A very sweet couple and authentic emotions.',
             it: 'Una dimora cinquecentesca a due passi da Milano, una coppia dolcissima e tante emozioni autentiche. Cosa volere di più?',
+          },
+        },
+        {
+          id: 'martinaalessandro',
+          src: '/images/stories/martinaalessandro/36.jpg',
+          title: 'Martina & Alessandro',
+          description: {
+            en: 'Simplicity, for me, wins over everything. Martina and Alessandro chose an intimate party in the Piedmont countryside to celebrate their pure and sincere love.',
+            it: 'La semplicità, per me, vince su tutto. Martina e Alessandro hanno scelto una festa intima nella campagna piemontese per celebrare il loro amore puro e sincero.',
           },
         },
         {
