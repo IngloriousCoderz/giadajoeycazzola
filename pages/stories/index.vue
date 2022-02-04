@@ -53,6 +53,25 @@ export default {
 
       images: [
         {
+          id: 'monikariccardo',
+          src: '/images/stories/monikariccardo/99.jpg',
+          title: 'Monika & Riccardo',
+          description: {
+            en: 'A romantic and modern overseas elopement, Monika and Rick have chosen a beautiful resort in Portugal to celebrate their love.',
+            it: 'Un romantico e moderno elopement oltreoceano, Monika e Rick hanno scelto un bellissimo resort in Portogallo per celebrare il loro amore',
+          },
+        },
+        {
+          id: 'giuliaandrea',
+          src: '/images/stories/giuliaandrea/90.jpg',
+          title: 'Giulia & Andrea',
+          description: {
+            en: 'Giulia and Andrea have lived in London for many years but have chosen a Piedmontese castle to swear eternal love. Elegance, nature and passion: these are the key words of their wedding.',
+            it: 'Giulia e Andrea abitano a Londra da tanti anni ma hanno scelto un castello piemontese per giurarsi amore eterno. Eleganza, natura e passione: queste le parole chiave del loro matrimonio.',
+          },
+        },
+
+        {
           id: 'annamark',
           src: '/images/stories/annamark/61.jpg',
           title: 'Anna & Mark',

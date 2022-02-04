@@ -8,7 +8,6 @@
         class="has-text-weight-bold"
         >Casetta Wedding</a
       ><br />
-
       venue:
       <a
         href="https://realcastello.com/"
@@ -16,15 +15,13 @@
         class="has-text-weight-bold"
         >Real Castello di Verduno</a
       ><br />
-
-      flowers:
+      florist:
       <a
         href="https://ilgermogliobra.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Il Germoglio</a
       ><br />
-
       furniture:
       <a
         href="https://antichitaalessio.com/"
@@ -32,7 +29,6 @@
         class="has-text-weight-bold"
         >Alessio Antichità & Home Decor</a
       ><br />
-
       stationery:
       <a
         href="https://www.behance.net/mariangelaiacobellis"
@@ -40,7 +36,6 @@
         class="has-text-weight-bold"
         >Mariangela Iacobellis</a
       ><br />
-
       bride dress:
       <a
         href="https://loretree.it/"
@@ -48,7 +43,6 @@
         class="has-text-weight-bold"
         >Lore Tree</a
       ><br />
-
       groom suite:
       <a
         href="https://www.atelierglamour.it/"
@@ -56,15 +50,13 @@
         class="has-text-weight-bold"
         >Atelier Glamour</a
       ><br />
-
-      hmua:
+      hair and makeup artist:
       <a
         href="https://rosannacurcimakeup.wordpress.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Rosanna Curci</a
       ><br />
-
       cake:
       <a
         href="http://www.torteriatasti.it/"
@@ -72,7 +64,6 @@
         class="has-text-weight-bold"
         >t.asti Food Lab</a
       ><br />
-
       bridal headpieces:
       <a
         href="https://cristinasignorina.it/"

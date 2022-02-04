@@ -7,22 +7,22 @@
         target="_blank"
         class="has-text-weight-bold"
         >La Federica</a
-      >
-      <br />abito da sposa:
+      ><br />
+      bride dress:
       <a
         href="http://www.whitelesposetorino.com/"
         target="_blank"
         class="has-text-weight-bold"
         >White Le Spose Torino</a
-      >
-      <br />abito da sposo:
+      ><br />
+      groom suite:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Carlo Pignatelli</a
-      >
-      <br />musica:
+      ><br />
+      music:
       <a
         href="http://www.ambaradanpartyband.it/"
         target="_blank"

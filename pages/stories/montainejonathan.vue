@@ -1,7 +1,7 @@
 <template>
   <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
-      abito da sposa:
+      dress:
       <a
         href="https://www.ideasposatorino.it/"
         target="_blank"

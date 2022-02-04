@@ -7,8 +7,8 @@
         target="_blank"
         class="has-text-weight-bold"
         >Palazzo La Marmora</a
-      >
-      <br />abito da sposa:
+      ><br />
+      dress:
       <a
         href="https://www.ideasposatorino.it/"
         target="_blank"

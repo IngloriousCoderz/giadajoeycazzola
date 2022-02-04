@@ -1,28 +1,28 @@
 <template>
   <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
-      floral designer:
+      florist:
       <a
         href="https://www.giokidarredo.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Gioki D'Arredo</a
-      >
-      <br />dress:
+      ><br />
+      dress:
       <a
         href=" https://www.pronovias.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Pronovias</a
-      >
-      <br />location:
+      ><br />
+      location:
       <a
         href="http://castellodirivara.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Castello di Rivara</a
-      >
-      <br />entertainment:
+      ><br />
+      entertainment:
       <a
         href="http://www.danielepavignano.it/"
         target="_blank"

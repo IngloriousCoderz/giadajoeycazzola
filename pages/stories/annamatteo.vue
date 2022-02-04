@@ -22,7 +22,7 @@
         class="has-text-weight-bold"
         >Top Parties</a
       ><br />
-      floral designer:
+      florist:
       <a
         href="http://www.fagnanifiori.it/"
         target="_blank"

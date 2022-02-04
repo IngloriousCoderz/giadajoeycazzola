@@ -1,56 +1,56 @@
 <template>
   <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
-      floral designer:
+      florist:
       <a
         href="https://carolinacarbone.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Carolina Carbone</a
-      >
-      <br />dress:
+      ><br />
+      dress:
       <a
         href="https://linktr.ee/moreabitidasposa"
         target="_blank"
         class="has-text-weight-bold"
         >MORE</a
-      >
-      <br />atelier:
+      ><br />
+      atelier:
       <a
         href="https://www.merrymeroma.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Merry Me Roma</a
-      >
-      <br />hair accessory:
+      ><br />
+      hair accessory:
       <a
         href="https://www.guineverevines.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Guinevere Vines</a
-      >
-      <br />makeup artist:
+      ><br />
+      makeup artist:
       <a
         href="https://www.divasmakeup.it/"
         target="_blank"
         class="has-text-weight-bold"
         >DivaS' MakeUp</a
-      >
-      <br />shoes:
+      ><br />
+      shoes:
       <a
         href="https://www.annielshop.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Anniel</a
-      >
-      <br />video:
+      ><br />
+      video:
       <a
         href="https://www.913art.com/"
         target="_blank"
         class="has-text-weight-bold"
         >913Art</a
-      >
-      <br />model:
+      ><br />
+      model:
       <a
         href="https://www.instagram.com/elisaablasi/"
         target="_blank"

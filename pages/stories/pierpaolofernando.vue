@@ -12,8 +12,8 @@
         target="_blank"
         class="has-text-weight-bold"
         >Principi di Piemonte</a
-      >
-      <br />abiti:
+      ><br />
+      suites:
       <a
         href="https://www.carlopignatelli.com/"
         target="_blank"

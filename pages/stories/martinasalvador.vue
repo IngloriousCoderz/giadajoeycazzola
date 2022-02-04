@@ -7,15 +7,15 @@
         target="_blank"
         class="has-text-weight-bold"
         >Ilpoderelerocche</a
-      >
-      <br />catering:
+      ><br />
+      catering:
       <a
         href="http://www.ristorantespazio7.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Spazio7</a
-      >
-      <br />abito da sposa:
+      ><br />
+      dress:
       <a
         href="https://www.celiadragouni.com/"
         target="_blank"
@@ -28,8 +28,8 @@
         target="_blank"
         class="has-text-weight-bold"
         >White Le Spose</a
-      >
-      <br />location:
+      ><br />
+      location:
       <a
         href="http://tamburnin.it/"
         target="_blank"

@@ -1,98 +1,98 @@
 <template>
   <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
-      Wedding Planner:
+      wedding planner:
       <a
         href="https://www.instagram.com/paolacasettaweddingplanner/"
         target="_blank"
         class="has-text-weight-bold"
         >Paola Casetta Wedding Planner</a
       ><br />
-      Venue:
+      location:
       <a
         href="https://www.instagram.com/castello_di_villar_dora/"
         target="_blank"
         class="has-text-weight-bold"
         >Castello di Villar Dora</a
       ><br />
-      Catering:
+      catering:
       <a
         href="https://www.instagram.com/strattatorino/"
         target="_blank"
         class="has-text-weight-bold"
         >Stratta Torino</a
       ><br />
-      Wedding Stationery:
+      wedding stationery:
       <a
         href="https://www.instagram.com/mogu.wedding/"
         target="_blank"
         class="has-text-weight-bold"
         >Mogu Wedding</a
       ><br />
-      Bridal Headpieces:
+      bridal headpieces:
       <a
         href="https://www.instagram.com/cristinasignorina/"
         target="_blank"
         class="has-text-weight-bold"
         >Cristina Signorina</a
       ><br />
-      MUA:
+      makeup artist:
       <a
         href="https://www.instagram.com/monicacenamua/"
         target="_blank"
         class="has-text-weight-bold"
         >Monica Cena Mua</a
       ><br />
-      Hair Style:
+      hair stylist:
       <a
         href="https://www.instagram.com/ganna_hairstyle/"
         target="_blank"
         class="has-text-weight-bold"
         >Ganna Hairstyle</a
       ><br />
-      Flower design:
+      florist:
       <a
         href="https://www.instagram.com/eventi_floral_designers/"
         target="_blank"
         class="has-text-weight-bold"
         >Eventi di Mara e Mauro</a
       ><br />
-      Bride dress:
+      bride dress:
       <a
         href="https://www.instagram.com/ideasposa_atelier/"
         target="_blank"
         class="has-text-weight-bold"
         >Idea Sposa Atelier</a
       ><br />
-      Groom suite:
+      groom suite:
       <a
         href="https://www.instagram.com/atelierglamoursposi/"
         target="_blank"
         class="has-text-weight-bold"
         >Atelier Glamour Sposi</a
       ><br />
-      Bridesmaids dress:
+      bridesmaids dress:
       <a
         href="https://www.instagram.com/amaranto_atelier/"
         target="_blank"
         class="has-text-weight-bold"
         >Amaranto Atelier Antonella Ciancio</a
       ><br />
-      Jewels:
+      jewels:
       <a
         href="https://www.instagram.com/efjewelrydesign/"
         target="_blank"
         class="has-text-weight-bold"
         >Federica Pedretti</a
       ><br />
-      Lights:
+      lights:
       <a
         href="https://www.instagram.com/lightshade___/"
         target="_blank"
         class="has-text-weight-bold"
         >Luca Boneri</a
       ><br />
-      Cerimonia:
+      ceremony:
       <a
         href="https://www.instagram.com/unconventional_ceremony/"
         target="_blank"

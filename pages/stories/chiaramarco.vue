@@ -1,21 +1,21 @@
 <template>
   <story :title="title" :base-path="basePath" :image-count="imageCount">
     <p class="is-size-7">
-      abito da sposa:
+      dress:
       <a
         href="https://www.ladymilu.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Lady Mi.Lù.</a
-      >
-      <br />location:
+      ><br />
+      location:
       <a
         href="https://www.turinpalacehotel.com/it/hotel-torino-centro/1-0.html"
         target="_blank"
         class="has-text-weight-bold"
         >Turin Palace Hotel</a
-      >
-      <br />musica:
+      ><br />
+      music:
       <a
         href="https://matrimonioeasy.it/"
         target="_blank"

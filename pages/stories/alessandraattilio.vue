@@ -7,8 +7,8 @@
         target="_blank"
         class="has-text-weight-bold"
         >Tenuta Tamburnin</a
-      >
-      <br />abito da sposa:
+      ><br />
+      dress:
       <a
         href="https://www.atelier-eme.it/atelier-torino/?IDstore=23"
         target="_blank"

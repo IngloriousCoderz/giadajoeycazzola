@@ -7,15 +7,15 @@
         target="_blank"
         class="has-text-weight-bold"
         >Villa Bria</a
-      >
-      <br />abito da sposa:
+      ><br />
+      dress:
       <a
         href="https://www.pronovias.com/"
         target="_blank"
         class="has-text-weight-bold"
         >Pronovias</a
-      >
-      <br />fiorista:
+      ><br />
+      florist:
       <a
         href="https://www.ifioridisaradue.it"
         target="_blank"

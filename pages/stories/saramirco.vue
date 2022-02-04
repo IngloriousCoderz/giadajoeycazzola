@@ -7,22 +7,22 @@
         target="_blank"
         class="has-text-weight-bold"
         >Tulle Sposa Atelier</a
-      >
-      <br />location:
+      ><br />
+      location:
       <a
         href="https://www.antico-opificio.it/"
         target="_blank"
         class="has-text-weight-bold"
         >Antico Opificio</a
-      >
-      <br />makeup artist:
+      ><br />
+      makeup artist:
       <a
         href="https://www.facebook.com/saraaresemua/"
         target="_blank"
         class="has-text-weight-bold"
         >Sara Arese Make Up Artist</a
-      >
-      <br />hair stylist:
+      ><br />
+      hair stylist:
       <a
         href="https://www.facebook.com/IdaECParrucchieri/"
         target="_blank"
