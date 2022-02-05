@@ -19,8 +19,14 @@
       class="lightbox-overlay"
       @click.self="closeOverlay"
     >
-      <div class="holder">
-        <div v-if="images[currentImage].thumb" style="padding: 56.25% 0 0 0">
+      <a class="close" nohref @click="closeOverlay"> &times; </a>
+
+      <a class="prev" nohref @click="prevImage">
+        <div class="swiper-button-prev swiper-button-white" />
+      </a>
+
+      <div class="main">
+        <div v-if="images[currentImage].thumb">
           <iframe
             :src="images[currentImage].src"
             style="
@@ -42,32 +48,18 @@
           :src="images[currentImage].src"
         />
 
-        <div v-if="nav" class="nav">
-          <a class="close" nohref @click="closeOverlay">
-            <span>&times;</span>
-          </a>
-
-          <a class="prev" nohref @click="prevImage">
-            <div
-              slot="button-prev"
-              data-v-2a183b29
-              class="swiper-button-prev swiper-button-white"
-            />
-          </a>
-
-          <a class="next" nohref @click="nextImage">
-            <div
-              slot="button-next"
-              data-v-2a183b29
-              class="swiper-button-next swiper-button-white"
-            />
-          </a>
-        </div>
-
         <p v-if="caption && images[currentImage].caption">
           {{ images[currentImage].caption }}
         </p>
       </div>
+
+      <a class="next" nohref @click="nextImage">
+        <div
+          slot="button-next"
+          data-v-2a183b29
+          class="swiper-button-next swiper-button-white"
+        />
+      </a>
     </div>
   </div>
 </template>
@@ -172,94 +164,67 @@ export default {
   bottom: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.9);
-  text-align: center;
-  padding: 20px;
-  box-sizing: border-box;
   z-index: 31;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto 1fr auto;
+  grid-template-areas: '. . close' 'prev main next';
 
-  .holder {
-    max-width: 600px;
-    margin: 0 auto;
-    position: relative;
-    max-height: 100vh;
-    transform: none;
+  .close,
+  .prev,
+  .next {
+    z-index: 1;
+    color: white !important;
+    user-select: none;
+    width: 4rem;
+    line-height: 1;
+    opacity: 0.6;
 
-    img {
-      width: 100%;
-      max-width: 600px;
-      cursor: pointer;
-      box-sizing: border-box;
-      display: block;
-      max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      opacity: 1;
     }
+  }
 
-    p {
-      color: #ffffff;
-      margin: 0;
-      background-color: rgba(0, 0, 0, 0.4);
+  .close {
+    grid-area: close;
+    font-size: 4rem;
+  }
+
+  .prev,
+  .next {
+    & > div {
+      position: initial;
+    }
+  }
+
+  .prev {
+    grid-area: prev;
+  }
+
+  .next {
+    grid-area: next;
+  }
+
+  .main {
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
       position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      box-sizing: border-box;
-      padding: 10px;
+      max-height: calc(100vh - 4rem);
     }
-    .nav {
-      max-width: 600px;
-      margin: 0 auto;
-      font-size: 14px;
 
-      a {
-        color: white !important;
-        opacity: 0.3;
-        user-select: none;
-        cursor: pointer;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
-
-      .next,
-      .prev {
-        position: absolute;
-        top: 120px;
-        bottom: 120px;
-        padding: 10px;
-        width: 20%;
-        box-sizing: border-box;
-        font-size: 40px;
-        display: flex;
-        align-items: center;
-      }
-
-      .next {
-        right: 0;
-        justify-content: flex-end;
-      }
-
-      .prev {
-        left: 0;
-        justify-content: flex-start;
-      }
-      .close {
-        right: 10px;
-        top: 0;
-        font-size: 30px;
-        opacity: 0.6;
-        z-index: 1;
-        position: absolute;
-        text-align: left;
-        box-sizing: border-box;
-
-        &:hover {
-          opacity: 1;
-        }
-      }
+    & > div {
+      position: absolute;
+      width: 100%;
+      height: 100%;
     }
   }
 }
