@@ -21,45 +21,47 @@
     >
       <a class="close" nohref @click="closeOverlay"> &times; </a>
 
-      <a class="prev" nohref @click="prevImage">
-        <div class="swiper-button-prev swiper-button-white" />
-      </a>
+      <div class="content">
+        <a class="prev" nohref @click="prevImage">
+          <div class="swiper-button-prev swiper-button-white" />
+        </a>
 
-      <div class="main">
-        <div v-if="images[currentImage].thumb">
-          <iframe
+        <div class="main">
+          <div v-if="images[currentImage].thumb">
+            <iframe
+              :src="images[currentImage].src"
+              style="
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+              "
+              frameborder="0"
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowfullscreen
+            />
+          </div>
+
+          <img
+            v-if="!images[currentImage].thumb"
             :src="images[currentImage].src"
-            style="
-              position: absolute;
-              top: 0;
-              left: 0;
-              width: 100%;
-              height: 100%;
-            "
-            frameborder="0"
-            webkitallowfullscreen
-            mozallowfullscreen
-            allowfullscreen
           />
+
+          <p v-if="caption && images[currentImage].caption">
+            {{ images[currentImage].caption }}
+          </p>
         </div>
 
-        <img
-          v-if="!images[currentImage].thumb"
-          :src="images[currentImage].src"
-        />
-
-        <p v-if="caption && images[currentImage].caption">
-          {{ images[currentImage].caption }}
-        </p>
+        <a class="next" nohref @click="nextImage">
+          <div
+            slot="button-next"
+            data-v-2a183b29
+            class="swiper-button-next swiper-button-white"
+          />
+        </a>
       </div>
-
-      <a class="next" nohref @click="nextImage">
-        <div
-          slot="button-next"
-          data-v-2a183b29
-          class="swiper-button-next swiper-button-white"
-        />
-      </a>
     </div>
   </div>
 </template>
@@ -166,10 +168,8 @@ export default {
   background: rgba(0, 0, 0, 0.9);
   z-index: 31;
 
-  display: grid;
-  grid-template-rows: auto 1fr;
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas: '. . close' 'prev main next';
+  display: flex;
+  flex-direction: column;
 
   .close,
   .prev,
@@ -178,7 +178,7 @@ export default {
     color: white !important;
     user-select: none;
     width: 4rem;
-    line-height: 1;
+    height: 4rem;
     opacity: 0.6;
 
     display: flex;
@@ -191,27 +191,26 @@ export default {
   }
 
   .close {
-    grid-area: close;
+    align-self: flex-end;
     font-size: 4rem;
+  }
+
+  .content {
+    flex-grow: 1;
+    display: flex;
   }
 
   .prev,
   .next {
+    align-self: center;
+
     & > div {
       position: initial;
     }
   }
 
-  .prev {
-    grid-area: prev;
-  }
-
-  .next {
-    grid-area: next;
-  }
-
   .main {
-    grid-area: main;
+    flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: center;
