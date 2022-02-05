@@ -216,13 +216,12 @@ export default {
     justify-content: center;
     align-items: center;
 
-    & > img {
+    & > * {
       position: absolute;
       max-height: calc(100vh - 4rem);
     }
 
     & > div {
-      position: absolute;
       width: 100%;
       height: 100%;
     }
