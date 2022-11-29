@@ -62,15 +62,6 @@ export default {
           },
         },
         {
-          id: 'yuliavladi',
-          src: '/images/stories/yuliavladi/11.jpg',
-          title: 'Yulia & Vladi',
-          description: {
-            en: 'How about waking up at dawn and going dancing in a deserted Rome? This is the story of Yulia and Vladi.',
-            it: "Che ne dici di svegliarci all'alba e andare a ballare in una Roma deserta? Questa è la storia di Yulia e Vladi.",
-          },
-        },
-        {
           id: 'monikariccardo',
           src: '/images/stories/monikariccardo/99.jpg',
           title: 'Monika & Riccardo',
@@ -88,7 +79,15 @@ export default {
             it: 'Giulia e Andrea abitano a Londra da tanti anni ma hanno scelto un castello piemontese per giurarsi amore eterno. Eleganza, natura e passione: queste le parole chiave del loro matrimonio.',
           },
         },
-
+        {
+          id: 'yuliavladi',
+          src: '/images/stories/yuliavladi/11.jpg',
+          title: 'Yulia & Vladi',
+          description: {
+            en: 'How about waking up at dawn and going dancing in a deserted Rome? This is the story of Yulia and Vladi.',
+            it: "Che ne dici di svegliarci all'alba e andare a ballare in una Roma deserta? Questa è la storia di Yulia e Vladi.",
+          },
+        },
         {
           id: 'annamark',
           src: '/images/stories/annamark/61.jpg',
