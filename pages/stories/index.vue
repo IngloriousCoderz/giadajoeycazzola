@@ -53,6 +53,15 @@ export default {
 
       images: [
         {
+          id: 'sunheederek',
+          src: '/images/stories/sunheederek/49.jpg',
+          title: 'Sunhee & Derek',
+          description: {
+            en: "What's the biggest craziest thing you've ever done? Make a marriage proposal and, in less than 24 hours, take a plane and fly from Texas to the Dolomites for a romantic elopement and to celebrate your love in a small mountain chapel!",
+            it: "Qual è la pazzia più grande che tu abbia mai fatto? Fare una proposta di matrimonio e, in meno di 24 ore, prendere un aereo e volare dal Texas alle Dolomiti per una romantica fuga d'amore e per celebrare in una piccola cappella di montagna le proprie nozze!",
+          },
+        },
+        {
           id: 'lauraroberto',
           src: '/images/stories/lauraroberto/20.jpg',
           title: 'Laura & Roberto',
@@ -89,21 +98,12 @@ export default {
           },
         },
         {
-          id: 'annamark',
-          src: '/images/stories/annamark/61.jpg',
-          title: 'Anna & Mark',
+          id: 'francescamarco',
+          src: '/images/stories/francescamarco/52.jpg',
+          title: 'Francesca & Marco',
           description: {
-            en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
-            it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
-          },
-        },
-        {
-          id: 'saramirco',
-          src: '/images/stories/saramirco/73.jpg',
-          title: 'Sara & Mirco',
-          description: {
-            en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
-            it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
+            en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
+            it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
           },
         },
         {
@@ -116,12 +116,21 @@ export default {
           },
         },
         {
-          id: 'francescamarco',
-          src: '/images/stories/francescamarco/52.jpg',
-          title: 'Francesca & Marco',
+          id: 'saramirco',
+          src: '/images/stories/saramirco/73.jpg',
+          title: 'Sara & Mirco',
           description: {
-            en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
-            it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
+            en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
+            it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
+          },
+        },
+        {
+          id: 'annamark',
+          src: '/images/stories/annamark/61.jpg',
+          title: 'Anna & Mark',
+          description: {
+            en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
+            it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
           },
         },
         {
