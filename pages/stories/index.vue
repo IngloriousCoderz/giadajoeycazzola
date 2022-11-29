@@ -53,6 +53,24 @@ export default {
 
       images: [
         {
+          id: 'lauraroberto',
+          src: '/images/stories/lauraroberto/20.jpg',
+          title: 'Laura & Roberto',
+          description: {
+            en: 'The sea in your hair, the smell of summer in your veins and bougainvillea in your eyes: and here comes Portofino, nestled between the sea and the mountains. She looks just like a cat who has made herself comfortable and plays a bit precious, aware of her beauty.',
+            it: "Il mare nei capelli, l'odore dell'estate nelle vene e la bouganville negli occhi: ed ecco spuntare Portofino, accoccolata fra mare e montagna. Pare proprio una gatta che si è messa comoda e fa un po' la preziosa, consapevole della sua bellezza.",
+          },
+        },
+        {
+          id: 'yuliavladi',
+          src: '/images/stories/yuliavladi/11.jpg',
+          title: 'Yulia & Vladi',
+          description: {
+            en: 'How about waking up at dawn and going dancing in a deserted Rome? This is the story of Yulia and Vladi.',
+            it: "Che ne dici di svegliarci all'alba e andare a ballare in una Roma deserta? Questa è la storia di Yulia e Vladi.",
+          },
+        },
+        {
           id: 'monikariccardo',
           src: '/images/stories/monikariccardo/99.jpg',
           title: 'Monika & Riccardo',
