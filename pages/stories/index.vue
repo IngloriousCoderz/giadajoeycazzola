@@ -80,6 +80,15 @@ export default {
           },
         },
         {
+          id: 'elenaalessandro',
+          src: '/images/stories/elenaalessandro/50.jpg',
+          title: 'Elena & Alessandro',
+          description: {
+            en: "A fairytale castle a stone's throw from Turin, a bubbly and very close-knit couple, many friends ready to celebrate this union. What else?",
+            it: 'Un castello da fiaba a due passi da Torino, una coppia spumeggiante e affiatatissima, tanti amici pronti a celebrare questa unione. What else?',
+          },
+        },
+        {
           id: 'giuliaandrea',
           src: '/images/stories/giuliaandrea/90.jpg',
           title: 'Giulia & Andrea',
@@ -116,33 +125,6 @@ export default {
           },
         },
         {
-          id: 'saramirco',
-          src: '/images/stories/saramirco/73.jpg',
-          title: 'Sara & Mirco',
-          description: {
-            en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
-            it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
-          },
-        },
-        {
-          id: 'annamark',
-          src: '/images/stories/annamark/61.jpg',
-          title: 'Anna & Mark',
-          description: {
-            en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
-            it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
-          },
-        },
-        {
-          id: 'elisajacopo',
-          src: '/images/stories/elisajacopo/07.jpg',
-          title: 'Elisa & Jacopo',
-          description: {
-            en: "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
-            it: 'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
-          },
-        },
-        {
           id: 'eleonoralorenzo',
           src: '/images/stories/eleonoralorenzo/59.jpg',
           title: 'Eleonora & Lorenzo',
@@ -161,12 +143,39 @@ export default {
           },
         },
         {
+          id: 'elisajacopo',
+          src: '/images/stories/elisajacopo/07.jpg',
+          title: 'Elisa & Jacopo',
+          description: {
+            en: "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
+            it: 'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
+          },
+        },
+        {
           id: 'lauraeldar',
           src: '/images/stories/lauraeldar/01.jpg',
           title: 'Laura & Eldar',
           description: {
             en: 'An intimate ceremony immersed in a heavenly atmosphere with a Caribbean touch while being in the heart of the Langhe.',
-            it: 'Una cerimonia intima immersi in un’atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.',
+            it: "Una cerimonia intima immersi in un'atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.",
+          },
+        },
+        {
+          id: 'annamark',
+          src: '/images/stories/annamark/61.jpg',
+          title: 'Anna & Mark',
+          description: {
+            en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
+            it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
+          },
+        },
+        {
+          id: 'saramirco',
+          src: '/images/stories/saramirco/73.jpg',
+          title: 'Sara & Mirco',
+          description: {
+            en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
+            it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
           },
         },
         {
@@ -202,7 +211,7 @@ export default {
           title: 'Elena & Luca',
           description: {
             en: 'A young and colorful wedding, a villa in the countryside and many friends. What else?',
-            it: 'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.',
+            it: "L'aria è frizzante, si percepisce l'affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.",
           },
         },
         {
@@ -211,7 +220,7 @@ export default {
           title: 'Alessia & Matteo',
           description: {
             en: 'An eighteenth-century villa is the setting for an intimate and elegant wedding with a super guest: the dog of the newlyweds!',
-            it: 'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.',
+            it: "Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c'è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l'amore. Loro l'hanno fatto benissimo.",
           },
         },
         {
@@ -220,7 +229,7 @@ export default {
           title: 'Martina & Salvador',
           description: {
             en: 'Magical marriage in the vineyards of the Asti area. Breathtaking views and suggestive settings are the setting for the love of Martina and Salvador.',
-            it: 'Magico matrimonio tra i vigneti dell’astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all’amore di Martina e Salvador.',
+            it: "Magico matrimonio tra i vigneti dell'astigiano. Panorama mozzafiato e allestimenti suggestivi fanno da cornice all'amore di Martina e Salvador.",
           },
         },
         {
@@ -238,7 +247,7 @@ export default {
           title: 'Vittoria & Luigi',
           description: {
             en: 'A chic wedding in a Piedmontese winery. For wine lovers, Piedmont is a certainty to get married!',
-            it: 'La bellezza e l’eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.',
+            it: "La bellezza e l'eleganza di questa coppia ha reso senza dubbio questo matrimonio una vera favola. Vittoria e Luigi, questa è la loro storia. Le parole non servono, lascio parlare le immagini.",
           },
         },
         {
@@ -265,7 +274,7 @@ export default {
           title: 'Cassandra & Carlo',
           description: {
             en: 'A sweet yes in a fairytale location!',
-            it: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.',
+            it: "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.",
           },
         },
         {
@@ -274,7 +283,7 @@ export default {
           title: 'Eleonora & Valentino',
           description: {
             en: 'This is the story of a day of rain and tears of joy. Because even the sky of Taormina was moved by watching this splendid wedding.',
-            it: 'Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un’estate siciliana.',
+            it: "Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un'estate siciliana.",
           },
         },
       ],
