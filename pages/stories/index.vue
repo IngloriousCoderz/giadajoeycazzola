@@ -53,6 +53,15 @@ export default {
 
       images: [
         {
+          id: 'yasminphil',
+          src: '/images/stories/yasminphil/67.jpg',
+          title: 'Yasmin & Phil',
+          description: {
+            en: 'From Munich to a beautiful castle near Florence to celebrate an intimate and glamour wedding.',
+            it: 'Da Monaco a un bellissimo castello vicino Firenze per celebrare un matrimonio intimo e glamour.',
+          },
+        },
+        {
           id: 'sunheederek',
           src: '/images/stories/sunheederek/49.jpg',
           title: 'Sunhee & Derek',
@@ -188,15 +197,6 @@ export default {
           },
         },
         {
-          id: 'martinaalessandro',
-          src: '/images/stories/martinaalessandro/36.jpg',
-          title: 'Martina & Alessandro',
-          description: {
-            en: 'Simplicity, for me, wins over everything. Martina and Alessandro chose an intimate party in the Piedmont countryside to celebrate their pure and sincere love.',
-            it: 'La semplicità, per me, vince su tutto. Martina e Alessandro hanno scelto una festa intima nella campagna piemontese per celebrare il loro amore puro e sincero.',
-          },
-        },
-        {
           id: 'alessandraattilio',
           src: '/images/stories/alessandraattilio/63.jpg',
           title: 'Alessandra & Attilio',
@@ -275,15 +275,6 @@ export default {
           description: {
             en: 'A sweet yes in a fairytale location!',
             it: "Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l'atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.",
-          },
-        },
-        {
-          id: 'eleonoravalentino',
-          src: '/images/stories/eleonoravalentino/56.jpg',
-          title: 'Eleonora & Valentino',
-          description: {
-            en: 'This is the story of a day of rain and tears of joy. Because even the sky of Taormina was moved by watching this splendid wedding.',
-            it: "Un matrimonio emozionante che ha fatto commuovere anche il cielo di Taormina. Eleonora e Valentino, questa è la loro storia sotto la pioggia di un'estate siciliana.",
           },
         },
       ],
