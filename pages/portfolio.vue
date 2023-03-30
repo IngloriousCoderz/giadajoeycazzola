@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container is-fluid">
     <h1 class="is-size-1 has-text-centered">
       {{ $t('portfolio.title') }}
     </h1>
@@ -29,11 +29,11 @@
 
     <lightbox :images="images" />
 
-    <h2 class="is-size-2 has-text-centered">
+    <!-- <h2 class="is-size-2 has-text-centered">
       {{ $t('portfolio.videos') }}
     </h2>
 
-    <lightbox :images="videos" />
+    <lightbox :images="videos" /> -->
   </section>
 </template>
 

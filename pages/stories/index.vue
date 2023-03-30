@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container is-fluid">
     <h1 class="is-size-1 has-text-centered">
       {{ $t('stories.title') }}
     </h1>
@@ -17,6 +17,16 @@
     <div class="content columns is-centered is-multiline">
       <div v-for="img in images" :key="img.id" class="column is-one-third">
         <nuxt-link :to="localePath(`stories-${img.id}`)">
+          <b-tag
+            :class="{
+              'is-pulled-right': true,
+              'has-text-white': true,
+              'has-background-link': img.type === 'wedding',
+              'has-background-danger': img.type === 'elopment',
+              'has-background-primary': img.type === 'editorial',
+            }"
+            >{{ img.type }}</b-tag
+          >
           <div class="card">
             <div class="card-image">
               <div class="image is-4by3">
@@ -26,6 +36,7 @@
                 />
               </div>
             </div>
+
             <div class="card-content has-text-centered">
               <h3 class="title is-5">
                 {{ img.title }}
@@ -53,7 +64,18 @@ export default {
 
       images: [
         {
+          id: 'signebrian',
+          type: 'wedding',
+          src: '/images/stories/signebrian/66.png',
+          title: 'Signe & Brian',
+          description: {
+            en: 'A rainy day among the gentle Tuscan slopes is the backdrop to the wedding of Signe and Brian, two wonderful guys who from Norway have chosen to get married in romantic Pienza.',
+            it: 'Una giornata di pioggia tra i dolci pendii toscani fa da sfondo al matrimonio di Signe e Brian, due ragazzi meravigliosi che dalla Norvegia hanno scelto di sposarsi nella romantica Pienza.',
+          },
+        },
+        {
           id: 'yasminphil',
+          type: 'wedding',
           src: '/images/stories/yasminphil/67.jpg',
           title: 'Yasmin & Phil',
           description: {
@@ -63,6 +85,7 @@ export default {
         },
         {
           id: 'sunheederek',
+          type: 'elopment',
           src: '/images/stories/sunheederek/49.jpg',
           title: 'Sunhee & Derek',
           description: {
@@ -72,6 +95,7 @@ export default {
         },
         {
           id: 'lauraroberto',
+          type: 'elopment',
           src: '/images/stories/lauraroberto/20.jpg',
           title: 'Laura & Roberto',
           description: {
@@ -81,6 +105,7 @@ export default {
         },
         {
           id: 'monikariccardo',
+          type: 'wedding',
           src: '/images/stories/monikariccardo/99.jpg',
           title: 'Monika & Riccardo',
           description: {
@@ -89,16 +114,18 @@ export default {
           },
         },
         {
-          id: 'elenaalessandro',
-          src: '/images/stories/elenaalessandro/50.jpg',
-          title: 'Elena & Alessandro',
+          id: 'francescamarco',
+          type: 'editorial',
+          src: '/images/stories/francescamarco/52.jpg',
+          title: 'Francesca & Marco',
           description: {
-            en: "A fairytale castle a stone's throw from Turin, a bubbly and very close-knit couple, many friends ready to celebrate this union. What else?",
-            it: 'Un castello da fiaba a due passi da Torino, una coppia spumeggiante e affiatatissima, tanti amici pronti a celebrare questa unione. What else?',
+            en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
+            it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
           },
         },
         {
           id: 'giuliaandrea',
+          type: 'wedding',
           src: '/images/stories/giuliaandrea/90.jpg',
           title: 'Giulia & Andrea',
           description: {
@@ -108,6 +135,7 @@ export default {
         },
         {
           id: 'yuliavladi',
+          type: 'elopment',
           src: '/images/stories/yuliavladi/11.jpg',
           title: 'Yulia & Vladi',
           description: {
@@ -116,16 +144,18 @@ export default {
           },
         },
         {
-          id: 'francescamarco',
-          src: '/images/stories/francescamarco/52.jpg',
-          title: 'Francesca & Marco',
+          id: 'elenaalessandro',
+          type: 'wedding',
+          src: '/images/stories/elenaalessandro/50.jpg',
+          title: 'Elena & Alessandro',
           description: {
-            en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
-            it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
+            en: "A fairytale castle a stone's throw from Turin, a bubbly and very close-knit couple, many friends ready to celebrate this union. What else?",
+            it: 'Un castello da fiaba a due passi da Torino, una coppia spumeggiante e affiatatissima, tanti amici pronti a celebrare questa unione. What else?',
           },
         },
         {
           id: 'montainejonathan',
+          type: 'elopment',
           src: '/images/stories/montainejonathan/22.jpg',
           title: 'Montaine & Jonathan',
           description: {
@@ -135,6 +165,7 @@ export default {
         },
         {
           id: 'eleonoralorenzo',
+          type: 'wedding',
           src: '/images/stories/eleonoralorenzo/59.jpg',
           title: 'Eleonora & Lorenzo',
           description: {
@@ -144,6 +175,7 @@ export default {
         },
         {
           id: 'francescaluca',
+          type: 'wedding',
           src: '/images/stories/francescaluca/54.jpg',
           title: 'Francesca & Luca',
           description: {
@@ -153,6 +185,7 @@ export default {
         },
         {
           id: 'elisajacopo',
+          type: 'editorial',
           src: '/images/stories/elisajacopo/07.jpg',
           title: 'Elisa & Jacopo',
           description: {
@@ -162,6 +195,7 @@ export default {
         },
         {
           id: 'lauraeldar',
+          type: 'editorial',
           src: '/images/stories/lauraeldar/01.jpg',
           title: 'Laura & Eldar',
           description: {
@@ -171,6 +205,7 @@ export default {
         },
         {
           id: 'annamark',
+          type: 'wedding',
           src: '/images/stories/annamark/61.jpg',
           title: 'Anna & Mark',
           description: {
@@ -180,6 +215,7 @@ export default {
         },
         {
           id: 'saramirco',
+          type: 'wedding',
           src: '/images/stories/saramirco/73.jpg',
           title: 'Sara & Mirco',
           description: {
@@ -189,6 +225,7 @@ export default {
         },
         {
           id: 'annamatteo',
+          type: 'wedding',
           src: '/images/stories/annamatteo/39.jpg',
           title: 'Anna & Matteo',
           description: {
@@ -198,6 +235,7 @@ export default {
         },
         {
           id: 'alessandraattilio',
+          type: 'wedding',
           src: '/images/stories/alessandraattilio/63.jpg',
           title: 'Alessandra & Attilio',
           description: {
@@ -207,6 +245,7 @@ export default {
         },
         {
           id: 'elenaluca',
+          type: 'wedding',
           src: '/images/stories/elenaluca/39.jpg',
           title: 'Elena & Luca',
           description: {
@@ -216,6 +255,7 @@ export default {
         },
         {
           id: 'alessiamatteo',
+          type: 'wedding',
           src: '/images/stories/alessiamatteo/75.jpg',
           title: 'Alessia & Matteo',
           description: {
@@ -225,6 +265,7 @@ export default {
         },
         {
           id: 'martinasalvador',
+          type: 'wedding',
           src: '/images/stories/martinasalvador/01.jpg',
           title: 'Martina & Salvador',
           description: {
@@ -234,6 +275,7 @@ export default {
         },
         {
           id: 'irenedavide',
+          type: 'wedding',
           src: '/images/stories/irenedavide/96.jpg',
           title: 'Irene & Davide',
           description: {
@@ -243,6 +285,7 @@ export default {
         },
         {
           id: 'vittorialuigi',
+          type: 'wedding',
           src: '/images/stories/vittorialuigi/58.jpg',
           title: 'Vittoria & Luigi',
           description: {
@@ -252,6 +295,7 @@ export default {
         },
         {
           id: 'pierpaolofernando',
+          type: 'wedding',
           src: '/images/stories/pierpaolofernando/01.jpg',
           title: 'Pierpaolo & Fernando',
           description: {
@@ -261,6 +305,7 @@ export default {
         },
         {
           id: 'chiaramarco',
+          type: 'wedding',
           src: '/images/stories/chiaramarco/mobile/50.jpg',
           title: 'Chiara & Marco',
           description: {
@@ -270,6 +315,7 @@ export default {
         },
         {
           id: 'cassandracarlo',
+          type: 'wedding',
           src: '/images/stories/cassandracarlo/03.jpg',
           title: 'Cassandra & Carlo',
           description: {

@@ -4,7 +4,7 @@
       {{ $t('contacts.title') }}
     </h1>
 
-    <div class="content columns">
+    <div class="content">
       <div class="column has-vertically-aligned-content">
         <div v-html="$t('contacts.body')" />
 
@@ -39,9 +39,25 @@
             <div class="field">
               <input
                 class="input"
+                name="name"
+                :placeholder="$t('contacts.address')"
+              />
+            </div>
+
+            <div class="field">
+              <input
+                class="input"
                 type="email"
                 name="email"
                 :placeholder="$t('contacts.email')"
+              />
+            </div>
+
+            <div class="field">
+              <input
+                class="input"
+                name="name"
+                :placeholder="$t('contacts.instagram')"
               />
             </div>
 

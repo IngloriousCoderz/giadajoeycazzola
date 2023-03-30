@@ -1,15 +1,12 @@
 <template>
-  <section class="container">
+  <section class="container is-fluid">
     <h1 class="is-size-1 has-text-centered">
       {{ title }}
     </h1>
 
     <article class="content">
       <p
-        class="
-          is-size-7 is-italic
-          has-text-centered-mobile has-text-right-desktop
-        "
+        class="is-size-7 is-italic has-text-centered-mobile has-text-right-desktop"
       >
         &mdash; {{ date }} &mdash;
       </p>

@@ -1,3 +1,9 @@
+// Import bulma styles
+@import '~bulma';
+
+// Import buefy styles
+@import '~buefy/src/scss/buefy';
+
 @font-face {
   font-family: 'Scriptina';
   src: url(/fonts/SCRIPTIN.ttf);
@@ -58,7 +64,7 @@ footer {
 
   a {
     text-shadow: 1px 1px 1px black;
-    padding: 1rem;
+    padding: 0 1rem;
   }
 }
 
@@ -140,4 +146,13 @@ footer {
   top: 0;
   z-index: 31;
   width: 100%;
+}
+
+.tag {
+  position: relative;
+  z-index: 1;
+
+  > span {
+    font-family: Arial;
+  }
 }

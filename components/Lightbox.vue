@@ -4,15 +4,14 @@
       {{ title }}
     </h1>
 
-    <ul v-if="images">
-      <li v-for="(image, index) in images" :key="image.src">
+    <vue-masonry-wall :items="images" :options="{ width: 600, padding: 12 }">
+      <template #default="{ item }">
         <img
-          :src="image.thumb || image.src"
-          :alt="image.caption"
-          @click="clickImage(index)"
-        />
-      </li>
-    </ul>
+          :src="item.thumb || item.src"
+          :alt="item.caption"
+          @click="clickImage(item)"
+        /> </template
+    ></vue-masonry-wall>
 
     <div
       v-if="overlayActive"
@@ -30,13 +29,13 @@
           <div v-if="images[currentImage].thumb">
             <iframe
               :src="images[currentImage].src"
-              style="
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-              "
+              :style="{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '100%',
+                height: '100%',
+              }"
               frameborder="0"
               webkitallowfullscreen
               mozallowfullscreen
@@ -67,7 +66,11 @@
 </template>
 
 <script>
+import VueMasonryWall from 'vue-masonry-wall'
+
 export default {
+  components: { VueMasonryWall },
+
   props: {
     resetstyles: { type: Boolean, default: false },
     title: { type: String, default: '' },
@@ -89,8 +92,8 @@ export default {
   },
 
   methods: {
-    clickImage(index) {
-      this.currentImage = index
+    clickImage(image) {
+      this.currentImage = this.images.findIndex(({ src }) => src === image.src)
       this.overlayActive = true
     },
 

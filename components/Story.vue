@@ -1,5 +1,5 @@
 <template>
-  <section class="container">
+  <section class="container is-fluid">
     <h1 class="is-size-1 has-text-centered">
       {{ title }}
     </h1>
@@ -21,7 +21,7 @@
       </div>
     </section>
 
-    <lightbox :images="images" />
+    <lightbox :images="images" :type="type" />
   </section>
 </template>
 
@@ -37,6 +37,7 @@ export default {
     title: { type: String, default: '' },
     basePath: { type: String, default: '' },
     imageCount: { type: Number, default: 0 },
+    type: { type: String, default: 'jpg' },
     video: { type: String, default: '' },
   },
 
@@ -44,7 +45,7 @@ export default {
     return {
       images: Array.from(Array(this.imageCount).keys()).map((index) => ({
         id: index + 1,
-        src: `/images/${this.basePath}/${zpad(index + 1)}.jpg`,
+        src: `/images/${this.basePath}/${zpad(index + 1)}.${this.type}`,
       })),
     }
   },

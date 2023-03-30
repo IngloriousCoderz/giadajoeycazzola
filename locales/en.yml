@@ -1,61 +1,96 @@
 default.seo.title: Wedding Photographer in Italy and Europe - Giada Joey Cazzola
-
 menu.home: Home
 menu.reviews: Reviews
 menu.portfolio: Portfolio
 menu.stories: Stories
 menu.blog: Blog
 menu.contacts: Contacts
-
 home.seo.title: Homepage
-home.seo.description: Destination wedding photographer in Piedmont, Tuscany, Rome, the rest of Italy and Europe. She specializes in authentic photo and video reportage.
+home.seo.description: >-
+  Destination wedding photographer in Piedmont, Tuscany, Rome, the rest of Italy
+  and Europe. She specializes in authentic photo and video reportage.
 home.about: >
   <p>I'm Giada and I'm a photographer specializing in wedding reportage.</p>
-  <p>I was born in Turin, a city of art and magic. And it is in the streets of this city that my passion for photography was born. I have always been sentimental, in love with love and everything that this feeling can arouse in people.</p>
-  <p>Accomplicing glances, fleeting kisses and imperceptible details have always been my greatest source of inspiration. For this reason, in a succession of events that have crossed my path, I have chosen to devote myself to wedding photography and specifically to reportage.</p>
-  <p>My ability to capture people's spontaneity could only be combined with the most spontaneous thing that exists: love.<br/>
-  And this is how I will tell the day of your wedding: with discretion and a wealth of details.</p>
-  <p>I will be moved and smile with you.</p>
-  <p>Mine is a serious and profound study that for years has allowed me to grow and expand my visual baggage not only directly on the field of my weddings but also by carefully watching weddings of gurus and mentors of reportage photography from all over the world.</p>
-  <p>I would describe my work as a search for perfection in imperfection.<br/>
-  The detailed story of the most beautiful day for a couple, made with a wealth of details but also with discretion.<br/>
-  The best compliment that the spouses give me after seeing the photos is that it seems to them to relive the wedding day through my shots with details that not even they remembered.</p>
-  <p>My success, and the reason why I invite you to choose me, is just that: I will tell your story, your special day, your love with a fresh, young, spontaneous and as natural approach as possible. For me, <em>you</em> exist, with your strengths and weaknesses that make you unique and that I'm sure are the ones that allowed your other half to fall in love with you. I am interested in your looks, the embarrassed smiles when you look at each other after saying that "yes" at the altar, the kisses and the hands that cross as you walk side by side. In a word, I'm interested in you, and my camera and I will do everything in our power to give you the perfect images to describe who you are.</p>
-  <p>⋯</p>
+  <p>I was born in Turin, a city of art and magic. And it is in the streets of
+  this city that my passion for photography was born. I have always been
+  sentimental, in love with love and everything that this feeling can arouse in
+  people.</p> <p>Accomplicing glances, fleeting kisses and imperceptible details
+  have always been my greatest source of inspiration. For this reason, in a
+  succession of events that have crossed my path, I have chosen to devote myself
+  to wedding photography and specifically to reportage.</p> <p>My ability to
+  capture people's spontaneity could only be combined with the most spontaneous
+  thing that exists: love.<br/> And this is how I will tell the day of your
+  wedding: with discretion and a wealth of details.</p> <p>I will be moved and
+  smile with you.</p> <p>Mine is a serious and profound study that for years has
+  allowed me to grow and expand my visual baggage not only directly on the field
+  of my weddings but also by carefully watching weddings of gurus and mentors of
+  reportage photography from all over the world.</p> <p>I would describe my work
+  as a search for perfection in imperfection.<br/> The detailed story of the
+  most beautiful day for a couple, made with a wealth of details but also with
+  discretion.<br/> The best compliment that the spouses give me after seeing the
+  photos is that it seems to them to relive the wedding day through my shots
+  with details that not even they remembered.</p> <p>My success, and the reason
+  why I invite you to choose me, is just that: I will tell your story, your
+  special day, your love with a fresh, young, spontaneous and as natural
+  approach as possible. For me, <em>you</em> exist, with your strengths and
+  weaknesses that make you unique and that I'm sure are the ones that allowed
+  your other half to fall in love with you. I am interested in your looks, the
+  embarrassed smiles when you look at each other after saying that "yes" at the
+  altar, the kisses and the hands that cross as you walk side by side. In a
+  word, I'm interested in you, and my camera and I will do everything in our
+  power to give you the perfect images to describe who you are.</p> <p>⋯</p>
 home.awards: Awards
 reviews.seo.title: Reviews
-reviews.seo.description: Who is Giada Joey Cazzola, a young wedding and maternity reportage photographer in Italy. Based in Turin and Rome.
+reviews.seo.description: >-
+  Who is Giada Joey Cazzola, a young wedding and maternity reportage
+  photographer in Italy. Based in Turin and Rome.
 reviews.title: Reviews
-reviews.quote: Photographing is a way of life. But life is important, not photography. It is important to tell. If you start from photography you get nowhere else than photography.
+reviews.quote: >-
+  Photographing is a way of life. But life is important, not photography. It is
+  important to tell. If you start from photography you get nowhere else than
+  photography.
 reviews.mentions: Mentions
-
 portfolio.seo.title: Portfolio
-portfolio.seo.description: 'Collection of the best wedding reportage works made in beautiful locations: Piedmont, Rome, Tuscany, Amalfi Coast, Sicily, Cinque Terre, Italy, Europe.'
+portfolio.seo.description: >-
+  Collection of the best wedding reportage works made in beautiful locations:
+  Piedmont, Rome, Tuscany, Amalfi Coast, Sicily, Cinque Terre, Italy, Europe.
 portfolio.title: Portfolio
 portfolio.quote: Photography is a simple thing, provided you have something to say.
-portfolio.body: A collection of photos and videos made in different weddings. To see the complete galleries click
+portfolio.body: >-
+  A collection of photos and videos made in different weddings. To see the
+  complete galleries click
 portfolio.body.link: here
 portfolio.photos: Photos
 portfolio.videos: Videos
-
 stories.seo.title: Stories
-stories.seo.description: A collection of the best of some weddings made in Italy and Europe. Spouses in love, modern and elegant settings, spontaneous photos, dream locations.
+stories.seo.description: >-
+  A collection of the best of some weddings made in Italy and Europe. Spouses in
+  love, modern and elegant settings, spontaneous photos, dream locations.
 stories.title: Stories
-stories.quote: I truly believe there are things that no one can see before they are photographed.
-
+stories.quote: >-
+  I truly believe there are things that no one can see before they are
+  photographed.
 blog.seo.title: Blog
-blog.seo.description: 'A collection of articles full of advice for future brides: boho chic, outdoor weddings, the new 2022/2023 wedding trends'
+blog.seo.description: >-
+  A collection of articles full of advice for future brides: boho chic, outdoor
+  weddings, the new 2022/2023 wedding trends
 blog.title: Blog
 blog.body: >
-  From the union of two passions, writing and photography, this blog is born: a space where future spouses, struggling with the organization of the wedding, can find interesting ideas. A journey through words and images that together make up articles on various topics: from style to locations, from dresses to favors. Enjoy the reading!
+  From the union of two passions, writing and photography, this blog is born: a
+  space where future spouses, struggling with the organization of the wedding,
+  can find interesting ideas. A journey through words and images that together
+  make up articles on various topics: from style to locations, from dresses to
+  favors. Enjoy the reading!
 blog.keep-reading: keep reading...
 blog.coming-soon: More posts coming soon...
-
 contacts.seo.title: Contacts
-contacts.seo.description: Fill out the form to contact Giada Joey Cazzola. Wedding, couple, maternity services in Turin, Rome and throughout Italy.
+contacts.seo.description: >-
+  Fill out the form to contact Giada Joey Cazzola. Wedding, couple, maternity
+  services in Turin, Rome and throughout Italy.
 contacts.title: Contact Me
 contacts.body: >
-  <p>Write me to receive more information about my services. I will be happy to answer your questions and confirm my availability for your wedding date.</p>
+  <p>Write me to receive more information about my services. I will be happy to
+  answer your questions and confirm my availability for your wedding date.</p>
   <p>In addition to wedding reportage, I offer various services such as:</p>
   <ul>
     <li>motherhood</li>
@@ -64,10 +99,11 @@ contacts.body: >
     <li>book</li>
     <li>couple services outdoors or in the studio</li>
     <li>portraits</li>
-  </ul>
-  <p>Find out more:</p>
-contacts.name: Name
-contacts.email: Email
+  </ul> <p>Find out more:</p>
+contacts.name: Name *
+contacts.address: Where are you living now? *
+contacts.email: Email *
+contacts.instagram: Instagram *
 contacts.phone: Phone
 contacts.message: Message
 contacts.privacy-policy: I accept the

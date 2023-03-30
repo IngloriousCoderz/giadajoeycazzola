@@ -92,7 +92,7 @@
     </nav>
 
     <div class="navbar level is-fixed-top is-hidden-touch">
-      <div class="languages">
+      <div class="languages is-size-3">
         <nuxt-link v-if="$i18n.locale !== 'en'" :to="switchLocalePath('en')">
           🇬🇧
         </nuxt-link>

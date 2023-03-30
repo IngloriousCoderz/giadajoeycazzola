@@ -19,8 +19,9 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
     "nuxt": "^2.15.7",
-    "nuxt-buefy": "^0.4.8",
+    "nuxt-buefy": "^0.4.25",
     "vue-awesome-swiper": "^3.0.7",
+    "vue-masonry-wall": "^0.3.2",
     "vue-server-renderer": "^2.5.13",
     "vue-template-compiler": "^2.5.13",
     "zpad": "^0.5.0"
