@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/stories/signebrian", {data:[{}],fetch:{},mutations:void 0});
