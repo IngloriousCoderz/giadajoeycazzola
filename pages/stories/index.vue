@@ -22,7 +22,7 @@
               'is-pulled-right': true,
               'has-text-white': true,
               'has-background-link': img.type === 'wedding',
-              'has-background-danger': img.type === 'elopment',
+              'has-background-danger': img.type === 'elopement',
               'has-background-primary': img.type === 'editorial',
             }"
             >{{ img.type }}</b-tag
@@ -85,7 +85,7 @@ export default {
         },
         {
           id: 'sunheederek',
-          type: 'elopment',
+          type: 'elopement',
           src: '/images/stories/sunheederek/49.jpg',
           title: 'Sunhee & Derek',
           description: {
@@ -95,7 +95,7 @@ export default {
         },
         {
           id: 'lauraroberto',
-          type: 'elopment',
+          type: 'elopement',
           src: '/images/stories/lauraroberto/20.jpg',
           title: 'Laura & Roberto',
           description: {
@@ -135,7 +135,7 @@ export default {
         },
         {
           id: 'yuliavladi',
-          type: 'elopment',
+          type: 'elopement',
           src: '/images/stories/yuliavladi/11.jpg',
           title: 'Yulia & Vladi',
           description: {
@@ -155,7 +155,7 @@ export default {
         },
         {
           id: 'montainejonathan',
-          type: 'elopment',
+          type: 'elopement',
           src: '/images/stories/montainejonathan/22.jpg',
           title: 'Montaine & Jonathan',
           description: {
