@@ -88,7 +88,7 @@ export default {
 
   data() {
     return {
-      title: 'Chiara & Marco',
+      title: 'Jessica & Filippo',
       description: {
         en: 'Is there a better place than home to celebrate your wedding? In the splendid villa of the spouses, in the heart of Monferrato, an elegant, refined wedding surrounded by an avalanche of affection!',
         it: 'Esiste un luogo migliore di casa per festeggiare il proprio matrimonio? Nella splendida villa degli sposi, nel cuore del Monferrato, un matrimonio elegante, raffinato e circondato da una valanga di affetto!',
