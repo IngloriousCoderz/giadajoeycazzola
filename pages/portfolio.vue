@@ -23,9 +23,9 @@
       </p>
     </div>
 
-    <h2 class="is-size-2 has-text-centered">
+    <!-- <h2 class="is-size-2 has-text-centered">
       {{ $t('portfolio.photos') }}
-    </h2>
+    </h2> -->
 
     <lightbox :images="images" />
 
@@ -43,7 +43,7 @@ import zpad from 'zpad'
 import Lightbox from '@/components/Lightbox'
 
 const BASE_PATH = '/images/portfolio'
-const IMAGE_COUNT = 96
+const IMAGE_COUNT = 99
 
 export default {
   components: { Lightbox },
@@ -53,11 +53,11 @@ export default {
       title: this.$i18n.t('portfolio.seo.title'),
       description: this.$i18n.t('portfolio.seo.description'),
       url: 'https://www.giadajoeycazzola.com/portfolio/',
-      image: 'https://www.giadajoeycazzola.com/images/portfolio/01.jpg',
+      image: 'https://www.giadajoeycazzola.com/images/portfolio/13.png',
 
       images: Array.from(Array(IMAGE_COUNT).keys()).map((index) => ({
         id: index + 1,
-        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`,
+        src: `${BASE_PATH}/${zpad(index + 1)}.png`,
       })),
 
       videos: [
