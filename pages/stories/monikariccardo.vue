@@ -82,8 +82,8 @@ con intimità ed eleganza uno dei matrimoni più belli che abbia mai fotografato
 mai partecipato).</p>
 <p>Grazie Portogallo, sei sempre nel mio cuore!</p>`,
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/99.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/99.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

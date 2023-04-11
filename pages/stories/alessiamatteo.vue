@@ -42,8 +42,8 @@ export default {
         en: 'An eighteenth-century villa is the setting for an intimate and elegant wedding with a super guest: the dog of the newlyweds!',
         it: 'Siamo in tre nella sala di Villa Bria ma in realtà intorno ad Alessia e Matteo c’è il silenzio di chi non ha bisogno di parlare per trasmettere ciò che sente. Dico sempre alle mie coppie di godersi quel momento per celebrare l’amore. Loro l’hanno fatto benissimo.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/75.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/75.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

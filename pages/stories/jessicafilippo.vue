@@ -142,8 +142,8 @@ luci, fiori bianchi hanno fatto il resto, rendendo questo scenario estremamente 
 <p>Il calore degli invitati accompagna gli sposi fino a notte fonda, con danze sfrenate sul palco
 a effetto specchio allestito in un'altra area del giardino. Un vero incanto!</p>`,
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/81.png`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/81.png`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

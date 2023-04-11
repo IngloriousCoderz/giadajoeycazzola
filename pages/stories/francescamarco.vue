@@ -119,8 +119,8 @@ export default {
         en: 'When dreams and reality come together to create a cozy, intimate but spectacular wedding.',
         it: 'Quando sogno e realtà si fondono per dare vita a un matrimonio raccolto, intimo ma spettacolare.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

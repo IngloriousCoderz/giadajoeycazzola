@@ -18,8 +18,8 @@ export default {
         en: 'A sweet yes in a fairytale location!',
         it: 'Amici, amanti e innamoratissimi. Cassandra e Carlo hanno scelto l’atmosfera incantevole che si respira al castello di Oviglio per promettersi amore eterno.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/03.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/03.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

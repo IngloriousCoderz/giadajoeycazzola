@@ -60,8 +60,8 @@ Gardena e abbiamo iniziato una magnifica sessione fotografica di coppia, accompa
 un brindisi con champagne a 2500 metri! Che momenti indimenticabili.</p>
 <p>Ringrazio sempre il mio lavoro per farmi vivere esperienze simili.</p>`,
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/49.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/49.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

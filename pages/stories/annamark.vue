@@ -56,8 +56,8 @@ export default {
         en: 'The elegance of Venice meets the Nordic charm of Budapest. From Hungary to Italy to say yes in front of the lagoon of the most romantic city in the world.',
         it: "L'eleganza di Venezia incontra il fascino nordico di Budapest. Dall'Ungheria in Italia per dire sì davanti alla laguna della città più romantica del mondo.",
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/61.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/61.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

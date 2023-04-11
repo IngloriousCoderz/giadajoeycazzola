@@ -43,12 +43,12 @@ export default {
       {
         hid: 'og:url',
         property: 'og:url',
-        content: 'https://www.giadajoeycazzola.com',
+        content: 'https://giadajoeycazzola.com',
       },
       {
         hid: 'og:image',
         property: 'og:image',
-        content: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+        content: 'https://giadajoeycazzola.com/images/about_me.jpg',
       },
       {
         hid: 'og:type',
@@ -66,7 +66,7 @@ export default {
       {
         hid: 'canonical',
         rel: 'canonical',
-        href: 'https://www.giadajoeycazzola.com',
+        href: 'https://giadajoeycazzola.com',
       },
       {
         rel: 'icon',

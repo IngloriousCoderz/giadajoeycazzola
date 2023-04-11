@@ -298,8 +298,8 @@ export default {
     return {
       title: this.$i18n.t('default.seo.title'),
       description: this.$i18n.t('home.seo.description'),
-      url: 'https://www.giadajoeycazzola.com/',
-      image: 'https://www.giadajoeycazzola.com/images/home/01.jpg',
+      url: 'https://giadajoeycazzola.com/',
+      image: 'https://giadajoeycazzola.com/images/home/01.jpg',
 
       burgerActive: false,
       images: Array.from(Array(IMAGE_COUNT).keys()).map((index) => ({

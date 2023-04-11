@@ -18,8 +18,8 @@ export default {
         en: 'A wonderful family and a special page: the little son!',
         it: 'Immersa nel verde delle colline canavesi sorge Villa Merlin, un luogo raffinato ma semplice proprio come Daniela e Michele.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/53.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/53.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

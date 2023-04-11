@@ -49,8 +49,8 @@ export default {
         en: "A modern, unconventional, industrial-style wedding that feels like it's set in the USA.",
         it: 'Un matrimonio moderno, non convenzionale e in stile industriale che sembra ambientato negli USA.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/73.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/73.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

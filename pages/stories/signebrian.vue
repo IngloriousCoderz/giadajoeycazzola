@@ -119,8 +119,8 @@ visitarla.</p>
 <p>E così, bagnati e infreddoliti ma entusuasti, abbiamo ballato sotto la pioggia portando a casa
 degli scatti che gli sposi hanno amato e che porterò sempre nel cuore.</p>`,
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/66.png`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/66.png`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

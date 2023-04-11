@@ -82,8 +82,8 @@ siamo divertite tantissimo!</p>
 <p>Grazie Toscana per la solita accoglienza e grazie a voi che scegliete l'Italia per celebrare il
 vostro amore!</p>`,
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/67.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/67.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

@@ -91,8 +91,8 @@ export default {
         en: 'An intimate ceremony immersed in a heavenly atmosphere with a Caribbean touch while being in the heart of the Langhe.',
         it: 'Una cerimonia intima immersi in un’atmosfera paradisiaca e dal tocco caraibico pur essendo nel cuore delle Langhe.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

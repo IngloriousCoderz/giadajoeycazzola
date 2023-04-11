@@ -77,8 +77,8 @@ export default {
         en: 'A fiveteenth-century residence on the outskirts of Milan. A very sweet couple and authentic emotions.',
         it: 'Una dimora cinquecentesca a due passi da Milano, una coppia dolcissima e tante emozioni autentiche. Cosa volere di più?',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/39.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/39.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

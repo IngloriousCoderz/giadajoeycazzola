@@ -49,8 +49,8 @@ export default {
         en: 'A genuine, nice, spontaneous couple. A pure reportage in a very charming rural location!',
         it: "Fotografare Irene e Davide è stato un privilegio: mi sono divertita tantissimo! Sono una coppia genuina e l'empatia tra di noi era davvero molto forte. Location e allestimenti eccezionali hanno fatto il resto.",
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/96.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/96.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

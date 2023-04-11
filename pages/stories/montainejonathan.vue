@@ -28,8 +28,8 @@ export default {
         en: 'A couple of dancers meet and fall in love in the streets of Paris.',
         it: 'Una coppia di ballerini si conosce e si innamora fra le vie di Parigi.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/22.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/22.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

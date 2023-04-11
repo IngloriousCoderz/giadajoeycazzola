@@ -49,8 +49,8 @@ export default {
         en: 'An explosive couple, a contemporary location, lots of pampas and love.',
         it: 'Una coppia esplosiva. Eleonora un vulcano e Lorenzo il suo porto sicuro. Li ho amati!',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/59.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/59.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

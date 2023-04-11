@@ -54,8 +54,8 @@ export default {
     return {
       title: this.$i18n.t('blog.seo.title'),
       description: this.$i18n.t('blog.seo.description'),
-      url: 'https://www.giadajoeycazzola.com/blog/',
-      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+      url: 'https://giadajoeycazzola.com/blog/',
+      image: 'https://giadajoeycazzola.com/images/about_me.jpg',
 
       posts: [
         {

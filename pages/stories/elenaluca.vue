@@ -49,8 +49,8 @@ export default {
         en: 'A young and colorful wedding, a villa in the countryside and many friends. What else?',
         it: 'L’aria è frizzante, si percepisce l’affetto sincero degli invitati. È una bellissima festa. Elena e Luca scelgono Villa Fiorita e in questa location immersa nel verde creiamo scatti di vero e puro reportage.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/39.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/39.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

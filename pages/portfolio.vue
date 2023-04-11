@@ -52,8 +52,8 @@ export default {
     return {
       title: this.$i18n.t('portfolio.seo.title'),
       description: this.$i18n.t('portfolio.seo.description'),
-      url: 'https://www.giadajoeycazzola.com/portfolio/',
-      image: 'https://www.giadajoeycazzola.com/images/portfolio/13.png',
+      url: 'https://giadajoeycazzola.com/portfolio/',
+      image: 'https://giadajoeycazzola.com/images/portfolio/13.png',
 
       images: Array.from(Array(IMAGE_COUNT).keys()).map((index) => ({
         id: index + 1,

@@ -35,8 +35,8 @@ export default {
         en: 'The dream of Francesca and Luca is crowned in one of the most historic and elegant buildings in Piedmont.',
         it: 'In uno dei palazzi più storici ed eleganti del Piemonte si corona il sogno di Francesca e Luca.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/54.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/54.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

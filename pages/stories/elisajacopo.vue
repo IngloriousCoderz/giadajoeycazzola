@@ -77,8 +77,8 @@ export default {
         en: "Get lost in the streets of Trastevere, reach San Pietro, walk along Castel Sant'Angelo. This is Rome!",
         it: 'Cose da fare almeno una volta nella vita: perdersi tra le vie di Trastevere, proseguire verso piazza San Pietro e respirare bellezza.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/07.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/07.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

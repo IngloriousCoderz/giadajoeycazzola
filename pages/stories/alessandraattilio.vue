@@ -35,8 +35,8 @@ export default {
         en: 'A simple and refined wedding in the heart of Monferrato. Light colors and bucolic details made the difference.',
         it: '“Gli incontri più importanti sono già combinati dalle anime prima che i corpi si vedano.” Come quello tra Alessandra e Attilio. Una coppia così rende splendido qualsiasi contesto.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/63.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/63.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

@@ -180,8 +180,8 @@ export default {
       title: 'Matrimonio Boho Chic',
       description:
         'Scopri tutti i segreti per organizzare un matrimonio bohemien, con foto boho chic e vintage polaroid e location adatte ai bohemian wedding.',
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH}/`,
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH}/`,
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/01.jpg`,
       type: 'website',
       date: '2 febbraio 2018',
 

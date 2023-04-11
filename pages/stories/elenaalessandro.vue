@@ -18,8 +18,8 @@ export default {
         en: "A fairytale castle a stone's throw from Turin, a bubbly and very close-knit couple, many friends ready to celebrate this union. What else?",
         it: 'Un castello da fiaba a due passi da Torino, una coppia spumeggiante e affiatatissima, tanti amici pronti a celebrare questa unione. What else?',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

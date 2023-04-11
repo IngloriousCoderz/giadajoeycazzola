@@ -18,8 +18,8 @@ export default {
         en: 'The sea in your hair, the smell of summer in your veins and bougainvillea in your eyes: and here comes Portofino, nestled between the sea and the mountains. She looks just like a cat who has made herself comfortable and plays a bit precious, aware of her beauty.',
         it: "Il mare nei capelli, l'odore dell'estate nelle vene e la bouganville negli occhi: ed ecco spuntare Portofino, accoccolata fra mare e montagna. Pare proprio una gatta che si è messa comoda e fa un po' la preziosa, consapevole della sua bellezza.",
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/20.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/20.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

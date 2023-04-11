@@ -42,8 +42,8 @@ export default {
         en: 'Two architects with a passion for art and a reportage in the heart of one of the most chaotic markets in Italy.',
         it: 'Torino non è mai stata bella come questa sera: Chiara e Marco, nel cuore della città, hanno scelto di dirsi “sì” per sempre.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/50.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,

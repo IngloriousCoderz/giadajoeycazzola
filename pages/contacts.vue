@@ -110,8 +110,8 @@ export default {
     return {
       title: this.$i18n.t('contacts.seo.title'),
       description: this.$i18n.t('contacts.seo.description'),
-      url: 'https://www.giadajoeycazzola.com/contacts/',
-      image: 'https://www.giadajoeycazzola.com/images/about_me.jpg',
+      url: 'https://giadajoeycazzola.com/contacts/',
+      image: 'https://giadajoeycazzola.com/images/about_me.jpg',
       privacyAccepted: false,
     }
   },

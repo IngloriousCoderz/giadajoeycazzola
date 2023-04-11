@@ -56,8 +56,8 @@ export default {
         en: 'Giulia and Andrea have lived in London for many years but have chosen a Piedmontese castle to swear eternal love. Elegance, nature and passion: these are the key words of their wedding.',
         it: 'Giulia e Andrea abitano a Londra da tanti anni ma hanno scelto un castello piemontese per giurarsi amore eterno. Eleganza, natura e passione: queste le parole chiave del loro matrimonio.',
       },
-      image: `https://www.giadajoeycazzola.com/images/${BASE_PATH}/90.jpg`,
-      url: `https://www.giadajoeycazzola.com/${BASE_PATH.replace(
+      image: `https://giadajoeycazzola.com/images/${BASE_PATH}/90.jpg`,
+      url: `https://giadajoeycazzola.com/${BASE_PATH.replace(
         /\/mobile/g,
         ''
       )}/`,
