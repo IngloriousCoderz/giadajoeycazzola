@@ -119,7 +119,7 @@ export default {
   },
 
   'google-gtag': {
-    id: 'UA-61816704-2',
+    id: 'G-GRHE7GXNJ2',
   },
 
   i18n: {
