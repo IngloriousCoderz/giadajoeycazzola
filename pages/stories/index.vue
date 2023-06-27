@@ -64,6 +64,16 @@ export default {
 
       images: [
         {
+          id: 'yanaomri',
+          type: 'editorial',
+          src: '/images/stories/yanaomri/64.png',
+          title: 'Yana & Omri',
+          description: {
+            en: 'In the heart of Puglia, between the Mandurian countryside with its beautiful Potenti farm, the trulli of Alberobello and the suggestive Polignano, a reportage worthy of the most romantic love story is born: the one to be lived in Italy, the undisputed queen of charm and traditions. Meet Yana and Omri.',
+            it: "Nel cuore della Puglia, tra la campagna manduriana con la sua bellissima masseria Potenti, i trulli di Alberobello e la suggestiva Polignano nasce un reportage degno della più romantica storia d'amore: quella da vivere in Italia, regina indiscussa di fascino e tradizioni. Ecco a voi Yana e Omri.",
+          },
+        },
+        {
           id: 'jessicafilippo',
           type: 'wedding',
           src: '/images/stories/jessicafilippo/81.png',
