@@ -15,6 +15,15 @@
     </div>
 
     <div class="content columns is-centered is-multiline">
+      <script src="https://pictimecloudaf-m.azureedge.net/pictures/scripts/compiled/artgalleryembed.js"></script>
+      <iframe
+        id="pictimeIntegration"
+        frameborder="0"
+        src="https://giadajoeycazzola.pic-time.com/client?headless=true"
+        style="width: 100%; height: 100%"
+        scrolling="no"
+      ></iframe>
+
       <div v-for="img in images" :key="img.id" class="column is-one-third">
         <nuxt-link :to="localePath(`stories-${img.id}`)">
           <b-tag
