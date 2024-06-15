@@ -12,7 +12,7 @@
 
         <button
           class="button navbar-burger"
-          :class="{ 'is-active': burgerActive }"
+          :class="{ 'is-active': isBurgerOpen }"
           @click="onClickBurger"
         >
           <span />
@@ -21,7 +21,7 @@
         </button>
       </div>
 
-      <div class="navbar-menu" :class="{ 'is-active': burgerActive }">
+      <div class="navbar-menu" :class="{ 'is-active': isBurgerOpen }">
         <div class="navbar-start">
           <nuxt-link
             :to="localePath('index')"
@@ -177,7 +177,12 @@
           </h1>
 
           <div class="content has-text-centered">
-            <img src="/images/home/me.jpg" alt="A picture of myself" />
+            <img
+              src="/images/home/me.png"
+              alt="A picture of myself"
+              class="has-ratio"
+              width="640"
+            />
           </div>
 
           <div class="content has-text-centered" v-html="$t('home.about')" />
@@ -286,7 +291,7 @@
 import zpad from 'zpad'
 
 const BASE_PATH = '/images/home'
-const IMAGE_COUNT = 7
+const IMAGE_COUNT = 8
 const SLIDE_DELAY = 3000
 const SLIDE_SPEED = 750
 const MANUAL_SPEED = 500
@@ -299,12 +304,12 @@ export default {
       title: this.$i18n.t('default.seo.title'),
       description: this.$i18n.t('home.seo.description'),
       url: 'https://giadajoeycazzola.com/',
-      image: 'https://giadajoeycazzola.com/images/home/01.jpg',
+      image: 'https://giadajoeycazzola.com/images/home/01.png',
 
-      burgerActive: false,
+      isBurgerOpen: false,
       images: Array.from(Array(IMAGE_COUNT).keys()).map((index) => ({
         id: index + 1,
-        src: `${BASE_PATH}/${zpad(index + 1)}.jpg`,
+        src: `${BASE_PATH}/${zpad(index + 1)}.png`,
       })),
       swiperOptions: {
         loop: true,
@@ -367,11 +372,11 @@ export default {
 
   methods: {
     onClickBurger() {
-      this.burgerActive = !this.burgerActive
+      this.isBurgerOpen = !this.isBurgerOpen
     },
 
     closeBurger() {
-      this.burgerActive = false
+      this.isBurgerOpen = false
     },
 
     onClickPrev() {
