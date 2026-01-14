@@ -10,9 +10,9 @@
 
         <p>
           <a
-            href="mailto:giada.cazzola93@gmail.com"
+            href="mailto:info@giadajoeycazzola.com"
             class="has-text-weight-bold"
-            >giada.cazzola93@gmail.com</a
+            >info@giadajoeycazzola.com</a
           >
           //
           <a href="tel:+393475045548" class="has-text-weight-bold"
@@ -25,7 +25,7 @@
         <div class="box">
           <form
             ref="form"
-            action="https://formspree.io/f/giada.cazzola93@gmail.com"
+            action="https://formspree.io/f/mojjvqlb"
             method="POST"
           >
             <div class="field">
